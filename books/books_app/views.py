@@ -1,31 +1,46 @@
 from rest_framework import status
-from rest_framework.decorators import api_view
-from rest_framework.response import Response
+from rest_framework.views import Response, Request, APIView
 from books_app.models import Book
 from books_app.serializers import BookSerializer
 
-
-@api_view(['GET', 'POST'])
-def books_list(request):
-    if request.method == 'GET':
+class BookList(APIView):
+    def get(self, request):
         if len(request.query_params) == 0:
             books = Book.objects.all()
             serializer = BookSerializer(books, many=True)
             return Response(serializer.data, status = status.HTTP_200_OK)
-        title = request.query_params.get("title")
-        if title is None:
-            return Response({"error" : "no title in query params"}, status = status.HTTP_400_BAD_REQUEST)
         else:
-            books = Book.objects.filter(title=title)
-            if len(books) == 0:
-                return Response(status = status.HTTP_404_NOT_FOUND)
-            else:
-                serializer = BookSerializer(books, many = True)
-                return Response(serializer.data, status = status.HTTP_200_OK)
-    elif request.method == 'POST':
-        data = request.data
-        serializer = BookSerializer(data=data)
+            return Response({"error": "wrong request"}, status=status.HTTP_400_BAD_REQUEST)
+
+
+class BookDetail(APIView):
+    def get(self, request: Request, uuid):
+        try:
+            book = Book.objects.get(pk=uuid)
+        except Book.DoesNotExist:
+            return Response({"error" : "wrong query parameters"}, status = status.HTTP_400_BAD_REQUEST)
+        
+        serializer = BookSerializer(book)
+        return Response(serializer.data, status = status.HTTP_200_OK)
+
+    def patch(self, request: Request, uuid):
+        try: 
+            book = Book.objects.get(pk=uuid)
+        except Book.DoesNotExist:
+            return Response(status=status.HTTP_404_NOT_FOUND)
+        serializer = BookSerializer(instance=book, data=request.data)
         if serializer.is_valid():
             serializer.save()
-            return Response(serializer.data, status=status.HTTP_201_CREATED)
-        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+            return Response(serializer.data, status=status.HTTP_202_ACCEPTED)
+        else:
+            return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+        
+
+    def delete(self, request: Request, uuid):
+        try:
+            book = Book.objects.get(pk=uuid)
+        except Book.DoesNotExist:
+            return Response(status=status.HTTP_404_NOT_FOUND)
+        book.delete()
+        return Response(status=status.HTTP_204_NO_CONTENT)
+        
