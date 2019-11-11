@@ -12,6 +12,15 @@ class BookList(APIView):
         else:
             return Response({"error": "wrong request"}, status=status.HTTP_400_BAD_REQUEST)
 
+    def post(self, request):
+        data = request.data
+        serializer = BookSerializer(data=data)
+        if serializer.is_valid():
+            serializer.save()
+            return Response(serializer.data, status=status.HTTP_201_CREATED)
+        else:
+            return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
 
 class BookDetail(APIView):
     def get(self, request: Request, uuid):
