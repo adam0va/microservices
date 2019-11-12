@@ -10,7 +10,7 @@ class ReaderList(APIView):
             serializer = ReaderSerializer(readers, many=True)
             return Response(serializer.data, status = status.HTTP_200_OK)
         else:
-            return Response({"error": "wrong request"}, status=status.HTTP_400_BAD_REQUEST)
+            return Response({'error': 'wrong request'}, status=status.HTTP_400_BAD_REQUEST)
 
     def post(self, request):
         data = request.data
@@ -27,7 +27,7 @@ class ReaderDetail(APIView):
         try:
             reader = Reader.objects.get(pk=uuid)
         except Reader.DoesNotExist:
-            return Response({"error" : "wrong query parameters"}, status = status.HTTP_400_BAD_REQUEST)
+            return Response({'error' : 'wrong query parameters'}, status = status.HTTP_400_BAD_REQUEST)
         
         serializer = ReaderSerializer(reader)
         return Response(serializer.data, status = status.HTTP_200_OK)

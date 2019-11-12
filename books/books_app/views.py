@@ -10,7 +10,7 @@ class BookList(APIView):
             serializer = BookSerializer(books, many=True)
             return Response(serializer.data, status = status.HTTP_200_OK)
         else:
-            return Response({"error": "wrong request"}, status=status.HTTP_400_BAD_REQUEST)
+            return Response({'error': 'wrong request'}, status=status.HTTP_400_BAD_REQUEST)
 
     def post(self, request):
         data = request.data
@@ -27,7 +27,7 @@ class BookDetail(APIView):
         try:
             book = Book.objects.get(pk=uuid)
         except Book.DoesNotExist:
-            return Response({"error" : "wrong query parameters"}, status = status.HTTP_400_BAD_REQUEST)
+            return Response({'error' : 'wrong query parameters'}, status = status.HTTP_400_BAD_REQUEST)
         
         serializer = BookSerializer(book)
         return Response(serializer.data, status = status.HTTP_200_OK)

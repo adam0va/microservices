@@ -10,7 +10,7 @@ class AuthorList(APIView):
             serializer = AuthorSerializer(authors, many=True)
             return Response(serializer.data, status = status.HTTP_200_OK)
         else:
-            return Response({"error": "wrong request"}, status=status.HTTP_400_BAD_REQUEST)
+            return Response({'error': 'wrong request'}, status=status.HTTP_400_BAD_REQUEST)
 
 
     def post(self, request):
@@ -28,7 +28,7 @@ class AuthorDetail(APIView):
         try:
             author = Author.objects.get(pk=uuid)
         except Author.DoesNotExist:
-            return Response({"error" : "wrong request"}, status = status.HTTP_400_BAD_REQUEST)
+            return Response({'error' : 'wrong request'}, status = status.HTTP_400_BAD_REQUEST)
         
         serializer = AuthorSerializer(author)
         return Response(serializer.data, status = status.HTTP_200_OK)
