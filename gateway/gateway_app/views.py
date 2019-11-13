@@ -63,6 +63,14 @@ class BookView(APIView):
 		data, code = self.REQUESTER.get_book(request=request, uuid=book_uuid)
 		return Response(data, status=code)
 
+	def delete(self, request, book_uuid):
+		data, code = self.REQUESTER.delete_book(request=request,uuid=book_uuid)
+		return Response(data, status=code)
+
+	def patch(self, request, book_uuid):
+		data, code = self.REQUESTER.patch_book(request=request, uuid=book_uuid, data=request.data)
+		return Response(data, status=code)
+
 
 
 

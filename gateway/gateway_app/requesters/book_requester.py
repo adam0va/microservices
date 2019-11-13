@@ -24,14 +24,14 @@ class BookRequester(Requester):
 			return book, 200
 
 	def author_excists(self, request, data):
-		from .requesters.author_requester import AuthorRequester
+		from gateway_app.requesters.author_requester import AuthorRequester
 		if data['author_uuid']:
 			_, code = AuthorRequester().get_author(request, data['author_uuid'])
 			return code == 200
 		return {}, 200
 
 	def reader_excists(self, request, data):
-		from .requesters.reader_requester import ReaderRequester
+		from gateway_app.requesters.reader_requester import ReaderRequester
 		if data['reader_uuid']:
 			_, code = ReaderRequester().get_reader(request, data['reader_uuid'])
 			return code == 200
@@ -86,22 +86,22 @@ class BookRequester(Requester):
 		response = self.delete_request(self.BOOK_HOST + uuid + '/')
 		if response is None:
 			return self.BASE_HTTP_ERROR
-		return response.json(), response.status_code
-	'''
+		return response, response.status_code
+	
 	def patch_book(self, request, uuid, data):
 		#проверить есть ли такой читатель
-		if not reader_excists(request, data):
+		if not self.reader_excists(request, data):
 			return {'error' : 'Wrong reader uuid'}, 404
 		#проверить есть ли такой автор
-		if not author_excists(request, data):
+		if not self.author_excists(request, data):
 			return {'error' : 'Wrong author uuid'}, 404
-		#удалить книгу
+		#поменять информацию
 		response = self.patch_request(self.BOOK_HOST + uuid + '/', data=data)
 		if response is None:
-			return self.BASE_HTTP_ERRORs
+			return self.BASE_HTTP_ERROR
 		return response.json(), response.status_code
 
-	'''
+	
 
 
 

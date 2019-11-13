@@ -23,8 +23,8 @@ class AuthorRequester(Requester):
 
     def patch_author(self, request, uuid, data):
         response = self.patch_request(self.AUTHOR_HOST + f'{uuid}/', data=data)
-        if response is None:
-            return self.BASE_HTTP_ERROR
+        #if response is None:
+            #return self.BASE_HTTP_ERROR
         return self.get_data_from_response(response), response.status_code
 
     def delete_author(self, request, uuid):
