@@ -56,6 +56,9 @@ class AllBooksView(APIView):
 	def get (self, request):
 		data, code = self.REQUESTER.get_all_books(request=request)
 		return Response(data, status=code)
+	def post(self, request):
+		data, code = self.REQUESTER.post_book(request=request, data=request.data)
+		return Response(data, status=code)
 
 class BookView(APIView):
 	REQUESTER = BookRequester()

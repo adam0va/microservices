@@ -101,6 +101,20 @@ class BookRequester(Requester):
 			return self.BASE_HTTP_ERROR
 		return response.json(), response.status_code
 
+	def post_book(self, request, data):
+		if not self.reader_excists(request, data):
+			return {'error' : 'Wrong reader uuid'}, 400
+		if not self.author_excists(request, data):
+			return {'error' : 'Wrong author uuid'}, 400
+
+		response = self.post_request(self.BOOK_HOST, data=data)
+		if response is None:
+			return Requester.BASE_HTTP_ERROR
+		
+		return response.json(), response.status_code
+
+
+
 	
 
 
