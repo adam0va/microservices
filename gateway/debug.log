@@ -1,0 +1,4 @@
+Watching for file changes with StatReloader
+Not Found: /authors/73410f68-a21a-4bf9-b3be-c7618096446d/
+"DELETE /authors/73410f68-a21a-4bf9-b3be-c7618096446d/ HTTP/1.1" 404 2
+"GET /authors/ HTTP/1.1" 200 639
