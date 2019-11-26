@@ -48,7 +48,7 @@ class ReaderDetail(APIView):
 
     def delete(self, request, uuid):
         try:
-            reader = Reader.objects.get(pk=uuid)
+            reader = Reader.objects.get(uuid=uuid)
         except Reader.DoesNotExist:
             return Response(status=status.HTTP_404_NOT_FOUND)
         reader.delete()

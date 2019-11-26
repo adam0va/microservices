@@ -4,7 +4,7 @@ import re
 
 class Requester:
 	HOST = 'http://127.0.0.1'
-	BASE_HTTP_ERROR = (json.dumps({'error': 'Internal server error'}), 500)
+	BASE_HTTP_ERROR = (json.dumps({'error': 'BaseHTTPError'}), 500)
 
 	def get_request(self, url):
 		try:
@@ -45,7 +45,7 @@ class Requester:
 	def get_data_from_response(self, response):
 		try:
 			return response.json()
-		except (ValueError, json.JSONDecodeError):
+		except (ValueError, json.JSONDecodeError, AttributeError):
 			return response.text
 
  

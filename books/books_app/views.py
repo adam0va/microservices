@@ -23,7 +23,7 @@ class BookList(APIView):
 
 
 class BookDetail(APIView):
-    def get(self, request: Request, uuid):
+    def get(self, request, uuid):
         try:
             book = Book.objects.get(pk=uuid)
         except Book.DoesNotExist:
@@ -32,20 +32,23 @@ class BookDetail(APIView):
         serializer = BookSerializer(book)
         return Response(serializer.data, status = status.HTTP_200_OK)
 
-    def patch(self, request: Request, uuid):
+    def patch(self, request, uuid):
         try: 
             book = Book.objects.get(pk=uuid)
         except Book.DoesNotExist:
             return Response(status=status.HTTP_404_NOT_FOUND)
-        serializer = BookSerializer(instance=book, data=request.data)
+        serializer = BookSerializer(instance=book, data=request.data, partial=True)
         if serializer.is_valid():
             serializer.save()
+            print('---')
+            print(serializer.data)
+            print('---')
             return Response(serializer.data, status=status.HTTP_202_ACCEPTED)
         else:
             return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
         
 
-    def delete(self, request: Request, uuid):
+    def delete(self, request, uuid):
         try:
             book = Book.objects.get(pk=uuid)
         except Book.DoesNotExist:

@@ -25,17 +25,52 @@ class BookRequester(Requester):
 
 	def author_excists(self, request, data):
 		from gateway_app.requesters.author_requester import AuthorRequester
-		if data['author_uuid']:
+		if 'author_uuid' in data:
 			_, code = AuthorRequester().get_author(request, data['author_uuid'])
-			return code == 200
-		return {}, 200
+			return code == 200 or data['author_uuid'] == None
+		return 200
 
 	def reader_excists(self, request, data):
 		from gateway_app.requesters.reader_requester import ReaderRequester
-		if data['reader_uuid']:
+		if 'reader_uuid' in data:
 			_, code = ReaderRequester().get_reader(request, data['reader_uuid'])
-			return code == 200
+			return code == 200 or data['reader_uuid'] == None
+		return 200
+
+	def erase_uuid(self, book, whos, uuid):
+		if whos == 'author':
+			if book['author_uuid'] == uuid:
+				book['author_uuid'] = None
+				response = self.patch_request(self.BOOK_HOST + book['uuid'] + '/', data=book)
+				return response, response.status_code
+
+		elif whos == 'reader':
+			if book['reader_uuid'] == uuid:
+				book['reader_uuid'] = None
+				response = self.patch_request(self.BOOK_HOST + book['uuid'] + '/', data=book)
+				return response, response.status_code
 		return {}, 200
+
+	def erase_deleted_authors_uuid(self, uuid):
+		response = self.get_request(self.BOOK_HOST)
+		if response is None:
+			print(1)
+			print(response)
+			return self.BASE_HTTP_ERROR
+		response_data = self.get_data_from_response(response)
+		for i in range(len(response_data)):
+			response, status = self.erase_uuid(response_data[i], 'author', uuid)
+		return response, status
+
+	def erase_deleted_readers_uuid(self, uuid):
+		response = self.get_request(self.BOOK_HOST)
+		if response is None:
+			return response
+		response_data = self.get_data_from_response(response)
+		for i in range(len(response_data)):
+			response, status = self.erase_uuid(response_data[i], 'reader', uuid)
+		return response, status
+
 	#-------------------------------------------------------------------------------------------
 
 	def get_all_books(self, request):
@@ -45,11 +80,7 @@ class BookRequester(Requester):
 		if response is None:
 			return self.BASE_HTTP_ERROR
 
-		response_data = response.json()
-		print('response')
-		print(response_data)
-		print('----')
-		print(response_data[0])
+		response_data = self.get_data_from_response(response)
 
 		for i in range(len(response_data)):
 			response_data[i], status_code = self.set_reader(request, response_data[i])
@@ -86,7 +117,7 @@ class BookRequester(Requester):
 		response = self.delete_request(self.BOOK_HOST + uuid + '/')
 		if response is None:
 			return self.BASE_HTTP_ERROR
-		return response, response.status_code
+		return self.get_data_from_response(response), response.status_code
 	
 	def patch_book(self, request, uuid, data):
 		#проверить есть ли такой читатель
@@ -99,7 +130,7 @@ class BookRequester(Requester):
 		response = self.patch_request(self.BOOK_HOST + uuid + '/', data=data)
 		if response is None:
 			return self.BASE_HTTP_ERROR
-		return response.json(), response.status_code
+		return self.get_data_from_response(response), response.status_code
 
 	def post_book(self, request, data):
 		if not self.reader_excists(request, data):
@@ -111,7 +142,7 @@ class BookRequester(Requester):
 		if response is None:
 			return Requester.BASE_HTTP_ERROR
 		
-		return response.json(), response.status_code
+		return self.get_data_from_response(response), response.status_code
 
 
 

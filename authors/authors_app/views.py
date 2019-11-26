@@ -2,6 +2,7 @@ from rest_framework import status
 from rest_framework.views import Response, Request, APIView
 from authors_app.models import Author
 from authors_app.serializers import AuthorSerializer
+from django.core.exceptions import ObjectDoesNotExist
 
 class AuthorList(APIView):
     def get(self, request):
@@ -24,7 +25,7 @@ class AuthorList(APIView):
 
 
 class AuthorDetail(APIView):
-    def get(self, request: Request, uuid):
+    def get(self, request, uuid):
         try:
             author = Author.objects.get(pk=uuid)
         except Author.DoesNotExist:
@@ -33,7 +34,7 @@ class AuthorDetail(APIView):
         serializer = AuthorSerializer(author)
         return Response(serializer.data, status = status.HTTP_200_OK)
 
-    def patch(self, request: Request, uuid):
+    def patch(self, request, uuid):
         try: 
             author = Author.objects.get(pk=uuid)
         except Author.DoesNotExist:
@@ -46,7 +47,7 @@ class AuthorDetail(APIView):
             return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
         
 
-    def delete(self, request: Request, uuid):
+    def delete(self, request, uuid):
         try:
             author = Author.objects.get(pk=uuid)
         except Author.DoesNotExist:

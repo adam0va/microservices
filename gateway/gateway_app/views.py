@@ -11,6 +11,7 @@ class AllReadersView(APIView):
 
 	def post(self, request):
 		data, code = self.REQUESTER.post_reader(request=request, data=request.data)
+		return Response(data, status=code)
 
 class ReaderView(APIView):
 	REQUESTER = ReaderRequester()
@@ -18,12 +19,12 @@ class ReaderView(APIView):
 		data, code = self.REQUESTER.get_reader(request=request, uuid=reader_uuid)
 		return Response(data, status=code)
 
-	def delete(self, request, author_uuid):
-		data, code = self.REQUESTER.delete_reader(request=request,uuid=author_uuid)
+	def delete(self, request, reader_uuid):
+		data, code = self.REQUESTER.delete_reader(request=request,uuid=reader_uuid)
 		return Response(data, status=code)
 
-	def patch(self, request, author_uuid):
-		data, code = self.REQUESTER.patch_reader(request=request, uuid=author_uuid, data=request.data)
+	def patch(self, request, reader_uuid):
+		data, code = self.REQUESTER.patch_reader(request=request, uuid=reader_uuid, data=request.data)
 		return Response(data, status=code)
 
 
@@ -35,6 +36,7 @@ class AllAuthorsView(APIView):
 
 	def post(self, request):
 		data, code = self.REQUESTER.post_author(request=request, data=request.data)
+		return Response(data, status=code)
 
 class AuthorView(APIView):
 	REQUESTER = AuthorRequester()

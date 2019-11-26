@@ -28,7 +28,12 @@ class ReaderRequester(Requester):
 		return self.get_data_from_response(response), response.status_code
 
 	def delete_reader(self, request, uuid):
+		from gateway_app.requesters.book_requester import BookRequester
+
 		response = self.delete_request(self.READER_HOST + f'{uuid}/')
 		if response is None:
 			return self.BASE_HTTP_ERROR
+		if response.status_code != 204:
+			return self.get_data_from_response(response), response.status_code
+		BookRequester().erase_deleted_readers_uuid(uuid)
 		return self.get_data_from_response(response), response.status_code
