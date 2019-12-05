@@ -74,22 +74,39 @@ class BookRequester(Requester):
 	#-------------------------------------------------------------------------------------------
 
 	def get_all_books(self, request):
+		
 		host = self.BOOK_HOST
 
 		response = self.get_request(host)
+		l_o = self.get_limit_and_offset(request)
+		if l_o is not None:
+			host += f'?limit={l_o[0]}&offset={l_o[1]}'
+		print(f'host: {host}')
+		response = self.get_request(host)
 		if response is None:
 			return self.BASE_HTTP_ERROR
+		response_data = self.next_and_prev_links_to_params(self.get_data_from_response(response))
 
-		response_data = self.get_data_from_response(response)
-
-		for i in range(len(response_data)):
-			response_data[i], status_code = self.set_reader(request, response_data[i])
-			if status_code != 200:
-				return response_data, response.status_code
-			response_data[i], status_code = self.set_author(request, response_data[i])
-			if status_code != 200:
-				return response_data, response.status_code
+		if isinstance(response_data, dict):
+			actual_messages = response_data['results']
+			for i in range(len(actual_messages)):
+				actual_messages[i], status_code = self.set_reader(request, actual_messages[i])
+				if status_code != 200:
+					return actual_messages, response.status_code
+				actual_messages[i], status_code = self.set_author(request, actual_messages[i])
+				if status_code != 200:
+					return actual_messages, response.status_code
+			response_data['results'] = actual_messages
+		else:
+			for i in range(len(response_data)):
+				response_data[i], status_code = self.set_reader(request, response_data[i])
+				if status_code != 200:
+					return response_data, response.status_code
+				response_data[i], status_code = self.set_author(request, response_data[i])
+				if status_code != 200:
+					return response_data, response.status_code
 		return response_data, status_code
+		
 
 	def get_book(self, request, uuid):
 		response = self.get_request(self.BOOK_HOST + uuid + '/')

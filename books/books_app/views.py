@@ -2,7 +2,14 @@ from rest_framework import status
 from rest_framework.views import Response, Request, APIView
 from books_app.models import Book
 from books_app.serializers import BookSerializer
+from rest_framework.generics import ListCreateAPIView
+#from rest_framework.renderers import JSONRenderer
 
+class BookList(ListCreateAPIView):
+    serializer_class = BookSerializer
+    def get_queryset(self):
+        return Book.objects.all()
+'''
 class BookList(APIView):
     def get(self, request):
         if len(request.query_params) == 0:
@@ -20,7 +27,7 @@ class BookList(APIView):
             return Response(serializer.data, status=status.HTTP_201_CREATED)
         else:
             return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
-
+'''
 
 class BookDetail(APIView):
     def get(self, request, uuid):

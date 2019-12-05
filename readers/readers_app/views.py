@@ -2,7 +2,15 @@ from rest_framework import status
 from rest_framework.views import Response, Request, APIView
 from readers_app.models import Reader
 from readers_app.serializers import ReaderSerializer
+from rest_framework.generics import ListCreateAPIView
 
+
+class ReaderList(ListCreateAPIView):
+    serializer_class = ReaderSerializer
+    def get_queryset(self):
+        return Reader.objects.all()
+
+'''
 class ReaderList(APIView):
     def get(self, request):
         if len(request.query_params) == 0:
@@ -14,13 +22,16 @@ class ReaderList(APIView):
 
     def post(self, request):
         data = request.data
+        print('--------')
+        print(data)
+        print('--------')
         serializer = ReaderSerializer(data=data)
         if serializer.is_valid():
             serializer.save()
             return Response(serializer.data, status=status.HTTP_201_CREATED)
         else:
             return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
-
+'''
 
 class ReaderDetail(APIView):
     def get(self, request, uuid):

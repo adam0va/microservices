@@ -4,10 +4,24 @@ class ReaderRequester(Requester):
 	READER_HOST = Requester.HOST + ':8001/readers/'
 
 	def get_all_readers(self, request):
+
+		host = self.READER_HOST
+		l_o = self.get_limit_and_offset(request)
+		if l_o is not None:
+			host += f'?limit={l_o[0]}&offset={l_o[1]}'
+		print(f'host: {host}')
+		response = self.get_request(host)
+		if response is None:
+			return self.BASE_HTTP_ERROR
+		response_json = self.next_and_prev_links_to_params(self.get_data_from_response(response))
+		return response_json, response.status_code
+		'''
 		response = self.get_request(self.READER_HOST)
 		if response is None:
 			return self.BASE_HTTP_ERROR
 		return self.get_data_from_response(response), response.status_code
+		'''
+
 
 	def get_reader(self, request, uuid):
 		response = self.get_request(self.READER_HOST + f'{uuid}/')

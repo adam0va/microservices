@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>basic title</title>
+</head>
+<body>
+	<div class="container">
+		<h1>READERS</h1>
+		<div class="content">
+			<div>name</div>
+			<div>surname</div>
+			<div>birth date</div>
+			<div>uuid</div>
+		</div>
+		<div class="content">
+			<div>name</div>
+			<div>surname</div>
+			<div>birth date</div>
+			<div>uuid</div>
+		</div>
+	</div>
+</body>
+
+<style type="text/css">
+
+	body {
+		box-sizing: border-box;
+	}
+
+
+	.container {
+		max-width: 600px;
+		margin: auto;
+	}
+	h1 {
+		text-align: center;
+		vertical-align: center;
+	}
+	.content {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		align-items: center;
+		height: 50px;
+		border: 2px dotted pink;
+	}
+</style>
+
+<script type="text/javascript">
+	const Http = new XMLHttpRequest();
+	const url='127.0.0.1:8000/authors/';
+	Http.open("GET", url);
+	Http.send();
+
+	Http.onreadystatechange = (e) => {
+	  console.log(Http.responseText);
+	}
+
+</script>
+
+</html>
+
+
+
+
+
+
+
+
+

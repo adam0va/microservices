@@ -2,8 +2,14 @@ from rest_framework import status
 from rest_framework.views import Response, Request, APIView
 from authors_app.models import Author
 from authors_app.serializers import AuthorSerializer
-from django.core.exceptions import ObjectDoesNotExist
+from rest_framework.generics import ListCreateAPIView
 
+
+class AuthorList(ListCreateAPIView):
+    serializer_class = AuthorSerializer
+    def get_queryset(self):
+        return Author.objects.all()
+'''
 class AuthorList(APIView):
     def get(self, request):
         if len(request.query_params) == 0:
@@ -13,7 +19,6 @@ class AuthorList(APIView):
         else:
             return Response({'error': 'wrong request'}, status=status.HTTP_400_BAD_REQUEST)
 
-
     def post(self, request):
         data = request.data
         serializer = AuthorSerializer(data=data)
@@ -22,6 +27,7 @@ class AuthorList(APIView):
             return Response(serializer.data, status=status.HTTP_201_CREATED)
         else:
             return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+'''
 
 
 class AuthorDetail(APIView):

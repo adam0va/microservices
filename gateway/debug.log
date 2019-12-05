@@ -2,3 +2,1976 @@ Watching for file changes with StatReloader
 Not Found: /authors/73410f68-a21a-4bf9-b3be-c7618096446d/
 "DELETE /authors/73410f68-a21a-4bf9-b3be-c7618096446d/ HTTP/1.1" 404 2
 "GET /authors/ HTTP/1.1" 200 639
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/requesters/requester.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/requesters/requester.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/requesters/author_requester.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /authors/
+Traceback (most recent call last):
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/views.py", line 34, in get
+    data, code = self.REQUESTER.get_all_authors(request=request)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/requesters/author_requester.py", line 8, in get_all_authors
+    l_o = self.get_limit_offset_from_request(request)
+AttributeError: 'AuthorRequester' object has no attribute 'get_limit_offset_from_request'
+"GET /authors/ HTTP/1.1" 500 92905
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 3206
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/requesters/author_requester.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /authors/
+Traceback (most recent call last):
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/views.py", line 34, in get
+    data, code = self.REQUESTER.get_all_authors(request=request)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/requesters/author_requester.py", line 8, in get_all_authors
+    l_o = self.get_limit_and_offset(request)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/requesters/requester.py", line 39, in get_limit_and_offset
+    limit = request.query_params('limit')
+TypeError: 'QueryDict' object is not callable
+"GET /authors/ HTTP/1.1" 500 96110
+Internal Server Error: /authors/
+Traceback (most recent call last):
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/views.py", line 34, in get
+    data, code = self.REQUESTER.get_all_authors(request=request)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/requesters/author_requester.py", line 8, in get_all_authors
+    l_o = self.get_limit_and_offset(request)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/requesters/requester.py", line 39, in get_limit_and_offset
+    limit = request.query_params('limit')
+TypeError: 'QueryDict' object is not callable
+"GET /authors/?limit=0&?offset=0 HTTP/1.1" 500 96696
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/requesters/requester.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /authors/?limit=0&?offset=0 HTTP/1.1" 200 12780
+"GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 200 3385
+"GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 8192
+"GET /authors/?limit=2&?offset=0 HTTP/1.1" 200 12780
+"GET /authors/?limit=2&?offset=0 HTTP/1.1" 200 12780
+"GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0
+"GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0
+"GET /static/rest_framework/js/jquery-3.4.1.min.js HTTP/1.1" 304 0
+"GET /static/rest_framework/css/default.css HTTP/1.1" 304 0
+"GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0
+"GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0
+"GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0
+"GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0
+"GET /static/rest_framework/js/default.js HTTP/1.1" 304 0
+"GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0
+"GET /static/rest_framework/img/grid.png HTTP/1.1" 304 0
+"GET /authors/?limit=2&?offset=2 HTTP/1.1" 200 12780
+"GET /authors/?limit=0&?offset=0 HTTP/1.1" 200 12780
+"GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 8192
+"GET /authors/?limit=2&?offset=0 HTTP/1.1" 200 12780
+"GET /books/ HTTP/1.1" 200 15331
+"GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 8192
+"GET /books/c066d53b-0e46-433e-b375-57aa6ca32940/ HTTP/1.1" 200 13520
+Watching for file changes with StatReloader
+"GET /books/ HTTP/1.1" 200 15331
+"GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 200 3385
+"GET /static/rest_framework/css/prettify.css HTTP/1.1" 200 817
+"GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 8192
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 3206
+"GET /books/c066d53b-0e46-433e-b375-57aa6ca32940/ HTTP/1.1" 200 13520
+"GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 8192
+"GET /authors/ HTTP/1.1" 200 639
+"GET /readers/ HTTP/1.1" 200 435
+"GET /readers/ HTTP/1.1" 200 12152
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 3206
+"GET /books/ HTTP/1.1" 200 15331
+"GET /books/c066d53b-0e46-433e-b375-57aa6ca32940 HTTP/1.1" 301 0
+"GET /books/c066d53b-0e46-433e-b375-57aa6ca32940/ HTTP/1.1" 200 13520
+Not Found: /books/c066d53b-0e46-433e-b375-57aa6ca32940/reader/name
+"GET /books/c066d53b-0e46-433e-b375-57aa6ca32940/reader/name HTTP/1.1" 404 3335
+Not Found: /
+"GET / HTTP/1.1" 404 3155
+Not Found: /reader
+"GET /reader HTTP/1.1" 404 3191
+"GET /readers/ HTTP/1.1" 200 12152
+"GET /static/rest_framework/css/bootstrap.min.css.map HTTP/1.1" 404 1744
+Watching for file changes with StatReloader
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /books/ HTTP/1.1" 200 15331
+"GET /static/rest_framework/css/default.css HTTP/1.1" 200 1131
+"GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 8192
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 3206
+"GET /books/ HTTP/1.1" 200 15331
+"GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0
+"GET /static/rest_framework/js/jquery-3.4.1.min.js HTTP/1.1" 304 0
+"GET /static/rest_framework/css/default.css HTTP/1.1" 304 0
+"GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0
+"GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0
+"GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0
+"GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0
+"GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0
+"GET /static/rest_framework/js/default.js HTTP/1.1" 304 0
+"GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
+"GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway/urls.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway/settings.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway/urls.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway/urls.py changed, reloading.
+Watching for file changes with StatReloader
+Not Found: /
+"GET / HTTP/1.1" 404 3282
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 3333
+Not Found: /
+"GET / HTTP/1.1" 404 3282
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 3333
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/urls.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/urls.py changed, reloading.
+Watching for file changes with StatReloader
+Not Found: /
+"GET / HTTP/1.1" 404 3456
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/urls.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/template/base.py", line 470, in parse
+    compile_func = self.tags[command]
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/core/handlers/base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/core/handlers/base.py", line 143, in _get_response
+    response = response.render()
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/template/response.py", line 106, in render
+    self.content = self.rendered_content
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/template/response.py", line 81, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/template/response.py", line 63, in resolve_template
+    return select_template(template, using=self.using)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/template/loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/template/backends/django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/template/engine.py", line 143, in get_template
+    template, origin = self.find_template(template_name)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/template/engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/template/loaders/base.py", line 30, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/template/base.py", line 156, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/template/base.py", line 194, in compile_nodelist
+    return parser.parse()
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/template/base.py", line 478, in parse
+    raise self.error(token, e)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/template/base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/template/loader_tags.py", line 266, in do_extends
+    nodelist = parser.parse()
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/template/base.py", line 478, in parse
+    raise self.error(token, e)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/template/base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/template/loader_tags.py", line 209, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/template/base.py", line 472, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/template/base.py", line 528, in invalid_block_tag
+    get_text_list(["'%s'" % p for p in parse_until], 'or'),
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 6: 'static', expected 'endblock'. Did you forget to register or load this tag?
+"GET / HTTP/1.1" 500 144822
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/template/base.py", line 470, in parse
+    compile_func = self.tags[command]
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/core/handlers/base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/core/handlers/base.py", line 143, in _get_response
+    response = response.render()
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/template/response.py", line 106, in render
+    self.content = self.rendered_content
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/template/response.py", line 81, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/template/response.py", line 63, in resolve_template
+    return select_template(template, using=self.using)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/template/loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/template/backends/django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/template/engine.py", line 143, in get_template
+    template, origin = self.find_template(template_name)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/template/engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/template/loaders/base.py", line 30, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/template/base.py", line 156, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/template/base.py", line 194, in compile_nodelist
+    return parser.parse()
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/template/base.py", line 478, in parse
+    raise self.error(token, e)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/template/base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/template/loader_tags.py", line 266, in do_extends
+    nodelist = parser.parse()
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/template/base.py", line 478, in parse
+    raise self.error(token, e)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/template/base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/template/loader_tags.py", line 209, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/template/base.py", line 472, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/template/base.py", line 528, in invalid_block_tag
+    get_text_list(["'%s'" % p for p in parse_until], 'or'),
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 6: 'static', expected 'endblock'. Did you forget to register or load this tag?
+"GET / HTTP/1.1" 500 144696
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/template/base.py", line 470, in parse
+    compile_func = self.tags[command]
+KeyError: "'static/js/app.js'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/core/handlers/base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/core/handlers/base.py", line 143, in _get_response
+    response = response.render()
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/template/response.py", line 106, in render
+    self.content = self.rendered_content
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/template/response.py", line 81, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/template/response.py", line 63, in resolve_template
+    return select_template(template, using=self.using)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/template/loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/template/backends/django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/template/engine.py", line 143, in get_template
+    template, origin = self.find_template(template_name)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/template/engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/template/loaders/base.py", line 30, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/template/base.py", line 156, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/template/base.py", line 194, in compile_nodelist
+    return parser.parse()
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/template/base.py", line 478, in parse
+    raise self.error(token, e)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/template/base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/template/loader_tags.py", line 266, in do_extends
+    nodelist = parser.parse()
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/template/base.py", line 478, in parse
+    raise self.error(token, e)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/template/base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/template/loader_tags.py", line 209, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/template/base.py", line 472, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/template/base.py", line 528, in invalid_block_tag
+    get_text_list(["'%s'" % p for p in parse_until], 'or'),
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 6: ''static/js/app.js'', expected 'endblock'. Did you forget to register or load this tag?
+"GET / HTTP/1.1" 500 145061
+"GET / HTTP/1.1" 200 707
+"GET /books/ HTTP/1.1" 200 15331
+"GET /static/rest_framework/css/prettify.css HTTP/1.1" 200 817
+"GET /static/rest_framework/css/default.css HTTP/1.1" 200 1131
+"GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 200 3597
+"GET /static/rest_framework/js/jquery-3.4.1.min.js HTTP/1.1" 200 88145
+"GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 121457
+"GET /static/rest_framework/js/csrf.js HTTP/1.1" 200 1719
+"GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 200 37608
+"GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 200 13632
+"GET /static/rest_framework/js/default.js HTTP/1.1" 200 1268
+"GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
+"GET / HTTP/1.1" 200 1210
+"GET /books/ HTTP/1.1" 200 2019
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway/settings.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /authors/ HTTP/1.1" 200 12636
+Not Found: /static/rest_framework/js/jquery-3.4.1.min.js
+"GET /static/rest_framework/js/jquery-3.4.1.min.js HTTP/1.1" 404 77
+"GET /authors/ HTTP/1.1" 200 12636
+"OPTIONS /authors/ HTTP/1.1" 200 11560
+"OPTIONS /authors/ HTTP/1.1" 200 11560
+"GET /authors/ HTTP/1.1" 200 12636
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway/settings.py changed, reloading.
+Watching for file changes with StatReloader
+Invalid HTTP_HOST header: 'localhost:8000'. You may need to add 'localhost' to ALLOWED_HOSTS.
+Bad Request: /books/
+"GET /books/ HTTP/1.1" 400 59008
+"GET /books/ HTTP/1.1" 200 15331
+"GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 8192
+"GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 3501
+"GET /static/rest_framework/css/bootstrap.min.css.map HTTP/1.1" 404 1858
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /authors/ HTTP/1.1" 200 12636
+"GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 8192
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /books/ HTTP/1.1" 200 15331
+"GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 8192
+"GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /books/ HTTP/1.1" 200 2019
+Bad Request: /books/c066d53b-0e46-433e-b375-57aa6ca32941/
+"GET /books/c066d53b-0e46-433e-b375-57aa6ca32941/ HTTP/1.1" 400 12759
+"GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 200 3385
+"GET /static/rest_framework/css/prettify.css HTTP/1.1" 200 817
+"GET /static/rest_framework/css/default.css HTTP/1.1" 200 1131
+"GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 8192
+"GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 3501
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/views.py changed, reloading.
+Watching for file changes with StatReloader
+Bad Request: /books/c066d53b-0e46-433e-b375-57aa6ca32941/
+"GET /books/c066d53b-0e46-433e-b375-57aa6ca32941/ HTTP/1.1" 400 42
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/core/handlers/base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/core/handlers/base.py", line 143, in _get_response
+    response = response.render()
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/template/response.py", line 106, in render
+    self.content = self.rendered_content
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/template/response.py", line 81, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/template/response.py", line 63, in resolve_template
+    return select_template(template, using=self.using)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/template/loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(', '.join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: gateway/main.html
+"GET / HTTP/1.1" 500 76883
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 3501
+"GET /readers/ HTTP/1.1" 200 12152
+"GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 8192
+"GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 500 59
+"GET /books/ HTTP/1.1" 200 15331
+"GET /books/ HTTP/1.1" 200 15331
+"GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 121457
+"GET /static/rest_framework/css/prettify.css HTTP/1.1" 200 817
+"GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 200 3385
+"GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 200 37608
+"GET /static/rest_framework/js/jquery-3.4.1.min.js HTTP/1.1" 200 88145
+"GET /static/rest_framework/css/default.css HTTP/1.1" 200 1131
+"GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 200 3597
+"GET /static/rest_framework/js/default.js HTTP/1.1" 200 1268
+"GET /static/rest_framework/js/csrf.js HTTP/1.1" 200 1719
+"GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 200 13632
+"GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 3501
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway/settings.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway/settings.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway/settings.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway/settings.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway/settings.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway/settings.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway/settings.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway/settings.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway/settings.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway/settings.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway/settings.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway/settings.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway/settings.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway/settings.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway/settings.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway/settings.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway/settings.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway/settings.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway/settings.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway/settings.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway/settings.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway/settings.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway/settings.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway/settings.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET /books HTTP/1.1" 301 0
+"GET /books/ HTTP/1.1" 200 2019
+"GET /books/ HTTP/1.1" 200 2019
+"GET /books/ HTTP/1.1" 200 2019
+"GET /books/ HTTP/1.1" 200 2019
+"GET /books/ HTTP/1.1" 200 2019
+"GET /books/ HTTP/1.1" 200 2019
+"GET /books/ HTTP/1.1" 200 2019
+"GET /books HTTP/1.1" 301 0
+"GET /books/ HTTP/1.1" 200 2019
+"GET /books/ HTTP/1.1" 200 2019
+"GET /books/ HTTP/1.1" 200 2019
+"GET /books/ HTTP/1.1" 200 2019
+"GET /authors HTTP/1.1" 301 0
+"GET /authors/ HTTP/1.1" 200 639
+"GET /authors/ HTTP/1.1" 200 639
+"GET /authors/ HTTP/1.1" 200 639
+"GET /authors/ HTTP/1.1" 200 639
+"GET /authors/ HTTP/1.1" 200 639
+"GET /authors/ HTTP/1.1" 200 639
+"GET /authors/ HTTP/1.1" 200 639
+"GET /authors/ HTTP/1.1" 200 639
+"GET /authors/ HTTP/1.1" 200 639
+"GET /authors HTTP/1.1" 301 0
+"GET /authors/ HTTP/1.1" 200 639
+"GET /authors/ HTTP/1.1" 200 639
+"GET /authors/ HTTP/1.1" 200 639
+"GET /authors/ HTTP/1.1" 200 639
+"GET /authors/ HTTP/1.1" 200 639
+"GET /readers HTTP/1.1" 301 0
+"GET /readers/ HTTP/1.1" 200 435
+"GET /readers/ HTTP/1.1" 200 435
+"GET /readers/ HTTP/1.1" 200 435
+"GET /readers/ HTTP/1.1" 200 435
+"GET /readers/ HTTP/1.1" 200 435
+"GET /readers/ HTTP/1.1" 200 435
+"GET /readers/ HTTP/1.1" 200 435
+"GET /readers/ HTTP/1.1" 200 435
+"GET /readers/ HTTP/1.1" 200 435
+"GET /readers/ HTTP/1.1" 200 435
+"GET /readers/ HTTP/1.1" 200 435
+"GET /readers/ HTTP/1.1" 200 435
+"GET /readers/ HTTP/1.1" 200 435
+"GET /readers/ HTTP/1.1" 200 435
+"GET /readers/ HTTP/1.1" 200 435
+"GET /readers/ HTTP/1.1" 200 435
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /authors/ HTTP/1.1" 200 639
+"GET /readers/ HTTP/1.1" 200 435
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /readers/ HTTP/1.1" 200 435
+"GET /readers/ HTTP/1.1" 200 435
+"GET /readers/ HTTP/1.1" 200 435
+"GET /readers/ HTTP/1.1" 200 435
+"GET /readers/ HTTP/1.1" 200 435
+"GET /readers/ HTTP/1.1" 200 435
+"GET /authors/ HTTP/1.1" 200 639
+"GET /readers/ HTTP/1.1" 200 435
+"GET /readers/ HTTP/1.1" 200 435
+"GET /readers/ HTTP/1.1" 200 435
+"GET /readers/ HTTP/1.1" 200 435
+"GET /readers/ HTTP/1.1" 200 435
+"GET /readers/ HTTP/1.1" 200 435
+"GET /readers/ HTTP/1.1" 200 435
+"GET /readers/ HTTP/1.1" 200 435
+"GET /readers/ HTTP/1.1" 200 435
+"GET /readers/ HTTP/1.1" 200 435
+"GET /readers/ HTTP/1.1" 200 435
+"GET /readers/ HTTP/1.1" 200 435
+"GET /readers/ HTTP/1.1" 200 435
+"GET /readers/ HTTP/1.1" 200 435
+"GET /readers/ HTTP/1.1" 200 435
+"GET /readers/ HTTP/1.1" 200 435
+"GET /readers/ HTTP/1.1" 200 435
+"GET /readers/ HTTP/1.1" 200 435
+"GET /readers/ HTTP/1.1" 200 435
+"GET /readers/ HTTP/1.1" 200 435
+"GET /readers/ HTTP/1.1" 200 435
+"GET /readers/ HTTP/1.1" 200 435
+"GET /readers/ HTTP/1.1" 200 435
+"GET /readers/ HTTP/1.1" 200 435
+"GET /readers/ HTTP/1.1" 200 435
+"GET /readers/ HTTP/1.1" 200 435
+"GET /readers/ HTTP/1.1" 200 435
+"GET /readers/ HTTP/1.1" 200 435
+"GET /readers/ HTTP/1.1" 200 435
+"GET /readers/ HTTP/1.1" 200 435
+"GET /readers/ HTTP/1.1" 200 435
+"GET /readers/ HTTP/1.1" 200 435
+"GET /readers/ HTTP/1.1" 200 435
+"GET /readers/ HTTP/1.1" 200 435
+"GET /readers/ HTTP/1.1" 200 435
+"GET /readers/ HTTP/1.1" 200 435
+"GET /readers/ HTTP/1.1" 200 435
+"GET /readers/ HTTP/1.1" 200 435
+"GET /readers/ HTTP/1.1" 200 435
+"GET /readers/ HTTP/1.1" 200 435
+"GET /readers/ HTTP/1.1" 200 435
+"GET /readers/ HTTP/1.1" 200 435
+"GET /readers/ HTTP/1.1" 200 435
+"GET /readers/ HTTP/1.1" 200 435
+"GET /readers/ HTTP/1.1" 200 435
+"GET /readers/ HTTP/1.1" 200 435
+"GET /readers/ HTTP/1.1" 200 435
+"GET /readers/ HTTP/1.1" 200 435
+"GET /readers/ HTTP/1.1" 200 435
+"GET /readers/ HTTP/1.1" 200 435
+"GET /readers/ HTTP/1.1" 200 435
+"GET /readers/ HTTP/1.1" 200 435
+Bad Request: /readers/
+"POST /readers/ HTTP/1.1" 400 11292
+"GET /static/rest_framework/css/prettify.css HTTP/1.1" 200 817
+"GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 8192
+"GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 200 3385
+"GET /static/rest_framework/css/default.css HTTP/1.1" 200 1131
+"GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 3501
+"GET /static/rest_framework/css/bootstrap.min.css.map HTTP/1.1" 404 1858
+Bad Request: /readers/
+"POST /readers/ HTTP/1.1" 400 11292
+"GET /static/rest_framework/css/bootstrap.min.css.map HTTP/1.1" 404 1858
+Bad Request: /readers/
+"POST /readers/ HTTP/1.1" 400 11292
+"GET /static/rest_framework/css/bootstrap.min.css.map HTTP/1.1" 404 1858
+"GET /readers/ HTTP/1.1" 200 435
+"GET /readers/ HTTP/1.1" 200 435
+"GET /readers/ HTTP/1.1" 200 435
+"GET /readers/ HTTP/1.1" 200 435
+"GET /readers/ HTTP/1.1" 200 435
+"GET /readers/ HTTP/1.1" 200 435
+"GET /readers/ HTTP/1.1" 200 435
+"GET /readers/ HTTP/1.1" 200 435
+"GET /readers/ HTTP/1.1" 200 435
+"GET /readers/ HTTP/1.1" 200 435
+"GET /readers/ HTTP/1.1" 200 435
+"GET /readers/ HTTP/1.1" 200 435
+"GET /readers/ HTTP/1.1" 200 435
+"GET /readers/ HTTP/1.1" 200 435
+"GET /readers/ HTTP/1.1" 200 435
+"GET /readers/ HTTP/1.1" 200 435
+"GET /readers/ HTTP/1.1" 200 435
+"GET /readers/ HTTP/1.1" 200 435
+"GET /readers/ HTTP/1.1" 200 435
+"GET /readers/ HTTP/1.1" 200 435
+"GET /readers/ HTTP/1.1" 200 435
+"GET /readers/ HTTP/1.1" 200 435
+"GET /readers/ HTTP/1.1" 200 435
+"GET /readers/ HTTP/1.1" 200 435
+"GET /readers/ HTTP/1.1" 200 435
+"GET /readers/ HTTP/1.1" 200 435
+"GET /readers/ HTTP/1.1" 200 435
+"GET /readers/ HTTP/1.1" 200 435
+"GET /readers/ HTTP/1.1" 200 435
+"POST /readers/ HTTP/1.1" 201 11417
+"GET /static/rest_framework/css/bootstrap.min.css.map HTTP/1.1" 404 1858
+"GET /readers/ HTTP/1.1" 200 546
+"POST /readers/ HTTP/1.1" 201 11417
+"GET /static/rest_framework/css/bootstrap.min.css.map HTTP/1.1" 404 1858
+"GET /readers/ HTTP/1.1" 200 657
+Bad Request: /readers/
+"POST /readers/ HTTP/1.1" 400 11337
+"GET /static/rest_framework/css/bootstrap.min.css.map HTTP/1.1" 404 1858
+Bad Request: /readers/
+"POST /readers/ HTTP/1.1" 400 11337
+"GET /static/rest_framework/css/bootstrap.min.css.map HTTP/1.1" 404 1858
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway/settings.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /readers/ HTTP/1.1" 200 657
+"POST /readers/ HTTP/1.1" 201 11412
+Not Found: /static/rest_framework/css/bootstrap.min.css.map
+"GET /static/rest_framework/css/bootstrap.min.css.map HTTP/1.1" 404 77
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway/settings.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /authors/ HTTP/1.1" 200 12636
+"GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
+"GET /readers/ HTTP/1.1" 200 763
+"GET /readers/ HTTP/1.1" 200 763
+"GET /readers/ HTTP/1.1" 200 763
+"GET /readers/ HTTP/1.1" 200 763
+"GET /readers/ HTTP/1.1" 200 763
+"GET /readers/ HTTP/1.1" 200 763
+Bad Request: /readers/
+"POST /readers/ HTTP/1.1" 400 11337
+"GET /static/rest_framework/css/bootstrap.min.css.map HTTP/1.1" 404 1858
+"POST /readers/ HTTP/1.1" 201 11418
+"GET /static/rest_framework/css/bootstrap.min.css.map HTTP/1.1" 404 1858
+"POST /readers/ HTTP/1.1" 201 11418
+"GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 200 3385
+"GET /static/rest_framework/css/prettify.css HTTP/1.1" 200 817
+"GET /static/rest_framework/css/default.css HTTP/1.1" 200 1131
+"GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 200 3597
+"GET /static/rest_framework/js/csrf.js HTTP/1.1" 200 1719
+"GET /static/rest_framework/js/jquery-3.4.1.min.js HTTP/1.1" 200 88145
+"GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 200 37608
+"GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 200 13632
+"GET /static/rest_framework/js/default.js HTTP/1.1" 200 1268
+"GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 121457
+"GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 3501
+"GET /readers/?name=dsdsd&surname=sosossd&date_of_birth=2019-02-02 HTTP/1.1" 200 13722
+"GET /static/rest_framework/css/bootstrap.min.css.map HTTP/1.1" 404 1858
+"GET /readers/ HTTP/1.1" 200 987
+"GET /static/rest_framework/css/bootstrap.min.css.map HTTP/1.1" 404 1858
+"GET /readers/?name=dsdsd&surname=sosossd&date_of_birth=2019-02-02 HTTP/1.1" 200 13722
+"GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0
+"GET /static/rest_framework/css/default.css HTTP/1.1" 304 0
+"GET /static/rest_framework/js/jquery-3.4.1.min.js HTTP/1.1" 304 0
+"GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0
+"GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0
+"GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0
+"GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0
+"GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0
+"GET /static/rest_framework/js/default.js HTTP/1.1" 304 0
+"GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0
+"GET /static/rest_framework/img/grid.png HTTP/1.1" 304 0
+"GET /static/rest_framework/css/bootstrap.min.css.map HTTP/1.1" 404 1858
+"GET /readers/ HTTP/1.1" 200 987
+"POST /readers/ HTTP/1.1" 201 11418
+"GET /static/rest_framework/css/bootstrap.min.css.map HTTP/1.1" 404 1858
+"GET /readers/ HTTP/1.1" 200 1099
+"POST /readers/ HTTP/1.1" 201 11418
+"GET /static/rest_framework/css/bootstrap.min.css.map HTTP/1.1" 404 1858
+"GET /readers/ HTTP/1.1" 200 1211
+"GET /readers/ HTTP/1.1" 200 1211
+"GET /readers/ HTTP/1.1" 200 1211
+"GET /readers/ HTTP/1.1" 200 1211
+"GET /readers/ HTTP/1.1" 200 1211
+"GET /readers/ HTTP/1.1" 200 1211
+"GET /readers/ HTTP/1.1" 200 1211
+"GET /readers/ HTTP/1.1" 200 1211
+"GET /readers/ HTTP/1.1" 200 1211
+"GET /readers/ HTTP/1.1" 200 1211
+"GET /readers/ HTTP/1.1" 200 1211
+"POST /readers/ HTTP/1.1" 201 11418
+"GET /static/rest_framework/css/bootstrap.min.css.map HTTP/1.1" 404 1858
+"GET /readers/ HTTP/1.1" 200 1323
+"POST /readers/ HTTP/1.1" 201 11418
+"GET /static/rest_framework/css/bootstrap.min.css.map HTTP/1.1" 404 1858
+"GET /readers/ HTTP/1.1" 200 1435
+"GET /readers/ HTTP/1.1" 200 1435
+"GET /readers/ HTTP/1.1" 200 1435
+"GET /readers/ HTTP/1.1" 200 1435
+"GET /readers/ HTTP/1.1" 200 1435
+"GET /readers/ HTTP/1.1" 200 1435
+"GET /readers/ HTTP/1.1" 200 1435
+"GET /readers/ HTTP/1.1" 200 1435
+"GET /readers/ HTTP/1.1" 200 1435
+"GET /readers/ HTTP/1.1" 200 1435
+"GET /readers/ HTTP/1.1" 200 1435
+"GET /readers/ HTTP/1.1" 200 1435
+"GET /readers/ HTTP/1.1" 200 1435
+"GET /readers/ HTTP/1.1" 200 1435
+"GET /books/ HTTP/1.1" 200 15331
+"GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
+"GET /readers/ HTTP/1.1" 200 1435
+"GET /readers/ HTTP/1.1" 200 1435
+"GET /readers/ HTTP/1.1" 200 1435
+"GET /readers/ HTTP/1.1" 200 1435
+"GET /readers/ HTTP/1.1" 200 1435
+"GET /readers/ HTTP/1.1" 200 1435
+"GET /readers/ HTTP/1.1" 200 1435
+"GET /readers/ HTTP/1.1" 200 1435
+"GET /readers/ HTTP/1.1" 200 1435
+"GET /readers/ HTTP/1.1" 200 1435
+"GET /authors/ HTTP/1.1" 200 639
+"GET /books/ HTTP/1.1" 200 2019
+"GET /readers/ HTTP/1.1" 200 1435
+"GET /authors/ HTTP/1.1" 200 639
+"GET /books/ HTTP/1.1" 200 2019
+"GET /authors/ HTTP/1.1" 200 639
+"GET /books/ HTTP/1.1" 200 2019
+"GET /authors/ HTTP/1.1" 200 639
+"GET /books/ HTTP/1.1" 200 2019
+"GET /books/ HTTP/1.1" 200 2019
+"GET /books/ HTTP/1.1" 200 2019
+"GET /books/ HTTP/1.1" 200 2019
+"GET /readers/ HTTP/1.1" 200 1435
+"GET /books/ HTTP/1.1" 200 2019
+"GET /authors/ HTTP/1.1" 200 639
+"GET /books/ HTTP/1.1" 200 2019
+"GET /readers/ HTTP/1.1" 200 1435
+"GET /books/ HTTP/1.1" 200 2019
+"GET /authors/ HTTP/1.1" 200 639
+"GET /books/ HTTP/1.1" 200 2019
+"GET /authors/ HTTP/1.1" 200 639
+"GET /books/ HTTP/1.1" 200 2019
+"GET /authors/ HTTP/1.1" 200 639
+"GET /authors/ HTTP/1.1" 200 639
+"GET /authors/ HTTP/1.1" 200 639
+"GET /books/ HTTP/1.1" 200 2019
+"GET /readers/ HTTP/1.1" 200 1435
+"POST /readers/ HTTP/1.1" 201 11418
+"GET /static/rest_framework/css/bootstrap.min.css.map HTTP/1.1" 404 1858
+"GET /readers/ HTTP/1.1" 200 1547
+"POST /readers/ HTTP/1.1" 201 11418
+"GET /static/rest_framework/css/bootstrap.min.css.map HTTP/1.1" 404 1858
+"GET /authors/ HTTP/1.1" 200 639
+"GET /books/ HTTP/1.1" 200 2019
+"GET /authors/ HTTP/1.1" 200 639
+"GET /readers/ HTTP/1.1" 200 1659
+"POST /readers/ HTTP/1.1" 201 11418
+"GET /static/rest_framework/css/prettify.css HTTP/1.1" 200 817
+"GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 200 3385
+"GET /static/rest_framework/css/default.css HTTP/1.1" 200 1131
+"GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 121457
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 3501
+"GET /static/rest_framework/css/bootstrap.min.css.map HTTP/1.1" 404 1858
+"GET /readers/ HTTP/1.1" 200 1771
+"GET /readers/ HTTP/1.1" 200 1771
+"GET /readers/ HTTP/1.1" 200 1771
+"GET /readers/ HTTP/1.1" 200 1771
+"GET /readers/ HTTP/1.1" 200 1771
+"GET /readers/ HTTP/1.1" 200 1771
+"GET /readers/ HTTP/1.1" 200 1771
+"GET /readers/ HTTP/1.1" 200 1771
+"GET /readers/ HTTP/1.1" 200 1771
+"GET /readers/ HTTP/1.1" 200 1771
+"GET /readers/ HTTP/1.1" 200 1771
+"GET /readers/ HTTP/1.1" 200 1771
+"POST /readers/ HTTP/1.1" 201 11413
+"GET /static/rest_framework/css/bootstrap.min.css.map HTTP/1.1" 404 1858
+"GET /authors/ HTTP/1.1" 200 639
+"GET /books/ HTTP/1.1" 200 2019
+"GET /readers/ HTTP/1.1" 200 1878
+"GET /books/ HTTP/1.1" 200 2019
+"POST /readers/ HTTP/1.1" 201 11418
+"GET /static/rest_framework/css/bootstrap.min.css.map HTTP/1.1" 404 1858
+"GET /books/ HTTP/1.1" 200 2019
+"GET /readers/ HTTP/1.1" 200 1990
+"GET /readers/ HTTP/1.1" 200 1990
+"GET /readers/ HTTP/1.1" 200 1990
+"GET /readers/ HTTP/1.1" 200 1990
+"GET /books/ HTTP/1.1" 200 2019
+"GET /authors/ HTTP/1.1" 200 639
+"GET /readers/ HTTP/1.1" 200 1990
+"GET /readers/ HTTP/1.1" 200 1990
+"GET /readers/ HTTP/1.1" 200 1990
+Bad Request: /readers/
+"POST /readers/ HTTP/1.1" 400 11337
+"GET /static/rest_framework/css/bootstrap.min.css.map HTTP/1.1" 404 1858
+"GET /readers/ HTTP/1.1" 200 1990
+"GET /readers/ HTTP/1.1" 200 1990
+"GET /readers/ HTTP/1.1" 200 1990
+"GET /readers/ HTTP/1.1" 200 1990
+"GET /readers/ HTTP/1.1" 200 1990
+"GET /readers/ HTTP/1.1" 200 1990
+"POST /readers/ HTTP/1.1" 201 11417
+Not Found: /index.html
+"GET /index.html HTTP/1.1" 404 3498
+"GET /readers/ HTTP/1.1" 200 2101
+"POST /readers/ HTTP/1.1" 201 11417
+"POST /readers/ HTTP/1.1" 201 11417
+"POST /readers/ HTTP/1.1" 201 11417
+"POST /readers/ HTTP/1.1" 201 11417
+Bad Request: /readers/
+"POST /readers/ HTTP/1.1" 400 11337
+Bad Request: /readers/
+"POST /readers/ HTTP/1.1" 400 11337
+Bad Request: /readers/
+"POST /readers/ HTTP/1.1" 400 11337
+Bad Request: /readers/
+"POST /readers/ HTTP/1.1" 400 11337
+Bad Request: /readers/
+"POST /readers/ HTTP/1.1" 400 11337
+"GET /readers/ HTTP/1.1" 200 2545
+Watching for file changes with StatReloader
+"GET /books/ HTTP/1.1" 200 15331
+"GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 8192
+"GET /authors/ HTTP/1.1" 200 12636
+"GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 8192
+"POST /authors/ HTTP/1.1" 201 120
+"GET /authors/?limit=0&?offset=0 HTTP/1.1" 200 13061
+"GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 8192
+"GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 500 59
+"GET /authors/?limit=2&?offset=0 HTTP/1.1" 200 13061
+"GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 8192
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/requesters/author_requester.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/requesters/author_requester.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /authors/
+Traceback (most recent call last):
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/views.py", line 37, in get
+    data, code = self.REQUESTER.get_all_authors(request=request)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/requesters/author_requester.py", line 10, in get_all_authors
+    l_o = self.get_limit_offset_from_request(request)
+AttributeError: 'AuthorRequester' object has no attribute 'get_limit_offset_from_request'
+"GET /authors/?limit=2&?offset=0 HTTP/1.1" 500 93744
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 3501
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/requesters/author_requester.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /authors/?limit=2&?offset=0 HTTP/1.1" 200 13061
+"GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0
+"GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0
+"GET /static/rest_framework/js/jquery-3.4.1.min.js HTTP/1.1" 304 0
+"GET /static/rest_framework/js/default.js HTTP/1.1" 304 0
+"GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0
+"GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0
+"GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0
+"GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0
+"GET /static/rest_framework/css/default.css HTTP/1.1" 304 0
+"GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0
+"GET /static/rest_framework/img/grid.png HTTP/1.1" 304 0
+"GET /authors/?limit=2&?offset=2 HTTP/1.1" 200 13061
+"GET /authors/?limit=2&offset=2 HTTP/1.1" 200 13051
+"GET /authors/?limit=2&?offset=2 HTTP/1.1" 200 13061
+"GET /authors/?limit=2&offset=2 HTTP/1.1" 200 13051
+"GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 8192
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/requesters/author_requester.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /books/ HTTP/1.1" 200 2019
+"GET /books/ HTTP/1.1" 200 2019
+"GET /books/ HTTP/1.1" 200 2019
+"GET /books/ HTTP/1.1" 200 2019
+"GET /books/ HTTP/1.1" 200 2019
+"GET /authors/ HTTP/1.1" 200 760
+"GET /authors/ HTTP/1.1" 200 760
+"GET /authors/ HTTP/1.1" 200 760
+"GET /authors/ HTTP/1.1" 200 760
+"GET /books/ HTTP/1.1" 200 2019
+"GET /readers/ HTTP/1.1" 200 2545
+"GET /authors/ HTTP/1.1" 200 760
+"GET /authors/ HTTP/1.1" 200 760
+"GET /authors/ HTTP/1.1" 200 760
+"GET /books/ HTTP/1.1" 200 2019
+"GET /readers/ HTTP/1.1" 200 2545
+"GET /readers/ HTTP/1.1" 200 2545
+"GET /readers/ HTTP/1.1" 200 2545
+"DELETE /readers/f92dabe1-37e3-47af-b674-8c2c32115137/ HTTP/1.1" 204 2
+"GET /readers/ HTTP/1.1" 200 16491
+"GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
+"GET /admin/ HTTP/1.1" 302 0
+"GET /admin/login/?next=/admin/ HTTP/1.1" 200 1819
+"GET /static/admin/css/base.css HTTP/1.1" 200 16378
+"GET /static/admin/css/login.css HTTP/1.1" 200 1233
+"GET /static/admin/css/responsive.css HTTP/1.1" 200 17944
+"GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+"GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 85876
+"GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 85692
+"POST /admin/login/?next=/admin/ HTTP/1.1" 200 1980
+"GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 86184
+"POST /admin/login/?next=/admin/ HTTP/1.1" 200 1988
+"POST /admin/login/?next=/admin/ HTTP/1.1" 200 1988
+"POST /admin/login/?next=/admin/ HTTP/1.1" 200 1988
+"POST /admin/login/?next=/admin/ HTTP/1.1" 200 1980
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/core/handlers/base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/core/handlers/base.py", line 143, in _get_response
+    response = response.render()
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/template/response.py", line 106, in render
+    self.content = self.rendered_content
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/template/response.py", line 81, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/template/response.py", line 63, in resolve_template
+    return select_template(template, using=self.using)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/template/loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(', '.join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: gateway/main.html
+"GET / HTTP/1.1" 500 77292
+"GET /readers/ HTTP/1.1" 200 2434
+"DELETE /readers/c3437b75-5b3e-4fed-89c1-2dc1560aa350/ HTTP/1.1" 204 2
+"GET /readers/ HTTP/1.1" 200 2323
+"DELETE /readers/5d29c914-255e-4b31-977e-1d56d3675057/ HTTP/1.1" 204 2
+"GET /readers/ HTTP/1.1" 200 2212
+"DELETE /readers/bcc53777-c10e-45f5-90e2-0e502110425b/ HTTP/1.1" 204 2
+"GET /readers/ HTTP/1.1" 200 2101
+"DELETE /readers/0c163f48-8bd4-482b-8124-0707d69aeb39/ HTTP/1.1" 204 2
+"GET /readers/ HTTP/1.1" 200 1990
+"DELETE /readers/415e3fcb-ec9c-4769-a293-877611208e49/ HTTP/1.1" 204 2
+"GET /readers/ HTTP/1.1" 200 1878
+"DELETE /readers/ac27fcee-c336-498d-ad31-c2360d959d60/ HTTP/1.1" 204 2
+Method Not Allowed: /readers/
+"DELETE /readers/ HTTP/1.1" 405 43
+"GET /readers/ HTTP/1.1" 200 1771
+"DELETE /readers/4a8303ad-1ecb-41fa-afb1-e7177721b43e/ HTTP/1.1" 204 2
+"GET /readers/ HTTP/1.1" 200 1659
+"DELETE /readers/b2a2b852-8990-4fe4-bb9b-7cfbd1b4a587/ HTTP/1.1" 204 2
+"GET /readers/ HTTP/1.1" 200 1547
+"DELETE /readers/77f92c80-fe0b-43d6-a87f-5ae4928757d5/ HTTP/1.1" 204 2
+"GET /readers/ HTTP/1.1" 200 1435
+"DELETE /readers/fec4ac30-e921-4fc6-9325-7b0b4ea6d232/ HTTP/1.1" 204 2
+"GET /readers/ HTTP/1.1" 200 1323
+"DELETE /readers/6e870ccf-95ff-4cf3-ac98-ec6e1374675b/ HTTP/1.1" 204 2
+"GET /readers/ HTTP/1.1" 200 1211
+"POST /readers/ HTTP/1.1" 201 113
+"POST /readers/ HTTP/1.1" 201 108
+"GET /readers/ HTTP/1.1" 200 1434
+"GET /readers/ HTTP/1.1" 200 1434
+"POST /readers/ HTTP/1.1" 201 109
+"GET /readers/ HTTP/1.1" 200 1544
+Bad Request: /readers/
+"POST /readers/ HTTP/1.1" 400 90
+"GET /readers/ HTTP/1.1" 200 1544
+"GET /readers/ HTTP/1.1" 200 1544
+Bad Request: /readers/
+"POST /readers/ HTTP/1.1" 400 90
+"GET /readers/ HTTP/1.1" 200 1544
+Bad Request: /readers/
+"POST /readers/ HTTP/1.1" 400 90
+"GET /readers/ HTTP/1.1" 200 1544
+Bad Request: /readers/
+"POST /readers/ HTTP/1.1" 400 90
+"GET /readers/ HTTP/1.1" 200 1544
+"GET /books/ HTTP/1.1" 200 2019
+"GET /authors/ HTTP/1.1" 200 760
+"GET /readers/ HTTP/1.1" 200 1544
+"POST /readers/ HTTP/1.1" 201 107
+"GET /readers/ HTTP/1.1" 200 1652
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 3501
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 3501
+"GET /static/rest_framework/css/prettify.css HTTP/1.1" 200 817
+"GET /static/rest_framework/css/default.css HTTP/1.1" 200 1131
+"GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 8192
+"GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 200 3385
+"GET /authors/?limit=2&?offset=0 HTTP/1.1" 200 13061
+"GET /books/ HTTP/1.1" 200 2019
+"GET /authors/ HTTP/1.1" 200 760
+"GET /readers/ HTTP/1.1" 200 1652
+"GET /books/ HTTP/1.1" 200 2019
+"GET /books/ HTTP/1.1" 200 2019
+"POST /readers/ HTTP/1.1" 201 107
+"GET /readers/ HTTP/1.1" 200 1760
+"POST /readers/ HTTP/1.1" 201 107
+"GET /readers/ HTTP/1.1" 200 1868
+"GET /readers/ HTTP/1.1" 200 1868
+"GET /readers/ HTTP/1.1" 200 1868
+"GET /readers/ HTTP/1.1" 200 1868
+"POST /readers/ HTTP/1.1" 201 107
+"POST /readers/ HTTP/1.1" 201 107
+"GET /readers/ HTTP/1.1" 200 2084
+"GET /readers/ HTTP/1.1" 200 2084
+"POST /readers/ HTTP/1.1" 201 107
+"GET /readers/ HTTP/1.1" 200 2192
+"POST /readers/ HTTP/1.1" 201 107
+"GET /books/ HTTP/1.1" 200 2019
+"GET /readers/ HTTP/1.1" 200 2300
+"GET /readers/ HTTP/1.1" 200 2300
+"GET /readers/ HTTP/1.1" 200 2300
+"GET /readers/ HTTP/1.1" 200 2300
+"POST /readers/ HTTP/1.1" 201 107
+"GET /readers/ HTTP/1.1" 200 2408
+"GET /readers/ HTTP/1.1" 200 2408
+"GET /readers/ HTTP/1.1" 200 2408
+"GET /readers/ HTTP/1.1" 200 2408
+"GET /books/ HTTP/1.1" 200 2019
+"GET /readers/ HTTP/1.1" 200 2408
+"GET /readers/ HTTP/1.1" 200 2408
+"GET /readers/ HTTP/1.1" 200 2408
+"GET /readers/ HTTP/1.1" 200 2408
+"GET /readers/ HTTP/1.1" 200 2408
+"GET /readers/ HTTP/1.1" 200 2408
+"GET /readers/ HTTP/1.1" 200 2408
+"GET /readers/ HTTP/1.1" 200 2408
+"GET /readers/ HTTP/1.1" 200 2408
+"GET /readers/ HTTP/1.1" 200 2408
+"GET /readers/ HTTP/1.1" 200 2408
+"GET /readers/ HTTP/1.1" 200 2408
+"GET /readers/ HTTP/1.1" 200 2408
+"GET /readers/ HTTP/1.1" 200 2408
+"GET /readers/ HTTP/1.1" 200 2408
+"GET /readers/ HTTP/1.1" 200 2408
+"GET /readers/ HTTP/1.1" 200 2408
+"GET /readers/ HTTP/1.1" 200 2408
+"GET /readers/ HTTP/1.1" 200 2408
+"GET /readers/ HTTP/1.1" 200 2408
+"GET /readers/ HTTP/1.1" 200 2408
+"GET /readers/ HTTP/1.1" 200 2408
+"GET /readers/ HTTP/1.1" 200 2408
+"GET /readers/ HTTP/1.1" 200 2408
+"GET /readers/ HTTP/1.1" 200 2408
+"GET /books/cd7e65f7-da94-4d2f-8d11-44af228a629f HTTP/1.1" 301 0
+Bad Request: /books/cd7e65f7-da94-4d2f-8d11-44af228a629f/
+"GET /books/cd7e65f7-da94-4d2f-8d11-44af228a629f/ HTTP/1.1" 400 42
+"GET /readers/ HTTP/1.1" 200 2408
+Bad Request: /books/cd7e65f7-da94-4d2f-8d11-44af228a629f/
+"GET /books/cd7e65f7-da94-4d2f-8d11-44af228a629f/ HTTP/1.1" 400 42
+"GET /books/ HTTP/1.1" 200 2019
+"GET /readers/ HTTP/1.1" 200 2408
+"GET /authors/ HTTP/1.1" 200 760
+"GET /authors/ HTTP/1.1" 200 760
+"GET /readers/ HTTP/1.1" 200 2408
+Bad Request: /books/cd7e65f7-da94-4d2f-8d11-44af228a629f/
+"GET /books/cd7e65f7-da94-4d2f-8d11-44af228a629f/ HTTP/1.1" 400 42
+"GET /readers/ HTTP/1.1" 200 2408
+Bad Request: /books/cd7e65f7-da94-4d2f-8d11-44af228a629f/
+"GET /books/cd7e65f7-da94-4d2f-8d11-44af228a629f/ HTTP/1.1" 400 42
+"GET /readers/ HTTP/1.1" 200 2408
+Bad Request: /books/cd7e65f7-da94-4d2f-8d11-44af228a629f/
+"GET /books/cd7e65f7-da94-4d2f-8d11-44af228a629f/ HTTP/1.1" 400 42
+"GET /readers/ HTTP/1.1" 200 2408
+"GET /readers/ HTTP/1.1" 200 2408
+"GET /readers/cd7e65f7-da94-4d2f-8d11-44af228a629f HTTP/1.1" 301 0
+"GET /readers/cd7e65f7-da94-4d2f-8d11-44af228a629f/ HTTP/1.1" 200 108
+"GET /readers/ HTTP/1.1" 200 2408
+"GET /readers/ HTTP/1.1" 200 2408
+"GET /readers/cd7e65f7-da94-4d2f-8d11-44af228a629f/ HTTP/1.1" 200 108
+"GET /readers/cd7e65f7-da94-4d2f-8d11-44af228a629f HTTP/1.1" 301 0
+"GET /readers/cd7e65f7-da94-4d2f-8d11-44af228a629f/ HTTP/1.1" 200 12925
+"GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 8192
+"GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 200 3385
+"GET /static/rest_framework/css/prettify.css HTTP/1.1" 200 817
+"GET /static/rest_framework/css/default.css HTTP/1.1" 200 1131
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 3501
+"GET /readers/ HTTP/1.1" 200 2408
+"GET /readers/cd7e65f7-da94-4d2f-8d11-44af228a629f HTTP/1.1" 301 0
+"GET /readers/cd7e65f7-da94-4d2f-8d11-44af228a629f/ HTTP/1.1" 200 108
+"GET /readers/ HTTP/1.1" 200 2408
+"GET /readers/cd7e65f7-da94-4d2f-8d11-44af228a629f/ HTTP/1.1" 200 108
+"GET /readers/ HTTP/1.1" 200 2408
+"GET /readers/cd7e65f7-da94-4d2f-8d11-44af228a629f/ HTTP/1.1" 200 108
+"GET /readers/ HTTP/1.1" 200 2408
+"GET /readers/cd7e65f7-da94-4d2f-8d11-44af228a629f/ HTTP/1.1" 200 108
+"GET /readers/ HTTP/1.1" 200 2408
+"GET /readers/cd7e65f7-da94-4d2f-8d11-44af228a629f/ HTTP/1.1" 200 108
+"GET /readers/ HTTP/1.1" 200 2408
+"GET /readers/cd7e65f7-da94-4d2f-8d11-44af228a629f/ HTTP/1.1" 200 108
+"GET /readers/ HTTP/1.1" 200 2408
+"GET /readers/cd7e65f7-da94-4d2f-8d11-44af228a629f/ HTTP/1.1" 200 108
+"GET /readers/ HTTP/1.1" 200 2408
+"GET /readers/cd7e65f7-da94-4d2f-8d11-44af228a629f/ HTTP/1.1" 200 108
+"GET /readers/ HTTP/1.1" 200 2408
+"GET /readers/cd7e65f7-da94-4d2f-8d11-44af228a629f/ HTTP/1.1" 200 108
+"GET /readers/ HTTP/1.1" 200 2408
+"GET /readers/cd7e65f7-da94-4d2f-8d11-44af228a629f/ HTTP/1.1" 200 108
+"GET /readers/ HTTP/1.1" 200 2408
+"GET /readers/ HTTP/1.1" 200 2408
+"GET /readers/ HTTP/1.1" 200 2408
+Not Found: /readers/05e98fcf-eb48-40c8-a3b5-8eb12e1cb245cd7e65f7-da94-4d2f-8d11-44af228a629f341f19f4-c927-4235-8e54-748013c1241af38b2554-608d-45d7-9863-56367c232a65c284d30a-da89-43e1-930e-4ab57531767f10d13330-034c-4653-a15b-a8f5a6611fda67cf7000-753b-47ec-aa7e-2eb0baae5fbb364be368-88c9-483e-93ec-cb89acb8150e3129476d-68e5-4730-b0ed-2af53ee9217170632fde-1f64-4ed7-9c0e-c9adefe06a9ad332da73-e817-435d-82f6-232c448ad93e5f1d0bd3-b7f5-4931-bcca-d5a477bf35d099308c76-fc3a-4a6c-a412-b4f681fc86de1f57f4fd-a4be-469a-87d6-c0b7c46ddde1eef028a5-4033-4f6e-a347-dc41d2f91edfe7c7d308-5de9-4871-80bf-30960cd864ecc9429a6c-c35a-47fa-8f57-4f858aab3f7712417e4d-1ad1-427d-a194-5407d3b2dbd7ba90a05e-42ee-4a8f-80bb-40150217dd543adc616b-6ab7-4b34-b45c-335d759d7e25cd78edaf-61e1-4f2c-8b44-1d8fad0396abe585e4ba-e4bf-460d-a2f6-206ed7fae7fa
+"GET /readers/05e98fcf-eb48-40c8-a3b5-8eb12e1cb245cd7e65f7-da94-4d2f-8d11-44af228a629f341f19f4-c927-4235-8e54-748013c1241af38b2554-608d-45d7-9863-56367c232a65c284d30a-da89-43e1-930e-4ab57531767f10d13330-034c-4653-a15b-a8f5a6611fda67cf7000-753b-47ec-aa7e-2eb0baae5fbb364be368-88c9-483e-93ec-cb89acb8150e3129476d-68e5-4730-b0ed-2af53ee9217170632fde-1f64-4ed7-9c0e-c9adefe06a9ad332da73-e817-435d-82f6-232c448ad93e5f1d0bd3-b7f5-4931-bcca-d5a477bf35d099308c76-fc3a-4a6c-a412-b4f681fc86de1f57f4fd-a4be-469a-87d6-c0b7c46ddde1eef028a5-4033-4f6e-a347-dc41d2f91edfe7c7d308-5de9-4871-80bf-30960cd864ecc9429a6c-c35a-47fa-8f57-4f858aab3f7712417e4d-1ad1-427d-a194-5407d3b2dbd7ba90a05e-42ee-4a8f-80bb-40150217dd543adc616b-6ab7-4b34-b45c-335d759d7e25cd78edaf-61e1-4f2c-8b44-1d8fad0396abe585e4ba-e4bf-460d-a2f6-206ed7fae7fa HTTP/1.1" 404 5868
+"GET /readers/ HTTP/1.1" 200 2408
+Not Found: /readers/05e98fcf-eb48-40c8-a3b5-8eb12e1cb245cd7e65f7-da94-4d2f-8d11-44af228a629f341f19f4-c927-4235-8e54-748013c1241af38b2554-608d-45d7-9863-56367c232a65c284d30a-da89-43e1-930e-4ab57531767f10d13330-034c-4653-a15b-a8f5a6611fda67cf7000-753b-47ec-aa7e-2eb0baae5fbb364be368-88c9-483e-93ec-cb89acb8150e3129476d-68e5-4730-b0ed-2af53ee9217170632fde-1f64-4ed7-9c0e-c9adefe06a9ad332da73-e817-435d-82f6-232c448ad93e5f1d0bd3-b7f5-4931-bcca-d5a477bf35d099308c76-fc3a-4a6c-a412-b4f681fc86de1f57f4fd-a4be-469a-87d6-c0b7c46ddde1eef028a5-4033-4f6e-a347-dc41d2f91edfe7c7d308-5de9-4871-80bf-30960cd864ecc9429a6c-c35a-47fa-8f57-4f858aab3f7712417e4d-1ad1-427d-a194-5407d3b2dbd7ba90a05e-42ee-4a8f-80bb-40150217dd543adc616b-6ab7-4b34-b45c-335d759d7e25cd78edaf-61e1-4f2c-8b44-1d8fad0396abe585e4ba-e4bf-460d-a2f6-206ed7fae7fa
+"GET /readers/05e98fcf-eb48-40c8-a3b5-8eb12e1cb245cd7e65f7-da94-4d2f-8d11-44af228a629f341f19f4-c927-4235-8e54-748013c1241af38b2554-608d-45d7-9863-56367c232a65c284d30a-da89-43e1-930e-4ab57531767f10d13330-034c-4653-a15b-a8f5a6611fda67cf7000-753b-47ec-aa7e-2eb0baae5fbb364be368-88c9-483e-93ec-cb89acb8150e3129476d-68e5-4730-b0ed-2af53ee9217170632fde-1f64-4ed7-9c0e-c9adefe06a9ad332da73-e817-435d-82f6-232c448ad93e5f1d0bd3-b7f5-4931-bcca-d5a477bf35d099308c76-fc3a-4a6c-a412-b4f681fc86de1f57f4fd-a4be-469a-87d6-c0b7c46ddde1eef028a5-4033-4f6e-a347-dc41d2f91edfe7c7d308-5de9-4871-80bf-30960cd864ecc9429a6c-c35a-47fa-8f57-4f858aab3f7712417e4d-1ad1-427d-a194-5407d3b2dbd7ba90a05e-42ee-4a8f-80bb-40150217dd543adc616b-6ab7-4b34-b45c-335d759d7e25cd78edaf-61e1-4f2c-8b44-1d8fad0396abe585e4ba-e4bf-460d-a2f6-206ed7fae7fa HTTP/1.1" 404 5868
+"GET /readers/ HTTP/1.1" 200 2408
+"GET /readers/ HTTP/1.1" 200 2408
+"GET /readers/ HTTP/1.1" 200 2408
+"GET /readers/ HTTP/1.1" 200 2408
+"GET /readers/ HTTP/1.1" 200 2408
+"GET /readers/ HTTP/1.1" 200 2408
+"GET /readers/ HTTP/1.1" 200 2408
+"GET /readers/ HTTP/1.1" 200 2408
+"GET /readers/ HTTP/1.1" 200 2408
+"GET /readers/ HTTP/1.1" 200 2408
+"GET /readers/ HTTP/1.1" 200 2408
+"GET /readers/ HTTP/1.1" 200 2408
+"GET /readers/ HTTP/1.1" 200 2408
+"GET /readers/ HTTP/1.1" 200 2408
+"GET /readers/ HTTP/1.1" 200 2408
+"GET /readers/ HTTP/1.1" 200 2408
+"GET /readers/ HTTP/1.1" 200 2408
+"GET /readers/ HTTP/1.1" 200 2408
+"GET /readers/ HTTP/1.1" 200 2408
+"GET /readers/ HTTP/1.1" 200 2408
+"GET /readers/ HTTP/1.1" 200 2408
+"GET /readers/ HTTP/1.1" 200 2408
+"GET /readers/ HTTP/1.1" 200 2408
+"GET /readers/ HTTP/1.1" 200 2408
+"GET /readers/ HTTP/1.1" 200 2408
+"GET /readers/ HTTP/1.1" 200 2408
+"GET /readers/ HTTP/1.1" 200 2408
+"GET /readers/ HTTP/1.1" 200 2408
+"GET /readers/ HTTP/1.1" 200 2408
+"GET /readers/ HTTP/1.1" 200 2408
+"GET /readers/ HTTP/1.1" 200 2408
+"GET /readers/ HTTP/1.1" 200 2408
+"GET /readers/ HTTP/1.1" 200 2408
+"GET /readers/ HTTP/1.1" 200 2408
+"GET /readers/ HTTP/1.1" 200 2408
+"GET /readers/ HTTP/1.1" 200 2408
+"GET /readers/ HTTP/1.1" 200 2408
+"GET /readers/ HTTP/1.1" 200 2408
+"GET /readers/ HTTP/1.1" 200 2408
+"GET /readers/ HTTP/1.1" 200 2408
+"GET /readers/ HTTP/1.1" 200 2408
+"GET /readers/ HTTP/1.1" 200 2408
+"GET /readers/cd7e65f7-da94-4d2f-8d11-44af228a629f/ HTTP/1.1" 200 108
+"GET /readers/ HTTP/1.1" 200 2408
+"GET /readers/05e98fcf-eb48-40c8-a3b5-8eb12e1cb245 HTTP/1.1" 301 0
+"GET /readers/05e98fcf-eb48-40c8-a3b5-8eb12e1cb245/ HTTP/1.1" 200 109
+"GET /readers/ HTTP/1.1" 200 2408
+"GET /readers/10d13330-034c-4653-a15b-a8f5a6611fda HTTP/1.1" 301 0
+"GET /readers/10d13330-034c-4653-a15b-a8f5a6611fda/ HTTP/1.1" 200 110
+"GET /readers/ HTTP/1.1" 200 2408
+"GET /readers/67cf7000-753b-47ec-aa7e-2eb0baae5fbb HTTP/1.1" 301 0
+"GET /readers/67cf7000-753b-47ec-aa7e-2eb0baae5fbb/ HTTP/1.1" 200 105
+"GET /readers/ HTTP/1.1" 200 2408
+"GET /readers/67cf7000-753b-47ec-aa7e-2eb0baae5fbb/ HTTP/1.1" 200 105
+"GET /readers/ HTTP/1.1" 200 2408
+"GET /readers/70632fde-1f64-4ed7-9c0e-c9adefe06a9a HTTP/1.1" 301 0
+"GET /readers/70632fde-1f64-4ed7-9c0e-c9adefe06a9a/ HTTP/1.1" 200 111
+"GET /readers/ HTTP/1.1" 200 2408
+"GET /readers/c9429a6c-c35a-47fa-8f57-4f858aab3f77 HTTP/1.1" 301 0
+"GET /readers/c9429a6c-c35a-47fa-8f57-4f858aab3f77/ HTTP/1.1" 200 107
+"GET /readers/ HTTP/1.1" 200 2408
+"GET /readers/c9429a6c-c35a-47fa-8f57-4f858aab3f77/ HTTP/1.1" 200 107
+"GET /readers/ HTTP/1.1" 200 2408
+"GET /readers/cd78edaf-61e1-4f2c-8b44-1d8fad0396ab HTTP/1.1" 301 0
+"GET /readers/cd78edaf-61e1-4f2c-8b44-1d8fad0396ab/ HTTP/1.1" 200 107
+"GET /readers/ HTTP/1.1" 200 2408
+"GET /readers/cd7e65f7-da94-4d2f-8d11-44af228a629f/ HTTP/1.1" 200 108
+"GET /readers/ HTTP/1.1" 200 2408
+"GET /readers/ HTTP/1.1" 200 2408
+"GET /readers/99308c76-fc3a-4a6c-a412-b4f681fc86de HTTP/1.1" 301 0
+"GET /readers/99308c76-fc3a-4a6c-a412-b4f681fc86de/ HTTP/1.1" 200 108
+"GET /readers/ HTTP/1.1" 200 2408
+"GET /readers/341f19f4-c927-4235-8e54-748013c1241a HTTP/1.1" 301 0
+"GET /readers/341f19f4-c927-4235-8e54-748013c1241a/ HTTP/1.1" 200 110
+"GET /readers/ HTTP/1.1" 200 2408
+"GET /books/ HTTP/1.1" 200 2019
+"GET /readers/ HTTP/1.1" 200 2408
+"GET /readers/ HTTP/1.1" 200 2408
+"GET /books/ HTTP/1.1" 200 2019
+"GET /readers/ HTTP/1.1" 200 2408
+"GET /readers/ HTTP/1.1" 200 2408
+"GET /readers/05e98fcf-eb48-40c8-a3b5-8eb12e1cb245/ HTTP/1.1" 200 109
+"GET /readers/ HTTP/1.1" 200 2408
+"GET /readers/ HTTP/1.1" 200 2408
+"GET /readers/ HTTP/1.1" 200 2408
+"GET /readers/05e98fcf-eb48-40c8-a3b5-8eb12e1cb245/ HTTP/1.1" 200 109
+"GET /readers/ HTTP/1.1" 200 2408
+"GET /readers/ HTTP/1.1" 200 2408
+"GET /readers/ HTTP/1.1" 200 2408
+"GET /readers/cd7e65f7-da94-4d2f-8d11-44af228a629f/ HTTP/1.1" 200 108
+"GET /readers/ HTTP/1.1" 200 2408
+"GET /readers/05e98fcf-eb48-40c8-a3b5-8eb12e1cb245/ HTTP/1.1" 200 109
+"GET /readers/ HTTP/1.1" 200 2408
+"GET /readers/05e98fcf-eb48-40c8-a3b5-8eb12e1cb245/ HTTP/1.1" 200 109
+"GET /readers/ HTTP/1.1" 200 2408
+"GET /readers/05e98fcf-eb48-40c8-a3b5-8eb12e1cb245/ HTTP/1.1" 200 109
+"GET /readers/ HTTP/1.1" 200 2408
+"GET /readers/cd7e65f7-da94-4d2f-8d11-44af228a629f/ HTTP/1.1" 200 108
+"GET /readers/ HTTP/1.1" 200 2408
+"GET /readers/05e98fcf-eb48-40c8-a3b5-8eb12e1cb245/ HTTP/1.1" 200 109
+"GET /readers/ HTTP/1.1" 200 2408
+"GET /readers/cd7e65f7-da94-4d2f-8d11-44af228a629f/ HTTP/1.1" 200 108
+"GET /readers/ HTTP/1.1" 200 2408
+"GET /readers/cd7e65f7-da94-4d2f-8d11-44af228a629f/ HTTP/1.1" 200 108
+"GET /readers/ HTTP/1.1" 200 2408
+"GET /readers/cd7e65f7-da94-4d2f-8d11-44af228a629f/ HTTP/1.1" 200 108
+"GET /readers/ HTTP/1.1" 200 2408
+"GET /readers/341f19f4-c927-4235-8e54-748013c1241a/ HTTP/1.1" 200 110
+"GET /readers/ HTTP/1.1" 200 2408
+"GET /readers/cd7e65f7-da94-4d2f-8d11-44af228a629f/ HTTP/1.1" 200 108
+"GET /readers/ HTTP/1.1" 200 2408
+"GET /readers/05e98fcf-eb48-40c8-a3b5-8eb12e1cb245/ HTTP/1.1" 200 109
+"GET /readers/ HTTP/1.1" 200 2408
+"GET /readers/cd7e65f7-da94-4d2f-8d11-44af228a629f/ HTTP/1.1" 200 108
+"GET /readers/ HTTP/1.1" 200 2408
+"GET /readers/cd7e65f7-da94-4d2f-8d11-44af228a629f/ HTTP/1.1" 200 108
+"GET /readers/ HTTP/1.1" 200 2408
+"GET /readers/05e98fcf-eb48-40c8-a3b5-8eb12e1cb245/ HTTP/1.1" 200 109
+"GET /readers/ HTTP/1.1" 200 2408
+"GET /readers/05e98fcf-eb48-40c8-a3b5-8eb12e1cb245/ HTTP/1.1" 200 109
+"GET /readers/ HTTP/1.1" 200 2408
+"GET /readers/cd7e65f7-da94-4d2f-8d11-44af228a629f/ HTTP/1.1" 200 108
+"GET /readers/ HTTP/1.1" 200 2408
+"GET /readers/05e98fcf-eb48-40c8-a3b5-8eb12e1cb245/ HTTP/1.1" 200 109
+"GET /readers/ HTTP/1.1" 200 2408
+"GET /readers/05e98fcf-eb48-40c8-a3b5-8eb12e1cb245/ HTTP/1.1" 200 109
+"GET /readers/ HTTP/1.1" 200 2408
+"GET /readers/f38b2554-608d-45d7-9863-56367c232a65 HTTP/1.1" 301 0
+"GET /readers/f38b2554-608d-45d7-9863-56367c232a65/ HTTP/1.1" 200 103
+"GET /readers/ HTTP/1.1" 200 2408
+"GET /readers/f38b2554-608d-45d7-9863-56367c232a65/ HTTP/1.1" 200 103
+"GET /readers/ HTTP/1.1" 200 2408
+"GET /readers/f38b2554-608d-45d7-9863-56367c232a65/ HTTP/1.1" 200 103
+"GET /readers/ HTTP/1.1" 200 2408
+"GET /readers/cd7e65f7-da94-4d2f-8d11-44af228a629f/ HTTP/1.1" 200 108
+"GET /readers/ HTTP/1.1" 200 2408
+"GET /readers/cd7e65f7-da94-4d2f-8d11-44af228a629f/ HTTP/1.1" 200 108
+"GET /readers/ HTTP/1.1" 200 2408
+"GET /readers/12417e4d-1ad1-427d-a194-5407d3b2dbd7 HTTP/1.1" 301 0
+"GET /readers/12417e4d-1ad1-427d-a194-5407d3b2dbd7/ HTTP/1.1" 200 107
+"GET /readers/ HTTP/1.1" 200 2408
+"GET /readers/ HTTP/1.1" 200 2408
+"GET /readers/1f57f4fd-a4be-469a-87d6-c0b7c46ddde1 HTTP/1.1" 301 0
+"GET /readers/1f57f4fd-a4be-469a-87d6-c0b7c46ddde1/ HTTP/1.1" 200 109
+"GET /readers/ HTTP/1.1" 200 2408
+"GET /readers/cd7e65f7-da94-4d2f-8d11-44af228a629f/ HTTP/1.1" 200 108
+"GET /readers/ HTTP/1.1" 200 2408
+"GET /readers/e7c7d308-5de9-4871-80bf-30960cd864ec HTTP/1.1" 301 0
+"GET /readers/e7c7d308-5de9-4871-80bf-30960cd864ec/ HTTP/1.1" 200 107
+"GET /readers/ HTTP/1.1" 200 2408
+"GET /readers/05e98fcf-eb48-40c8-a3b5-8eb12e1cb245/ HTTP/1.1" 200 109
+"GET /readers/ HTTP/1.1" 200 2408
+"GET /readers/c9429a6c-c35a-47fa-8f57-4f858aab3f77/ HTTP/1.1" 200 107
+"GET /readers/ HTTP/1.1" 200 2408
+"GET /books/ HTTP/1.1" 200 2019
+"GET /readers/ HTTP/1.1" 200 2408
+"GET /authors/ HTTP/1.1" 200 760
+"GET /readers/ HTTP/1.1" 200 2408
+"GET /readers/ HTTP/1.1" 200 2408
+"GET /readers/cd7e65f7-da94-4d2f-8d11-44af228a629f/ HTTP/1.1" 200 108
+"GET /readers/ HTTP/1.1" 200 2408
+"GET /readers/341f19f4-c927-4235-8e54-748013c1241a/ HTTP/1.1" 200 110
+"GET /readers/ HTTP/1.1" 200 2408
+"GET /books/ HTTP/1.1" 200 2019
+"GET /readers/ HTTP/1.1" 200 2408
+"GET /readers/ HTTP/1.1" 200 2408
+"GET /readers/cd7e65f7-da94-4d2f-8d11-44af228a629f/ HTTP/1.1" 200 108
+"GET /readers/ HTTP/1.1" 200 2408
+"GET /readers/f38b2554-608d-45d7-9863-56367c232a65/ HTTP/1.1" 200 103
+"GET /readers/ HTTP/1.1" 200 2408
+"GET /readers/05e98fcf-eb48-40c8-a3b5-8eb12e1cb245/ HTTP/1.1" 200 109
+"GET /readers/ HTTP/1.1" 200 2408
+"GET /readers/341f19f4-c927-4235-8e54-748013c1241a/ HTTP/1.1" 200 110
+"GET /readers/ HTTP/1.1" 200 2408
+"GET /readers/d332da73-e817-435d-82f6-232c448ad93e HTTP/1.1" 301 0
+"GET /readers/d332da73-e817-435d-82f6-232c448ad93e/ HTTP/1.1" 200 111
+"GET /readers/ HTTP/1.1" 200 2408
+"GET /readers/e585e4ba-e4bf-460d-a2f6-206ed7fae7fa HTTP/1.1" 301 0
+"GET /readers/e585e4ba-e4bf-460d-a2f6-206ed7fae7fa/ HTTP/1.1" 200 107
+"GET /readers/ HTTP/1.1" 200 2408
+"GET /readers/12417e4d-1ad1-427d-a194-5407d3b2dbd7/ HTTP/1.1" 200 107
+"GET /readers/ HTTP/1.1" 200 2408
+"GET /readers/eef028a5-4033-4f6e-a347-dc41d2f91edf HTTP/1.1" 301 0
+"GET /readers/eef028a5-4033-4f6e-a347-dc41d2f91edf/ HTTP/1.1" 200 107
+"GET /readers/ HTTP/1.1" 200 2408
+"GET /books/ HTTP/1.1" 200 2019
+"GET /authors/ HTTP/1.1" 200 760
+"GET /readers/ HTTP/1.1" 200 2408
+"GET /readers/eef028a5-4033-4f6e-a347-dc41d2f91edf/ HTTP/1.1" 200 107
+"GET /readers/ HTTP/1.1" 200 2408
+"GET /readers/e585e4ba-e4bf-460d-a2f6-206ed7fae7fa/ HTTP/1.1" 200 107
+"GET /readers/ HTTP/1.1" 200 2408
+"GET /readers/ HTTP/1.1" 200 2408
+"GET /readers/ HTTP/1.1" 200 2408
+"GET /readers/ HTTP/1.1" 200 2408
+"GET /readers/e585e4ba-e4bf-460d-a2f6-206ed7fae7fa/ HTTP/1.1" 200 107
+"GET /readers/ HTTP/1.1" 200 2408
+"GET /readers/ HTTP/1.1" 200 2408
+"GET /readers/cd7e65f7-da94-4d2f-8d11-44af228a629f/ HTTP/1.1" 200 108
+"GET /readers/ HTTP/1.1" 200 2408
+"GET /readers/ba90a05e-42ee-4a8f-80bb-40150217dd54 HTTP/1.1" 301 0
+"GET /readers/ba90a05e-42ee-4a8f-80bb-40150217dd54/ HTTP/1.1" 200 107
+"GET /readers/ HTTP/1.1" 200 2408
+"GET /readers/ HTTP/1.1" 200 2408
+"POST /readers/ HTTP/1.1" 201 104
+"GET /readers/ HTTP/1.1" 200 2513
+"GET /books/ HTTP/1.1" 200 2019
+"GET /authors/ HTTP/1.1" 200 760
+"GET /readers/ HTTP/1.1" 200 2513
+"GET /readers/5f1d0bd3-b7f5-4931-bcca-d5a477bf35d0 HTTP/1.1" 301 0
+"GET /readers/5f1d0bd3-b7f5-4931-bcca-d5a477bf35d0/ HTTP/1.1" 200 113
+"GET /readers/ HTTP/1.1" 200 2513
+"POST /readers/ HTTP/1.1" 201 108
+"GET /readers/ HTTP/1.1" 200 2622
+"GET /readers/eef028a5-4033-4f6e-a347-dc41d2f91edf/ HTTP/1.1" 200 107
+"GET /readers/ HTTP/1.1" 200 2622
+"GET /readers/341f19f4-c927-4235-8e54-748013c1241a/ HTTP/1.1" 200 110
+"GET /readers/ HTTP/1.1" 200 2622
+"GET /readers/67cf7000-753b-47ec-aa7e-2eb0baae5fbb/ HTTP/1.1" 200 105
+"GET /readers/ HTTP/1.1" 200 2622
+"GET /readers/cd7e65f7-da94-4d2f-8d11-44af228a629f/ HTTP/1.1" 200 108
+"GET /readers/ HTTP/1.1" 200 2622
+"GET /readers/f38b2554-608d-45d7-9863-56367c232a65/ HTTP/1.1" 200 103
+"OPTIONS /readers/ HTTP/1.1" 200 0
+"GET /readers/ HTTP/1.1" 200 2622
+Method Not Allowed: /readers/
+"PATCH /readers/ HTTP/1.1" 405 42
+"GET /readers/ HTTP/1.1" 200 2622
+"GET /readers/c284d30a-da89-43e1-930e-4ab57531767f HTTP/1.1" 301 0
+"GET /readers/c284d30a-da89-43e1-930e-4ab57531767f/ HTTP/1.1" 200 110
+"GET /readers/ HTTP/1.1" 200 2622
+"GET /readers/c284d30a-da89-43e1-930e-4ab57531767f/ HTTP/1.1" 200 110
+"OPTIONS /readers/ HTTP/1.1" 200 0
+Method Not Allowed: /readers/
+"PATCH /readers/ HTTP/1.1" 405 42
+"GET /readers/ HTTP/1.1" 200 2622
+"GET /readers/ HTTP/1.1" 200 2622
+"GET /readers/341f19f4-c927-4235-8e54-748013c1241a/ HTTP/1.1" 200 110
+"GET /readers/ HTTP/1.1" 200 2622
+"GET /readers/364be368-88c9-483e-93ec-cb89acb8150e HTTP/1.1" 301 0
+"GET /readers/364be368-88c9-483e-93ec-cb89acb8150e/ HTTP/1.1" 200 111
+"GET /readers/ HTTP/1.1" 200 2622
+"GET /readers/05e98fcf-eb48-40c8-a3b5-8eb12e1cb245/ HTTP/1.1" 200 109
+"GET /readers/ HTTP/1.1" 200 2622
+"OPTIONS /readers/ HTTP/1.1" 200 0
+Method Not Allowed: /readers/
+"PATCH /readers/ HTTP/1.1" 405 42
+"OPTIONS /readers/ HTTP/1.1" 200 0
+"GET /readers/ HTTP/1.1" 200 2622
+Method Not Allowed: /readers/
+"PATCH /readers/ HTTP/1.1" 405 42
+"OPTIONS /readers/ HTTP/1.1" 200 0
+"GET /readers/ HTTP/1.1" 200 2622
+Method Not Allowed: /readers/
+"PATCH /readers/ HTTP/1.1" 405 42
+"OPTIONS /readers/ HTTP/1.1" 200 0
+"GET /readers/ HTTP/1.1" 200 2622
+Method Not Allowed: /readers/
+"PATCH /readers/ HTTP/1.1" 405 42
+"GET /readers/ HTTP/1.1" 200 2622
+"GET /readers/cd7e65f7-da94-4d2f-8d11-44af228a629f/ HTTP/1.1" 200 108
+"OPTIONS /readers/cd7e65f7-da94-4d2f-8d11-44af228a629f HTTP/1.1" 200 0
+"GET /readers/cd7e65f7-da94-4d2f-8d11-44af228a629f/ HTTP/1.1" 200 108
+Internal Server Error: /readers/cd7e65f7-da94-4d2f-8d11-44af228a629f
+Traceback (most recent call last):
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/utils/deprecation.py", line 93, in __call__
+    response = self.process_request(request)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/middleware/common.py", line 53, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/middleware/common.py", line 93, in get_full_path_with_slash
+    'url': request.get_host() + new_path,
+RuntimeError: You called this URL via PATCH, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining PATCH data. Change your form to point to 127.0.0.1:8000/readers/cd7e65f7-da94-4d2f-8d11-44af228a629f/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+"PATCH /readers/cd7e65f7-da94-4d2f-8d11-44af228a629f HTTP/1.1" 500 61629
+"GET /readers/ HTTP/1.1" 200 2622
+"GET /readers/f38b2554-608d-45d7-9863-56367c232a65/ HTTP/1.1" 200 103
+"OPTIONS /readers/f38b2554-608d-45d7-9863-56367c232a65/ HTTP/1.1" 200 0
+Bad Request: /readers/f38b2554-608d-45d7-9863-56367c232a65/
+"PATCH /readers/f38b2554-608d-45d7-9863-56367c232a65/ HTTP/1.1" 400 90
+"GET /readers/f38b2554-608d-45d7-9863-56367c232a65/ HTTP/1.1" 200 103
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /readers/ HTTP/1.1" 200 2622
+"GET /readers/f38b2554-608d-45d7-9863-56367c232a65/ HTTP/1.1" 200 103
+"OPTIONS /readers/f38b2554-608d-45d7-9863-56367c232a65/ HTTP/1.1" 200 0
+"GET /readers/f38b2554-608d-45d7-9863-56367c232a65/ HTTP/1.1" 200 103
+"PATCH /readers/f38b2554-608d-45d7-9863-56367c232a65/ HTTP/1.1" 202 105
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /readers/ HTTP/1.1" 200 2624
+"GET /readers/c284d30a-da89-43e1-930e-4ab57531767f/ HTTP/1.1" 200 110
+"OPTIONS /readers/c284d30a-da89-43e1-930e-4ab57531767f/ HTTP/1.1" 200 0
+"PATCH /readers/c284d30a-da89-43e1-930e-4ab57531767f/ HTTP/1.1" 202 107
+"GET /readers/c284d30a-da89-43e1-930e-4ab57531767f/ HTTP/1.1" 200 110
+"GET /readers/ HTTP/1.1" 200 2621
+"GET /readers/f38b2554-608d-45d7-9863-56367c232a65/ HTTP/1.1" 200 105
+"OPTIONS /readers/f38b2554-608d-45d7-9863-56367c232a65/ HTTP/1.1" 200 0
+"PATCH /readers/f38b2554-608d-45d7-9863-56367c232a65/ HTTP/1.1" 202 105
+"GET /readers/f38b2554-608d-45d7-9863-56367c232a65/ HTTP/1.1" 200 105
+"GET /readers/ HTTP/1.1" 200 2621
+"GET /readers/5f1d0bd3-b7f5-4931-bcca-d5a477bf35d0/ HTTP/1.1" 200 113
+"OPTIONS /readers/5f1d0bd3-b7f5-4931-bcca-d5a477bf35d0/ HTTP/1.1" 200 0
+"PATCH /readers/5f1d0bd3-b7f5-4931-bcca-d5a477bf35d0/ HTTP/1.1" 202 105
+"GET /readers/5f1d0bd3-b7f5-4931-bcca-d5a477bf35d0/ HTTP/1.1" 200 105
+"GET /readers/ HTTP/1.1" 200 2613
+"GET /readers/10d13330-034c-4653-a15b-a8f5a6611fda/ HTTP/1.1" 200 110
+"OPTIONS /readers/10d13330-034c-4653-a15b-a8f5a6611fda/ HTTP/1.1" 200 0
+"PATCH /readers/10d13330-034c-4653-a15b-a8f5a6611fda/ HTTP/1.1" 202 105
+"GET /readers/10d13330-034c-4653-a15b-a8f5a6611fda/ HTTP/1.1" 200 105
+"GET /readers/ HTTP/1.1" 200 2608
+"GET /readers/67cf7000-753b-47ec-aa7e-2eb0baae5fbb/ HTTP/1.1" 200 105
+"OPTIONS /readers/67cf7000-753b-47ec-aa7e-2eb0baae5fbb/ HTTP/1.1" 200 0
+"PATCH /readers/67cf7000-753b-47ec-aa7e-2eb0baae5fbb/ HTTP/1.1" 202 111
+"GET /readers/67cf7000-753b-47ec-aa7e-2eb0baae5fbb/ HTTP/1.1" 200 111
+"GET /readers/ HTTP/1.1" 200 2614
+"GET /readers/cd7e65f7-da94-4d2f-8d11-44af228a629f HTTP/1.1" 301 0
+"GET /readers/cd7e65f7-da94-4d2f-8d11-44af228a629f/ HTTP/1.1" 200 108
+"OPTIONS /readers/cd7e65f7-da94-4d2f-8d11-44af228a629f/ HTTP/1.1" 200 0
+Bad Request: /readers/cd7e65f7-da94-4d2f-8d11-44af228a629f/
+"PATCH /readers/cd7e65f7-da94-4d2f-8d11-44af228a629f/ HTTP/1.1" 400 90
+"GET /readers/cd7e65f7-da94-4d2f-8d11-44af228a629f/ HTTP/1.1" 200 108
+"GET /readers/ HTTP/1.1" 200 2614
+"GET /readers/05e98fcf-eb48-40c8-a3b5-8eb12e1cb245/ HTTP/1.1" 200 109
+"GET /readers/ HTTP/1.1" 200 2614
+"GET /readers/05e98fcf-eb48-40c8-a3b5-8eb12e1cb245/ HTTP/1.1" 200 109
+"GET /readers/ HTTP/1.1" 200 2614
+"GET /readers/05e98fcf-eb48-40c8-a3b5-8eb12e1cb245/ HTTP/1.1" 200 109
+"OPTIONS /readers/05e98fcf-eb48-40c8-a3b5-8eb12e1cb245/ HTTP/1.1" 200 0
+Bad Request: /readers/05e98fcf-eb48-40c8-a3b5-8eb12e1cb245/
+"PATCH /readers/05e98fcf-eb48-40c8-a3b5-8eb12e1cb245/ HTTP/1.1" 400 90
+"GET /readers/05e98fcf-eb48-40c8-a3b5-8eb12e1cb245/ HTTP/1.1" 200 109
+"OPTIONS /readers/05e98fcf-eb48-40c8-a3b5-8eb12e1cb245/ HTTP/1.1" 200 0
+"PATCH /readers/05e98fcf-eb48-40c8-a3b5-8eb12e1cb245/ HTTP/1.1" 202 107
+"GET /readers/05e98fcf-eb48-40c8-a3b5-8eb12e1cb245/ HTTP/1.1" 200 107
+"GET /books/ HTTP/1.1" 200 15329
+"GET /readers/ HTTP/1.1" 200 2612
+"GET /readers/ HTTP/1.1" 200 2612
+"GET /readers/ HTTP/1.1" 200 2612
+"POST /readers/ HTTP/1.1" 201 110
+"GET /readers/ HTTP/1.1" 200 2723
+"GET /readers/e7c7d308-5de9-4871-80bf-30960cd864ec HTTP/1.1" 301 0
+"GET /readers/e7c7d308-5de9-4871-80bf-30960cd864ec/ HTTP/1.1" 200 107
+"GET /readers/ HTTP/1.1" 200 2723
+"GET /readers/364be368-88c9-483e-93ec-cb89acb8150e/ HTTP/1.1" 200 111
+"GET /readers/ HTTP/1.1" 200 2723
+"GET /readers/cd7e65f7-da94-4d2f-8d11-44af228a629f/ HTTP/1.1" 200 108
+"OPTIONS /readers/cd7e65f7-da94-4d2f-8d11-44af228a629f/ HTTP/1.1" 200 0
+"GET /readers/ HTTP/1.1" 200 2723
+"DELETE /readers/cd7e65f7-da94-4d2f-8d11-44af228a629f/ HTTP/1.1" 204 2
+"GET /readers/3129476d-68e5-4730-b0ed-2af53ee92171 HTTP/1.1" 301 0
+"GET /readers/3129476d-68e5-4730-b0ed-2af53ee92171/ HTTP/1.1" 200 111
+"OPTIONS /readers/3129476d-68e5-4730-b0ed-2af53ee92171/ HTTP/1.1" 200 0
+"GET /readers/ HTTP/1.1" 200 2614
+"DELETE /readers/3129476d-68e5-4730-b0ed-2af53ee92171/ HTTP/1.1" 204 2
+"GET /readers/ HTTP/1.1" 200 2502
+"GET /readers/05e98fcf-eb48-40c8-a3b5-8eb12e1cb245/ HTTP/1.1" 200 107
+"GET /readers/ HTTP/1.1" 200 2502
+"GET /readers/364be368-88c9-483e-93ec-cb89acb8150e/ HTTP/1.1" 200 111
+"OPTIONS /readers/364be368-88c9-483e-93ec-cb89acb8150e/ HTTP/1.1" 200 0
+"GET /readers/ HTTP/1.1" 200 2502
+"DELETE /readers/364be368-88c9-483e-93ec-cb89acb8150e/ HTTP/1.1" 204 2
+"GET /readers/70632fde-1f64-4ed7-9c0e-c9adefe06a9a HTTP/1.1" 301 0
+"GET /readers/70632fde-1f64-4ed7-9c0e-c9adefe06a9a/ HTTP/1.1" 200 111
+"OPTIONS /readers/70632fde-1f64-4ed7-9c0e-c9adefe06a9a/ HTTP/1.1" 200 0
+"GET /readers/ HTTP/1.1" 200 2390
+"DELETE /readers/70632fde-1f64-4ed7-9c0e-c9adefe06a9a/ HTTP/1.1" 204 2
+"GET /readers/ HTTP/1.1" 200 2278
+"GET /readers/ HTTP/1.1" 200 2278
+"GET /readers/e7c7d308-5de9-4871-80bf-30960cd864ec/ HTTP/1.1" 200 107
+"GET /readers/ HTTP/1.1" 200 2278
+"GET /readers/99308c76-fc3a-4a6c-a412-b4f681fc86de HTTP/1.1" 301 0
+"GET /readers/99308c76-fc3a-4a6c-a412-b4f681fc86de/ HTTP/1.1" 200 108
+"GET /readers/ HTTP/1.1" 200 2278
+"GET /readers/ HTTP/1.1" 200 2278
+"GET /readers/ HTTP/1.1" 200 2278
+"GET /readers/eef028a5-4033-4f6e-a347-dc41d2f91edf/ HTTP/1.1" 200 107
+"OPTIONS /readers/eef028a5-4033-4f6e-a347-dc41d2f91edf/ HTTP/1.1" 200 0
+"GET /readers/ HTTP/1.1" 200 2278
+"DELETE /readers/eef028a5-4033-4f6e-a347-dc41d2f91edf/ HTTP/1.1" 204 2
+"GET /readers/ HTTP/1.1" 200 2170
+"GET /readers/ HTTP/1.1" 200 2170
+"GET /books/ HTTP/1.1" 200 1865
+"GET /readers/ HTTP/1.1" 200 2170
+"GET /readers/12417e4d-1ad1-427d-a194-5407d3b2dbd7 HTTP/1.1" 301 0
+"GET /readers/12417e4d-1ad1-427d-a194-5407d3b2dbd7/ HTTP/1.1" 200 107
+"OPTIONS /readers/12417e4d-1ad1-427d-a194-5407d3b2dbd7/ HTTP/1.1" 200 0
+"GET /readers/ HTTP/1.1" 200 2170
+"DELETE /readers/12417e4d-1ad1-427d-a194-5407d3b2dbd7/ HTTP/1.1" 204 2
+"GET /readers/ HTTP/1.1" 200 2062
+"GET /readers/ HTTP/1.1" 200 2062
+"GET /readers/d332da73-e817-435d-82f6-232c448ad93e HTTP/1.1" 301 0
+"GET /readers/d332da73-e817-435d-82f6-232c448ad93e/ HTTP/1.1" 200 111
+"OPTIONS /readers/d332da73-e817-435d-82f6-232c448ad93e/ HTTP/1.1" 200 0
+"GET /readers/ HTTP/1.1" 200 2062
+"GET /readers/ HTTP/1.1" 200 2062
+"DELETE /readers/d332da73-e817-435d-82f6-232c448ad93e/ HTTP/1.1" 204 2
+"GET /readers/ HTTP/1.1" 200 1950
+"GET /readers/ HTTP/1.1" 200 1950
+"GET /authors/ HTTP/1.1" 200 760
+"GET /books/ HTTP/1.1" 200 1865
+"GET /readers/ HTTP/1.1" 200 1950
+"GET /readers/ba90a05e-42ee-4a8f-80bb-40150217dd54/ HTTP/1.1" 200 107
+"OPTIONS /readers/ba90a05e-42ee-4a8f-80bb-40150217dd54/ HTTP/1.1" 200 0
+"GET /readers/ HTTP/1.1" 200 1950
+"DELETE /readers/ba90a05e-42ee-4a8f-80bb-40150217dd54/ HTTP/1.1" 204 2
+"GET /readers/e7c7d308-5de9-4871-80bf-30960cd864ec/ HTTP/1.1" 200 107
+"OPTIONS /readers/e7c7d308-5de9-4871-80bf-30960cd864ec/ HTTP/1.1" 200 0
+"GET /readers/ HTTP/1.1" 200 1842
+"DELETE /readers/e7c7d308-5de9-4871-80bf-30960cd864ec/ HTTP/1.1" 204 2
+"GET /readers/d3fcc59e-a4d4-411d-a330-c2ed41571c75 HTTP/1.1" 301 0
+"GET /readers/d3fcc59e-a4d4-411d-a330-c2ed41571c75/ HTTP/1.1" 200 104
+"OPTIONS /readers/d3fcc59e-a4d4-411d-a330-c2ed41571c75/ HTTP/1.1" 200 0
+"GET /readers/ HTTP/1.1" 200 1734
+"DELETE /readers/d3fcc59e-a4d4-411d-a330-c2ed41571c75/ HTTP/1.1" 204 2
+"GET /readers/12e7cead-30b9-4413-b9ab-48140d67e397 HTTP/1.1" 301 0
+"GET /readers/12e7cead-30b9-4413-b9ab-48140d67e397/ HTTP/1.1" 200 108
+"OPTIONS /readers/12e7cead-30b9-4413-b9ab-48140d67e397/ HTTP/1.1" 200 0
+"GET /readers/ HTTP/1.1" 200 1629
+"DELETE /readers/12e7cead-30b9-4413-b9ab-48140d67e397/ HTTP/1.1" 204 2
+"GET /readers/ HTTP/1.1" 200 1520
+"GET /readers/ HTTP/1.1" 200 1520
+"GET /readers/e585e4ba-e4bf-460d-a2f6-206ed7fae7fa/ HTTP/1.1" 200 107
+"OPTIONS /readers/e585e4ba-e4bf-460d-a2f6-206ed7fae7fa/ HTTP/1.1" 200 0
+"GET /readers/ HTTP/1.1" 200 1520
+"DELETE /readers/e585e4ba-e4bf-460d-a2f6-206ed7fae7fa/ HTTP/1.1" 204 2
+"GET /readers/cd78edaf-61e1-4f2c-8b44-1d8fad0396ab/ HTTP/1.1" 200 107
+"OPTIONS /readers/cd78edaf-61e1-4f2c-8b44-1d8fad0396ab/ HTTP/1.1" 200 0
+"GET /readers/ HTTP/1.1" 200 1412
+"DELETE /readers/cd78edaf-61e1-4f2c-8b44-1d8fad0396ab/ HTTP/1.1" 204 2
+"GET /readers/ HTTP/1.1" 200 1304
+"GET /readers/3adc616b-6ab7-4b34-b45c-335d759d7e25 HTTP/1.1" 301 0
+"GET /readers/3adc616b-6ab7-4b34-b45c-335d759d7e25/ HTTP/1.1" 200 107
+"OPTIONS /readers/3adc616b-6ab7-4b34-b45c-335d759d7e25/ HTTP/1.1" 200 0
+"GET /readers/ HTTP/1.1" 200 1304
+"DELETE /readers/3adc616b-6ab7-4b34-b45c-335d759d7e25/ HTTP/1.1" 204 2
+"GET /readers/c9429a6c-c35a-47fa-8f57-4f858aab3f77 HTTP/1.1" 301 0
+"GET /readers/c9429a6c-c35a-47fa-8f57-4f858aab3f77/ HTTP/1.1" 200 107
+"OPTIONS /readers/c9429a6c-c35a-47fa-8f57-4f858aab3f77/ HTTP/1.1" 200 0
+"GET /readers/ HTTP/1.1" 200 1196
+"DELETE /readers/c9429a6c-c35a-47fa-8f57-4f858aab3f77/ HTTP/1.1" 204 2
+"GET /readers/ HTTP/1.1" 200 1088
+"GET /readers/99308c76-fc3a-4a6c-a412-b4f681fc86de/ HTTP/1.1" 200 108
+"OPTIONS /readers/99308c76-fc3a-4a6c-a412-b4f681fc86de/ HTTP/1.1" 200 0
+"GET /readers/ HTTP/1.1" 200 1088
+"DELETE /readers/99308c76-fc3a-4a6c-a412-b4f681fc86de/ HTTP/1.1" 204 2
+"GET /readers/ HTTP/1.1" 200 979
+"GET /readers/ HTTP/1.1" 200 979
+"GET /readers/5f1d0bd3-b7f5-4931-bcca-d5a477bf35d0 HTTP/1.1" 301 0
+"GET /readers/5f1d0bd3-b7f5-4931-bcca-d5a477bf35d0/ HTTP/1.1" 200 105
+"GET /readers/ HTTP/1.1" 200 979
+"GET /readers/5f1d0bd3-b7f5-4931-bcca-d5a477bf35d0/ HTTP/1.1" 200 105
+"OPTIONS /readers/5f1d0bd3-b7f5-4931-bcca-d5a477bf35d0/ HTTP/1.1" 200 0
+"GET /readers/ HTTP/1.1" 200 979
+"DELETE /readers/5f1d0bd3-b7f5-4931-bcca-d5a477bf35d0/ HTTP/1.1" 204 2
+"GET /readers/ HTTP/1.1" 200 873
+"GET /readers/ HTTP/1.1" 200 873
+"GET /readers/1f57f4fd-a4be-469a-87d6-c0b7c46ddde1 HTTP/1.1" 301 0
+"GET /readers/1f57f4fd-a4be-469a-87d6-c0b7c46ddde1/ HTTP/1.1" 200 109
+"OPTIONS /readers/1f57f4fd-a4be-469a-87d6-c0b7c46ddde1/ HTTP/1.1" 200 0
+"GET /readers/ HTTP/1.1" 200 873
+"DELETE /readers/1f57f4fd-a4be-469a-87d6-c0b7c46ddde1/ HTTP/1.1" 204 2
+"GET /readers/ HTTP/1.1" 200 763
+"GET /readers/ HTTP/1.1" 200 763
+"GET /readers/ HTTP/1.1" 200 763
+"POST /readers/ HTTP/1.1" 201 109
+"GET /readers/ HTTP/1.1" 200 873
+"GET /readers/f8bd2be9-3943-4df9-b5a9-4ab16de1ed6d HTTP/1.1" 301 0
+"GET /readers/f8bd2be9-3943-4df9-b5a9-4ab16de1ed6d/ HTTP/1.1" 200 109
+"OPTIONS /readers/f8bd2be9-3943-4df9-b5a9-4ab16de1ed6d/ HTTP/1.1" 200 0
+"GET /readers/f8bd2be9-3943-4df9-b5a9-4ab16de1ed6d/ HTTP/1.1" 200 113
+"PATCH /readers/f8bd2be9-3943-4df9-b5a9-4ab16de1ed6d/ HTTP/1.1" 202 113
+"OPTIONS /readers/f8bd2be9-3943-4df9-b5a9-4ab16de1ed6d/ HTTP/1.1" 200 0
+"GET /readers/ HTTP/1.1" 200 877
+"DELETE /readers/f8bd2be9-3943-4df9-b5a9-4ab16de1ed6d/ HTTP/1.1" 204 2
+"GET /readers/ HTTP/1.1" 200 763
+"GET /books/ HTTP/1.1" 200 15002
+"GET /readers/ HTTP/1.1" 200 763
+"GET /readers/ HTTP/1.1" 200 763
+"GET /readers/ HTTP/1.1" 200 763
+"GET /books/ HTTP/1.1" 200 1865
+"GET /authors/ HTTP/1.1" 200 760
+"GET /readers/ HTTP/1.1" 200 763
+"GET /books/ HTTP/1.1" 200 1865
+"GET /authors/ HTTP/1.1" 200 760
+"GET /readers/ HTTP/1.1" 200 763
+"GET /readers/ HTTP/1.1" 200 763
+"GET /readers/ HTTP/1.1" 200 763
+"GET /readers/ HTTP/1.1" 200 763
+"GET /readers/ HTTP/1.1" 200 763
+"GET /readers/ HTTP/1.1" 200 763
+"GET /readers/ HTTP/1.1" 200 763
+"GET /readers/ HTTP/1.1" 200 763
+"GET /readers/ HTTP/1.1" 200 763
+"GET /readers/ HTTP/1.1" 200 763
+"GET /readers/ HTTP/1.1" 200 763
+"GET /readers/ HTTP/1.1" 200 763
+"GET /readers/ HTTP/1.1" 200 763
+"GET /books/ HTTP/1.1" 200 1865
+"GET /books/ HTTP/1.1" 200 1865
+"GET /books/ HTTP/1.1" 200 1865
+"GET /authors/ HTTP/1.1" 200 760
+"GET /readers/ HTTP/1.1" 200 763
+"GET /readers/ HTTP/1.1" 200 763
+"GET /readers/ HTTP/1.1" 200 763
+"GET /readers/ HTTP/1.1" 200 763
+"GET /readers/ HTTP/1.1" 200 763
+"GET /readers/ HTTP/1.1" 200 763
+"GET /readers/ HTTP/1.1" 200 763
+"GET /readers/ HTTP/1.1" 200 763
+"GET /readers/ HTTP/1.1" 200 763
+"GET /readers/ HTTP/1.1" 200 763
+"GET /readers/ HTTP/1.1" 200 763
+"GET /readers/ HTTP/1.1" 200 763
+"GET /readers/ HTTP/1.1" 200 763
+"GET /readers/ HTTP/1.1" 200 763
+"GET /books/ HTTP/1.1" 200 1865
+"GET /readers/ HTTP/1.1" 200 763
+"GET /books/ HTTP/1.1" 200 1865
+"GET /readers/ HTTP/1.1" 200 763
+"GET /readers/ HTTP/1.1" 200 763
+"GET /books/ HTTP/1.1" 200 1865
+"GET /readers/ HTTP/1.1" 200 763
+"GET /readers/ HTTP/1.1" 200 763
+"GET /readers/ HTTP/1.1" 200 763
+"GET /readers/ HTTP/1.1" 200 763
+"GET /readers/ HTTP/1.1" 200 763
+"GET /readers/ HTTP/1.1" 200 763
+"GET /readers/ HTTP/1.1" 200 763
+"GET /books/ HTTP/1.1" 200 1865
+"GET /authors/ HTTP/1.1" 200 760
+"GET /readers/ HTTP/1.1" 200 763
+"GET /books/ HTTP/1.1" 200 1865
+"GET /readers/ HTTP/1.1" 200 763
+"GET /authors/ HTTP/1.1" 200 760
+"GET /readers/ HTTP/1.1" 200 763
+"GET /books/ HTTP/1.1" 200 1865
+"GET /readers/ HTTP/1.1" 200 763
+"GET /readers/ HTTP/1.1" 200 763
+"GET /readers/ HTTP/1.1" 200 763
+"GET /readers/ HTTP/1.1" 200 763
+"GET /readers/ HTTP/1.1" 200 763
+"GET /readers/ HTTP/1.1" 200 763
+"GET /readers/ HTTP/1.1" 200 763
+"GET /readers/ HTTP/1.1" 200 763
+"GET /readers/ HTTP/1.1" 200 763
+"GET /books/ HTTP/1.1" 200 1865
+"GET /authors/ HTTP/1.1" 200 760
+"GET /readers/ HTTP/1.1" 200 763
+"GET /readers/ HTTP/1.1" 200 763
+"GET /readers/ HTTP/1.1" 200 763
+"GET /readers/ HTTP/1.1" 200 763
+"GET /readers/ HTTP/1.1" 200 763
+"GET /readers/c284d30a-da89-43e1-930e-4ab57531767f HTTP/1.1" 301 0
+"GET /readers/c284d30a-da89-43e1-930e-4ab57531767f/ HTTP/1.1" 200 107
+"OPTIONS /readers/c284d30a-da89-43e1-930e-4ab57531767f/ HTTP/1.1" 200 0
+"GET /readers/ HTTP/1.1" 200 763
+"DELETE /readers/c284d30a-da89-43e1-930e-4ab57531767f/ HTTP/1.1" 204 2
+"GET /readers/ HTTP/1.1" 200 655
+"GET /books/ HTTP/1.1" 200 1865
+"GET /authors/ HTTP/1.1" 200 760
+"GET /readers/ HTTP/1.1" 200 655
+"GET /books/ HTTP/1.1" 200 1865
+"GET /authors/ HTTP/1.1" 200 760
+"GET /books/ HTTP/1.1" 200 1865
+"GET /readers/ HTTP/1.1" 200 655
+"GET /books/ HTTP/1.1" 200 1865
+"GET /authors/ HTTP/1.1" 200 760
+"GET /books/ HTTP/1.1" 200 1865
+"GET /readers/ HTTP/1.1" 200 655
+"GET /books/ HTTP/1.1" 200 1865
+"GET /authors/ HTTP/1.1" 200 760
+"GET /readers/ HTTP/1.1" 200 655
+"GET /books/ HTTP/1.1" 200 1865
+"GET /authors/ HTTP/1.1" 200 760
+"GET /books/ HTTP/1.1" 200 1865
+"GET /authors/ HTTP/1.1" 200 760
+"GET /books/ HTTP/1.1" 200 1865
+"GET /readers/ HTTP/1.1" 200 655
+"GET /books/ HTTP/1.1" 200 1865
+"GET /authors/ HTTP/1.1" 200 760
+"GET /readers/ HTTP/1.1" 200 655
+"GET /authors/ HTTP/1.1" 200 760
+"GET /books/ HTTP/1.1" 200 1865
+"GET /readers/ HTTP/1.1" 200 655
+"GET /readers/ HTTP/1.1" 200 655
+"GET /readers/ HTTP/1.1" 200 655
+"GET /books/ HTTP/1.1" 200 1865
+"GET /authors/ HTTP/1.1" 200 760
+"GET /readers/ HTTP/1.1" 200 655
+"GET /books/ HTTP/1.1" 200 1865
+"GET /static/rest_framework/css/default.css HTTP/1.1" 200 1131
+"GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 200 3385
+"GET /static/rest_framework/css/prettify.css HTTP/1.1" 200 817
+"GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 8192
+"GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 3501
+"GET /static/rest_framework/css/bootstrap.min.css.map HTTP/1.1" 404 1858
+"GET /books/ HTTP/1.1" 200 1865
+"GET /authors/ HTTP/1.1" 200 760
+"GET /books/ HTTP/1.1" 200 1865
+"GET /authors/ HTTP/1.1" 200 760
+"GET /readers/ HTTP/1.1" 200 655
+"GET /authors/?limit=0&?offset=0 HTTP/1.1" 200 13061
+"GET /authors/ HTTP/1.1" 200 760
+"GET /books/ HTTP/1.1" 200 1865
+"GET /readers/ HTTP/1.1" 200 655
+"GET /books/ HTTP/1.1" 200 1865
+"GET /books/ HTTP/1.1" 200 1865
+"GET /readers/ HTTP/1.1" 200 655
+"GET /authors/ HTTP/1.1" 200 760
+"GET /books/ HTTP/1.1" 200 1865
+"GET /authors/ HTTP/1.1" 200 760
+"GET /books/ HTTP/1.1" 200 1865
+"GET /readers/ HTTP/1.1" 200 655
+"GET /readers/ HTTP/1.1" 200 655
+"GET /books/ HTTP/1.1" 200 1865
+"GET /readers/ HTTP/1.1" 200 655
+"GET /readers/ HTTP/1.1" 200 655
+"GET /books/ HTTP/1.1" 200 1865
+"GET /authors/ HTTP/1.1" 200 760
+"GET /readers/ HTTP/1.1" 200 655
+"GET /books/ HTTP/1.1" 200 1865
+"GET /authors/ HTTP/1.1" 200 760
+"GET /readers/ HTTP/1.1" 200 655
+"GET /readers/ HTTP/1.1" 200 655
+"GET /readers/ HTTP/1.1" 200 655
+"GET /readers/ HTTP/1.1" 200 655
+"GET /readers/ HTTP/1.1" 200 655
+"GET /readers/ HTTP/1.1" 200 655
+"GET /readers/ HTTP/1.1" 200 655
+"GET /books/ HTTP/1.1" 200 1865
+"GET /authors/ HTTP/1.1" 200 760
+"GET /readers/ HTTP/1.1" 200 655
+"GET /books/ HTTP/1.1" 200 1865
+"GET /authors/ HTTP/1.1" 200 760
+"GET /readers/ HTTP/1.1" 200 655
+"GET /books/ HTTP/1.1" 200 1865
+"GET /authors/ HTTP/1.1" 200 760
+"GET /readers/ HTTP/1.1" 200 655
+"GET /books/ HTTP/1.1" 200 1865
+"GET /authors/ HTTP/1.1" 200 760
+"GET /books/ HTTP/1.1" 200 1865
+"GET /readers/ HTTP/1.1" 200 655
+"GET /readers/ HTTP/1.1" 200 655
+Watching for file changes with StatReloader
+"GET /readers/ HTTP/1.1" 200 655
+"GET /readers/ HTTP/1.1" 200 655
+"GET /books/ HTTP/1.1" 200 1865
+"GET /readers/ HTTP/1.1" 200 655
+"GET /readers/ HTTP/1.1" 200 655
+"GET /readers/ HTTP/1.1" 200 655
+"GET /authors/?limit=0&?offset=0 HTTP/1.1" 200 13061
+"GET /static/rest_framework/js/jquery-3.4.1.min.js HTTP/1.1" 304 0
+"GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0
+"GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0
+"GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0
+"GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 200 3385
+"GET /static/rest_framework/css/prettify.css HTTP/1.1" 200 817
+"GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0
+"GET /static/rest_framework/js/default.js HTTP/1.1" 304 0
+"GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 121457
+"GET /static/rest_framework/css/default.css HTTP/1.1" 200 1131
+"GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 3501
+"GET /readers/ HTTP/1.1" 200 655
+"GET /readers/ HTTP/1.1" 200 655
+"GET /books/ HTTP/1.1" 200 1865
+"GET /authors/ HTTP/1.1" 200 760
+"GET /readers/ HTTP/1.1" 200 655
+"GET /books/ HTTP/1.1" 200 1865
+"GET /readers/ HTTP/1.1" 200 655
+"GET /books/ HTTP/1.1" 200 1865
+"GET /authors/ HTTP/1.1" 200 760
+"GET /books/ HTTP/1.1" 200 1865
+"GET /readers/ HTTP/1.1" 200 655
+"GET /readers/ HTTP/1.1" 200 655
+"GET /readers/ HTTP/1.1" 200 655
+"GET /books/ HTTP/1.1" 200 1865
+"GET /authors/ HTTP/1.1" 200 760
+"GET /readers/ HTTP/1.1" 200 655
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/requesters/reader_requester.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /authors/?limit=0&offset=0 HTTP/1.1" 200 13051
+"GET /authors/?limit=0&offset=2 HTTP/1.1" 200 13051
+"GET /authors/?limit=2&offset=2 HTTP/1.1" 200 13051
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/requesters/reader_requester.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /authors/?limit=2&offset=2 HTTP/1.1" 200 13051
+"GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0
+"GET /static/rest_framework/js/jquery-3.4.1.min.js HTTP/1.1" 304 0
+"GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0
+"GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0
+"GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0
+"GET /static/rest_framework/css/default.css HTTP/1.1" 304 0
+"GET /static/rest_framework/js/default.js HTTP/1.1" 304 0
+"GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0
+"GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0
+"GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0
+"GET /static/rest_framework/img/grid.png HTTP/1.1" 304 0
+"GET /readers/?limit=2&offset=2 HTTP/1.1" 200 12766
+"POST /readers/ HTTP/1.1" 201 108
+"GET /readers/?limit=2&offset=2 HTTP/1.1" 200 13005
+"GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 121457
+"GET /static/rest_framework/js/jquery-3.4.1.min.js HTTP/1.1" 304 0
+"GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0
+"GET /static/rest_framework/css/default.css HTTP/1.1" 200 1131
+"GET /static/rest_framework/js/default.js HTTP/1.1" 304 0
+"GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0
+"GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0
+"GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0
+"GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 200 3385
+"GET /static/rest_framework/css/prettify.css HTTP/1.1" 200 817
+"GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 3501
+"GET /readers/?limit=2&offset=2 HTTP/1.1" 200 12029
+"GET /static/rest_framework/js/jquery-3.4.1.min.js HTTP/1.1" 304 0
+"GET /static/rest_framework/js/default.js HTTP/1.1" 304 0
+"GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0
+"GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0
+"GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 121457
+"GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0
+"GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0
+"GET /static/rest_framework/css/default.css HTTP/1.1" 304 0
+"GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 200 3385
+"GET /static/rest_framework/css/prettify.css HTTP/1.1" 200 817
+"GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 3501
+"GET /readers/?limit=2&offset=0 HTTP/1.1" 200 12007
+"GET /books/?limit=2&offset=0 HTTP/1.1" 200 15136
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/requesters/book_requester.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /books/
+Traceback (most recent call last):
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/views.py", line 62, in get
+    data, code = self.REQUESTER.get_all_books(request=request)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/requesters/book_requester.py", line 90, in get_all_books
+    for i in range(len(response_data)):
+NameError: name 'response_data' is not defined
+"GET /books/?limit=2&offset=0 HTTP/1.1" 500 94746
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/requesters/book_requester.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /books/
+Traceback (most recent call last):
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/views.py", line 62, in get
+    data, code = self.REQUESTER.get_all_books(request=request)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/requesters/book_requester.py", line 91, in get_all_books
+    response_data[i], status_code = self.set_reader(request, response_data[i])
+KeyError: 0
+"GET /books/?limit=2&offset=0 HTTP/1.1" 500 94753
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/requesters/book_requester.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/requesters/book_requester.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/requesters/book_requester.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /books/?limit=2&offset=0 HTTP/1.1" 200 13107
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 3501
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/requesters/author_requester.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/requesters/author_requester.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /authors/?limit=2&offset=0 HTTP/1.1" 200 12120
+"GET /authors/?limit=8&offset=8 HTTP/1.1" 200 11476

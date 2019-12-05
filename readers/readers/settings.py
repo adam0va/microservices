@@ -72,6 +72,10 @@ TEMPLATES = [
 WSGI_APPLICATION = 'readers.wsgi.application'
 
 
+REST_FRAMEWORK = {
+    'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.LimitOffsetPagination',
+}
+
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
 

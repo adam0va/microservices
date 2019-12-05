@@ -25,10 +25,12 @@ class ReaderView(APIView):
 
 	def patch(self, request, reader_uuid):
 		data, code = self.REQUESTER.patch_reader(request=request, uuid=reader_uuid, data=request.data)
+		print(request.data)
 		return Response(data, status=code)
 
 
 class AllAuthorsView(APIView):
+	#renderer_classes = [JSONRenderer]
 	REQUESTER = AuthorRequester()
 	def get(self, request):
 		data, code = self.REQUESTER.get_all_authors(request=request)
@@ -39,6 +41,7 @@ class AllAuthorsView(APIView):
 		return Response(data, status=code)
 
 class AuthorView(APIView):
+	#renderer_classes = [JSONRenderer]
 	REQUESTER = AuthorRequester()
 	def get(self, request, author_uuid):
 		data, code = self.REQUESTER.get_author(request=request, uuid=author_uuid)
