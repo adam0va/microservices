@@ -38,7 +38,7 @@ class ReaderDetail(APIView):
         try:
             reader = Reader.objects.get(pk=uuid)
         except Reader.DoesNotExist:
-            return Response({'error' : 'wrong query parameters'}, status = status.HTTP_400_BAD_REQUEST)
+            return Response(status=status.HTTP_404_NOT_FOUND)
         
         serializer = ReaderSerializer(reader)
         return Response(serializer.data, status = status.HTTP_200_OK)
