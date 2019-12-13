@@ -1,0 +1,5 @@
+django==2.2.4
+djangorestframework==3.10.2
+gunicorn==19.9.0
+whitenoise==4.1.3
+psycopg2==2.8
