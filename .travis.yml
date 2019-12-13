@@ -1,0 +1,8 @@
+language: python
+pyhton:
+    -3.7
+# command to run tests
+script:
+  - python3 books/manage.py test
+  - python3 authors/manage.py test
+  - python3 readers/manage.py test
