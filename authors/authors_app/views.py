@@ -35,7 +35,7 @@ class AuthorDetail(APIView):
         try:
             author = Author.objects.get(pk=uuid)
         except Author.DoesNotExist:
-            return Response({'error' : 'wrong request'}, status = status.HTTP_400_BAD_REQUEST)
+            return Response(status=status.HTTP_404_NOT_FOUND)
         
         serializer = AuthorSerializer(author)
         return Response(serializer.data, status = status.HTTP_200_OK)

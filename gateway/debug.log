@@ -1975,3 +1975,1156 @@ Watching for file changes with StatReloader
 Watching for file changes with StatReloader
 "GET /authors/?limit=2&offset=0 HTTP/1.1" 200 12120
 "GET /authors/?limit=8&offset=8 HTTP/1.1" 200 11476
+Watching for file changes with StatReloader
+"GET /readers/ HTTP/1.1" 200 764
+"GET /readers/ HTTP/1.1" 200 764
+"GET /readers/ HTTP/1.1" 200 764
+"GET /books/ HTTP/1.1" 200 1865
+"GET /authors/ HTTP/1.1" 200 760
+"GET /readers/ HTTP/1.1" 200 764
+"GET /books/ HTTP/1.1" 200 1865
+"GET /readers/ HTTP/1.1" 200 764
+"GET /authors/ HTTP/1.1" 200 760
+"GET /books/ HTTP/1.1" 200 1865
+"GET /readers/ HTTP/1.1" 200 764
+"GET /books/ HTTP/1.1" 200 1865
+"GET /authors/ HTTP/1.1" 200 760
+"GET /books/ HTTP/1.1" 200 1865
+"GET /readers/ HTTP/1.1" 200 764
+"GET /books/ HTTP/1.1" 200 1865
+"GET /readers/ HTTP/1.1" 200 764
+"GET /books/ HTTP/1.1" 200 1865
+"GET /readers/ HTTP/1.1" 200 764
+"GET /books/ HTTP/1.1" 200 1865
+"GET /readers/ HTTP/1.1" 200 764
+"GET /books/ HTTP/1.1" 200 1865
+"GET /authors/ HTTP/1.1" 200 760
+"GET /readers/ HTTP/1.1" 200 764
+"GET /readers/ HTTP/1.1" 200 764
+"GET /books/ HTTP/1.1" 200 1865
+"GET /authors/ HTTP/1.1" 200 760
+"GET /authors/ HTTP/1.1" 200 760
+"GET /authors/ HTTP/1.1" 200 760
+"GET /books/ HTTP/1.1" 200 1865
+"GET /readers/ HTTP/1.1" 200 764
+"GET /authors/ HTTP/1.1" 200 760
+"GET /books/ HTTP/1.1" 200 1865
+"GET /authors/ HTTP/1.1" 200 760
+"GET /readers/ HTTP/1.1" 200 764
+"GET /authors/ HTTP/1.1" 200 760
+"GET /authors/ HTTP/1.1" 200 760
+"GET /authors/ HTTP/1.1" 200 760
+"GET /authors/ HTTP/1.1" 200 760
+"GET /books/ HTTP/1.1" 200 1865
+"GET /books/ HTTP/1.1" 200 1865
+"GET /books/ HTTP/1.1" 200 1865
+"GET /books/ HTTP/1.1" 200 1865
+"GET /authors/ HTTP/1.1" 200 760
+"GET /authors/ HTTP/1.1" 200 760
+"GET /readers/ HTTP/1.1" 200 764
+"GET /authors/ HTTP/1.1" 200 760
+"GET /books/ HTTP/1.1" 200 1865
+"GET /books/ HTTP/1.1" 200 1865
+"GET /books/ HTTP/1.1" 200 1865
+"GET /books/ HTTP/1.1" 200 1865
+"GET /readers/ HTTP/1.1" 200 764
+"GET /authors/ HTTP/1.1" 200 760
+"GET /readers/ HTTP/1.1" 200 764
+"GET /authors/ HTTP/1.1" 200 760
+"GET /books/ HTTP/1.1" 200 1865
+"GET /authors/ HTTP/1.1" 200 760
+"GET /readers/ HTTP/1.1" 200 764
+"GET /authors/ HTTP/1.1" 200 760
+"GET /readers/ HTTP/1.1" 200 764
+"GET /books/ HTTP/1.1" 200 1865
+"GET /readers/ HTTP/1.1" 200 764
+"GET /authors/ HTTP/1.1" 200 760
+"GET /books/ HTTP/1.1" 200 1865
+"GET /readers/ HTTP/1.1" 200 764
+"GET /authors/ HTTP/1.1" 200 760
+"GET /books/ HTTP/1.1" 200 1865
+"GET /readers/ HTTP/1.1" 200 764
+"GET /books/ HTTP/1.1" 200 1865
+"GET /authors/ HTTP/1.1" 200 760
+"GET /books/ HTTP/1.1" 200 1865
+Bad Request: /readers/
+"POST /readers/ HTTP/1.1" 400 90
+"GET /readers/ HTTP/1.1" 200 764
+"GET /books/ HTTP/1.1" 200 1865
+"GET /readers/ HTTP/1.1" 200 764
+"GET /books/ HTTP/1.1" 200 1865
+"GET /authors/ HTTP/1.1" 200 760
+"GET /books/ HTTP/1.1" 200 1865
+"GET /authors/ HTTP/1.1" 200 760
+"GET /books/ HTTP/1.1" 200 1865
+"GET /books/ HTTP/1.1" 200 1865
+"GET /books/ HTTP/1.1" 200 1865
+"GET /books/ HTTP/1.1" 200 1865
+"GET /authors/ HTTP/1.1" 200 760
+"GET /books/ HTTP/1.1" 200 1865
+"GET /books/ HTTP/1.1" 200 1865
+"GET /books/ HTTP/1.1" 200 1865
+"GET /readers/ HTTP/1.1" 200 764
+"GET /books/ HTTP/1.1" 200 1865
+"GET /books/ HTTP/1.1" 200 1865
+"GET /books/ HTTP/1.1" 200 1865
+"GET /books/ HTTP/1.1" 200 1865
+"GET /books/ HTTP/1.1" 200 15002
+"GET /static/rest_framework/css/default.css HTTP/1.1" 200 1131
+"GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 200 3385
+"GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 8192
+"GET /static/rest_framework/css/prettify.css HTTP/1.1" 200 817
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 3501
+"GET /books/ HTTP/1.1" 200 1865
+"DELETE /books/10b66248-346e-44d4-a139-bd56d63cd657/ HTTP/1.1" 204 2
+"GET /books/ HTTP/1.1" 200 1688
+"GET /books/ HTTP/1.1" 200 1688
+"GET /books/ HTTP/1.1" 200 14695
+"GET /static/rest_framework/js/jquery-3.4.1.min.js HTTP/1.1" 304 0
+"GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0
+"GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0
+"GET /static/rest_framework/js/default.js HTTP/1.1" 304 0
+"GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0
+"GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0
+"GET /static/rest_framework/css/prettify.css HTTP/1.1" 200 817
+"GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 121457
+"GET /static/rest_framework/css/default.css HTTP/1.1" 200 1131
+"GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 200 3385
+"GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 3501
+"DELETE /books/aab6cb9f-690d-472e-aee4-ffca242653eb/ HTTP/1.1" 204 2
+"GET /books/ HTTP/1.1" 200 14442
+"GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0
+"GET /static/rest_framework/js/default.js HTTP/1.1" 304 0
+"GET /static/rest_framework/js/jquery-3.4.1.min.js HTTP/1.1" 304 0
+"GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0
+"GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0
+"GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0
+"GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 200 3385
+"GET /static/rest_framework/css/default.css HTTP/1.1" 304 0
+"GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 121457
+"GET /static/rest_framework/css/prettify.css HTTP/1.1" 200 817
+"GET /static/rest_framework/img/grid.png HTTP/1.1" 304 0
+"DELETE /books/b9762d44-e190-4bcf-89c2-d327501e2498/ HTTP/1.1" 204 2
+"GET /books/ HTTP/1.1" 200 14188
+"GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0
+"GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 200 3385
+"GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 121457
+"GET /static/rest_framework/js/default.js HTTP/1.1" 304 0
+"GET /static/rest_framework/js/jquery-3.4.1.min.js HTTP/1.1" 304 0
+"GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0
+"GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0
+"GET /static/rest_framework/css/default.css HTTP/1.1" 200 1131
+"GET /static/rest_framework/css/prettify.css HTTP/1.1" 200 817
+"GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0
+"GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 3501
+"DELETE /books/d61735cd-8908-475f-845a-e63a308d6322/ HTTP/1.1" 204 2
+"GET /books/ HTTP/1.1" 200 13836
+"GET /static/rest_framework/js/jquery-3.4.1.min.js HTTP/1.1" 304 0
+"GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0
+"GET /static/rest_framework/js/default.js HTTP/1.1" 304 0
+"GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0
+"GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0
+"GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0
+"GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 200 3385
+"GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 121457
+"GET /static/rest_framework/css/default.css HTTP/1.1" 200 1131
+"GET /static/rest_framework/css/prettify.css HTTP/1.1" 200 817
+"GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 3501
+"GET /authors/ HTTP/1.1" 200 12917
+"GET /static/rest_framework/css/prettify.css HTTP/1.1" 200 817
+"GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 200 3385
+"GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 8192
+"GET /static/rest_framework/css/default.css HTTP/1.1" 200 1131
+"GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
+"GET /readers/ HTTP/1.1" 200 12871
+"POST /books/ HTTP/1.1" 201 136
+"GET /books/ HTTP/1.1" 200 1506
+"GET /authors/ HTTP/1.1" 200 760
+"GET /books/ HTTP/1.1" 200 1506
+"GET /readers/ HTTP/1.1" 200 764
+"GET /books/ HTTP/1.1" 200 1506
+"GET /authors/ HTTP/1.1" 200 760
+"GET /books/ HTTP/1.1" 200 1506
+"GET /readers/ HTTP/1.1" 200 764
+"GET /books/ HTTP/1.1" 200 1506
+"GET /authors/ HTTP/1.1" 200 760
+"GET /books/ HTTP/1.1" 200 1506
+"GET /readers/ HTTP/1.1" 200 764
+"GET /books/ HTTP/1.1" 200 1506
+"GET /authors/ HTTP/1.1" 200 760
+"GET /books/ HTTP/1.1" 200 1506
+"GET /readers/ HTTP/1.1" 200 764
+"GET /books/ HTTP/1.1" 200 1506
+"GET /authors/ HTTP/1.1" 200 760
+"GET /books/ HTTP/1.1" 200 1506
+"GET /readers/ HTTP/1.1" 200 764
+"GET /books/ HTTP/1.1" 200 1506
+"GET /readers/ HTTP/1.1" 200 764
+"GET /books/ HTTP/1.1" 200 1506
+"GET /authors/ HTTP/1.1" 200 760
+"GET /books/ HTTP/1.1" 200 1506
+"GET /readers/ HTTP/1.1" 200 764
+"GET /books/ HTTP/1.1" 200 1506
+"GET /authors/ HTTP/1.1" 200 760
+"GET /books/ HTTP/1.1" 200 1506
+"GET /readers/ HTTP/1.1" 200 764
+"GET /books/ HTTP/1.1" 200 1506
+"GET /authors/ HTTP/1.1" 200 760
+"GET /books/ HTTP/1.1" 200 1506
+"GET /readers/ HTTP/1.1" 200 764
+"GET /books/ HTTP/1.1" 200 1506
+"GET /readers/ HTTP/1.1" 200 764
+"GET /readers/ HTTP/1.1" 200 764
+"GET /readers/ HTTP/1.1" 200 764
+"GET /readers/ HTTP/1.1" 200 764
+"GET /books/ HTTP/1.1" 200 1506
+"GET /readers/ HTTP/1.1" 200 764
+"GET /readers/05e98fcf-eb48-40c8-a3b5-8eb12e1cb245 HTTP/1.1" 301 0
+"GET /readers/05e98fcf-eb48-40c8-a3b5-8eb12e1cb245/ HTTP/1.1" 200 107
+"GET /books/ HTTP/1.1" 200 1506
+"GET /readers/ HTTP/1.1" 200 764
+"GET /authors/ HTTP/1.1" 200 760
+"GET /readers/ HTTP/1.1" 200 764
+"GET /books/ HTTP/1.1" 200 1506
+"GET /authors/ HTTP/1.1" 200 760
+"GET /books/ HTTP/1.1" 200 1506
+"GET /books/ HTTP/1.1" 200 1506
+"GET /books/ HTTP/1.1" 200 1506
+"GET /books/ HTTP/1.1" 200 1506
+"GET /books/ HTTP/1.1" 200 1506
+"GET /books/ HTTP/1.1" 200 1506
+"GET /books/ HTTP/1.1" 200 1506
+"GET /books/ HTTP/1.1" 200 1506
+"GET /books/ HTTP/1.1" 200 1506
+"GET /books/ HTTP/1.1" 200 1506
+"GET /books/ HTTP/1.1" 200 1506
+"GET /books/ HTTP/1.1" 200 1506
+"GET /authors/ HTTP/1.1" 200 760
+"GET /readers/ HTTP/1.1" 200 764
+"GET /authors/ HTTP/1.1" 200 760
+"GET /readers/ HTTP/1.1" 200 764
+"GET /authors/ HTTP/1.1" 200 760
+"GET /authors/ HTTP/1.1" 200 760
+"GET /readers/ HTTP/1.1" 200 764
+"GET /readers/341f19f4-c927-4235-8e54-748013c1241a HTTP/1.1" 301 0
+"GET /readers/341f19f4-c927-4235-8e54-748013c1241a/ HTTP/1.1" 200 110
+"GET /books/ HTTP/1.1" 200 1506
+"GET /books/ HTTP/1.1" 200 1506
+"GET /authors/ HTTP/1.1" 200 760
+"GET /authors/ HTTP/1.1" 200 760
+"GET /authors/ HTTP/1.1" 200 760
+"GET /readers/ HTTP/1.1" 200 764
+"GET /readers/67cf7000-753b-47ec-aa7e-2eb0baae5fbb/ HTTP/1.1" 200 111
+"GET /books/ HTTP/1.1" 200 1506
+Not Found: /books//
+"GET /books// HTTP/1.1" 404 3489
+"GET /authors/ HTTP/1.1" 200 760
+Not Found: /authors//
+"GET /authors// HTTP/1.1" 404 3495
+"GET /authors/ HTTP/1.1" 200 760
+"GET /authors/ HTTP/1.1" 200 760
+Not Found: /authors//
+"GET /authors// HTTP/1.1" 404 3495
+"GET /authors/ HTTP/1.1" 200 760
+"GET /authors/ HTTP/1.1" 200 760
+"GET /readers/ HTTP/1.1" 200 764
+"GET /authors/ HTTP/1.1" 200 760
+"GET /authors/ HTTP/1.1" 200 760
+"GET /readers/ HTTP/1.1" 200 764
+"GET /books/ HTTP/1.1" 200 1506
+"GET /authors/ HTTP/1.1" 200 760
+"GET /readers/ HTTP/1.1" 200 764
+"GET /readers/f38b2554-608d-45d7-9863-56367c232a65 HTTP/1.1" 301 0
+"GET /readers/f38b2554-608d-45d7-9863-56367c232a65/ HTTP/1.1" 200 105
+"GET /books/ HTTP/1.1" 200 1506
+"GET /books/ HTTP/1.1" 200 1506
+"GET /authors/ HTTP/1.1" 200 760
+"GET /authors/ HTTP/1.1" 200 760
+"GET /authors/ HTTP/1.1" 200 760
+"GET /readers/ HTTP/1.1" 200 764
+"GET /books/ HTTP/1.1" 200 1506
+Not Found: /books/Dubrovsky
+"GET /books/Dubrovsky HTTP/1.1" 404 3513
+"GET /books/ HTTP/1.1" 200 1506
+"GET /books/7ebd3e0a-400a-49e8-b33c-a57ddddcaeb9 HTTP/1.1" 301 0
+"GET /books/7ebd3e0a-400a-49e8-b33c-a57ddddcaeb9/ HTTP/1.1" 200 434
+"GET /authors/ HTTP/1.1" 200 760
+"GET /authors/10af1a36-bd60-49af-8c65-0125d51a1993 HTTP/1.1" 301 0
+"GET /authors/10af1a36-bd60-49af-8c65-0125d51a1993/ HTTP/1.1" 200 120
+"GET /books/ HTTP/1.1" 200 1506
+"GET /books/b5b9d9ea-1d72-4134-adaf-d86c12cedbba HTTP/1.1" 301 0
+"GET /books/b5b9d9ea-1d72-4134-adaf-d86c12cedbba/ HTTP/1.1" 200 435
+"GET /books/ HTTP/1.1" 200 1506
+"GET /books/f94d8b8e-3773-4748-8751-ff5e0fb0e146 HTTP/1.1" 301 0
+"GET /books/f94d8b8e-3773-4748-8751-ff5e0fb0e146/ HTTP/1.1" 200 253
+"GET /books/ HTTP/1.1" 200 1506
+"GET /books/c066d53b-0e46-433e-b375-57aa6ca32940 HTTP/1.1" 301 0
+"GET /books/c066d53b-0e46-433e-b375-57aa6ca32940/ HTTP/1.1" 200 279
+"GET /readers/ HTTP/1.1" 200 764
+"GET /readers/ HTTP/1.1" 200 764
+"GET /books/ HTTP/1.1" 200 1506
+"GET /authors/ HTTP/1.1" 200 760
+"GET /books/ HTTP/1.1" 200 1506
+"GET /books/b5b9d9ea-1d72-4134-adaf-d86c12cedbba/ HTTP/1.1" 200 435
+"GET /books/ HTTP/1.1" 200 1506
+"GET /books/7ebd3e0a-400a-49e8-b33c-a57ddddcaeb9 HTTP/1.1" 301 0
+"GET /books/7ebd3e0a-400a-49e8-b33c-a57ddddcaeb9/ HTTP/1.1" 200 434
+"GET /books/ HTTP/1.1" 200 1506
+"GET /books/7ebd3e0a-400a-49e8-b33c-a57ddddcaeb9/ HTTP/1.1" 200 434
+"GET /books/ HTTP/1.1" 200 1506
+"GET /books/7ebd3e0a-400a-49e8-b33c-a57ddddcaeb9/ HTTP/1.1" 200 434
+"GET /books/ HTTP/1.1" 200 1506
+"GET /books/7ebd3e0a-400a-49e8-b33c-a57ddddcaeb9/ HTTP/1.1" 200 434
+"GET /books/ HTTP/1.1" 200 1506
+"GET /books/ad11af99-0503-4ccf-870c-446c3cba598f HTTP/1.1" 301 0
+"GET /books/ad11af99-0503-4ccf-870c-446c3cba598f/ HTTP/1.1" 200 99
+"GET /books/ HTTP/1.1" 200 1506
+"GET /books/c066d53b-0e46-433e-b375-57aa6ca32940 HTTP/1.1" 301 0
+"GET /books/c066d53b-0e46-433e-b375-57aa6ca32940/ HTTP/1.1" 200 279
+"GET /books/ HTTP/1.1" 200 1506
+"GET /books/b5b9d9ea-1d72-4134-adaf-d86c12cedbba/ HTTP/1.1" 200 435
+"GET /readers/ HTTP/1.1" 200 764
+"GET /readers/e8e82417-b995-42d3-b11d-cfdb11499ab7 HTTP/1.1" 301 0
+"GET /readers/e8e82417-b995-42d3-b11d-cfdb11499ab7/ HTTP/1.1" 200 110
+"GET /readers/ HTTP/1.1" 200 764
+"GET /readers/e8e82417-b995-42d3-b11d-cfdb11499ab7/ HTTP/1.1" 200 110
+"GET /books/ HTTP/1.1" 200 1506
+"GET /books/ad11af99-0503-4ccf-870c-446c3cba598f/ HTTP/1.1" 200 99
+"GET /readers/ HTTP/1.1" 200 764
+"GET /readers/10d13330-034c-4653-a15b-a8f5a6611fda HTTP/1.1" 301 0
+"GET /readers/10d13330-034c-4653-a15b-a8f5a6611fda/ HTTP/1.1" 200 105
+"GET /readers/ HTTP/1.1" 200 764
+"GET /readers/05e98fcf-eb48-40c8-a3b5-8eb12e1cb245/ HTTP/1.1" 200 107
+"GET /books/ HTTP/1.1" 200 1506
+"GET /books/b5b9d9ea-1d72-4134-adaf-d86c12cedbba/ HTTP/1.1" 200 435
+"GET /books/ HTTP/1.1" 200 1506
+"GET /readers/ HTTP/1.1" 200 764
+"GET /readers/341f19f4-c927-4235-8e54-748013c1241a/ HTTP/1.1" 200 110
+"GET /books/ HTTP/1.1" 200 1506
+"GET /books/7ebd3e0a-400a-49e8-b33c-a57ddddcaeb9 HTTP/1.1" 301 0
+"GET /books/7ebd3e0a-400a-49e8-b33c-a57ddddcaeb9/ HTTP/1.1" 200 434
+"GET /readers/ HTTP/1.1" 200 764
+"GET /books/ HTTP/1.1" 200 1506
+"GET /books/c066d53b-0e46-433e-b375-57aa6ca32940 HTTP/1.1" 301 0
+"GET /books/c066d53b-0e46-433e-b375-57aa6ca32940/ HTTP/1.1" 200 279
+"GET /books/ HTTP/1.1" 200 1506
+"GET /books/c066d53b-0e46-433e-b375-57aa6ca32940/ HTTP/1.1" 200 279
+"GET /authors/ HTTP/1.1" 200 760
+"GET /readers/ HTTP/1.1" 200 764
+"GET /readers/05e98fcf-eb48-40c8-a3b5-8eb12e1cb245/ HTTP/1.1" 200 107
+"GET /books/ HTTP/1.1" 200 1506
+"GET /books/c066d53b-0e46-433e-b375-57aa6ca32940/ HTTP/1.1" 200 279
+"GET /authors/ HTTP/1.1" 200 760
+"GET /authors/ab10ab11-1ecd-43fb-babb-64d76dd4aeed HTTP/1.1" 301 0
+"GET /authors/ab10ab11-1ecd-43fb-babb-64d76dd4aeed/ HTTP/1.1" 200 134
+"GET /books/ HTTP/1.1" 200 1506
+"GET /books/ad11af99-0503-4ccf-870c-446c3cba598f HTTP/1.1" 301 0
+"GET /books/ad11af99-0503-4ccf-870c-446c3cba598f/ HTTP/1.1" 200 99
+"OPTIONS /readers/ad11af99-0503-4ccf-870c-446c3cba598f/ HTTP/1.1" 200 0
+"GET /readers/ HTTP/1.1" 200 764
+Not Found: /readers/ad11af99-0503-4ccf-870c-446c3cba598f/
+"DELETE /readers/ad11af99-0503-4ccf-870c-446c3cba598f/ HTTP/1.1" 404 2
+"GET /books/ HTTP/1.1" 200 1506
+"GET /books/ad11af99-0503-4ccf-870c-446c3cba598f/ HTTP/1.1" 200 99
+"OPTIONS /readers/ad11af99-0503-4ccf-870c-446c3cba598f/ HTTP/1.1" 200 0
+Not Found: /readers/ad11af99-0503-4ccf-870c-446c3cba598f/
+"DELETE /readers/ad11af99-0503-4ccf-870c-446c3cba598f/ HTTP/1.1" 404 2
+"GET /readers/ HTTP/1.1" 200 764
+"GET /books/ HTTP/1.1" 200 1506
+"GET /books/ HTTP/1.1" 200 1506
+"GET /books/ad11af99-0503-4ccf-870c-446c3cba598f HTTP/1.1" 301 0
+"GET /books/ad11af99-0503-4ccf-870c-446c3cba598f/ HTTP/1.1" 200 99
+"OPTIONS /readers/ad11af99-0503-4ccf-870c-446c3cba598f/ HTTP/1.1" 200 0
+Not Found: /readers/ad11af99-0503-4ccf-870c-446c3cba598f/
+"DELETE /readers/ad11af99-0503-4ccf-870c-446c3cba598f/ HTTP/1.1" 404 2
+"GET /readers/ HTTP/1.1" 200 764
+"GET /books/ HTTP/1.1" 200 1506
+"GET /books/ HTTP/1.1" 200 1506
+"GET /books/ad11af99-0503-4ccf-870c-446c3cba598f/ HTTP/1.1" 200 99
+"GET /books/ HTTP/1.1" 200 1506
+"GET /books/ad11af99-0503-4ccf-870c-446c3cba598f/ HTTP/1.1" 200 99
+"OPTIONS /books/ad11af99-0503-4ccf-870c-446c3cba598f/ HTTP/1.1" 200 0
+"DELETE /books/ad11af99-0503-4ccf-870c-446c3cba598f/ HTTP/1.1" 204 2
+"GET /books/ HTTP/1.1" 200 1506
+"GET /books/ HTTP/1.1" 200 1406
+"GET /authors/ HTTP/1.1" 200 760
+"GET /readers/ HTTP/1.1" 200 764
+"GET /readers/10d13330-034c-4653-a15b-a8f5a6611fda/ HTTP/1.1" 200 105
+"GET /readers/ HTTP/1.1" 200 764
+"GET /readers/341f19f4-c927-4235-8e54-748013c1241a/ HTTP/1.1" 200 110
+"GET /books/ HTTP/1.1" 200 1406
+"GET /books/c066d53b-0e46-433e-b375-57aa6ca32940 HTTP/1.1" 301 0
+"GET /books/c066d53b-0e46-433e-b375-57aa6ca32940/ HTTP/1.1" 200 279
+"GET /authors/ HTTP/1.1" 200 760
+"GET /authors/f487f2eb-fdce-4a6e-9681-6c02486b7945 HTTP/1.1" 301 0
+"GET /authors/f487f2eb-fdce-4a6e-9681-6c02486b7945/ HTTP/1.1" 200 128
+"GET /authors/ HTTP/1.1" 200 760
+"GET /books/ HTTP/1.1" 200 1406
+"GET /books/b5b9d9ea-1d72-4134-adaf-d86c12cedbba HTTP/1.1" 301 0
+"GET /books/b5b9d9ea-1d72-4134-adaf-d86c12cedbba/ HTTP/1.1" 200 435
+"GET /books/ HTTP/1.1" 200 1406
+"GET /books/ HTTP/1.1" 200 1406
+"GET /authors/ HTTP/1.1" 200 760
+"GET /readers/ HTTP/1.1" 200 764
+"GET /readers/f38b2554-608d-45d7-9863-56367c232a65/ HTTP/1.1" 200 105
+"GET /authors/ HTTP/1.1" 200 760
+"GET /books/ HTTP/1.1" 200 1406
+"GET /books/ HTTP/1.1" 200 1406
+"GET /books/ HTTP/1.1" 200 1406
+"GET /books/ HTTP/1.1" 200 1406
+"GET /books/ HTTP/1.1" 200 1406
+"GET /books/ HTTP/1.1" 200 1406
+"GET /authors/ HTTP/1.1" 200 760
+"GET /authors/ HTTP/1.1" 200 760
+"GET /books/ HTTP/1.1" 200 1406
+"GET /books/ HTTP/1.1" 200 1406
+"GET /books/ HTTP/1.1" 200 1406
+"GET /books/ HTTP/1.1" 200 1406
+"GET /authors/ HTTP/1.1" 200 760
+"GET /books/ HTTP/1.1" 200 1406
+"GET /readers/ HTTP/1.1" 200 764
+"GET /books/ HTTP/1.1" 200 1406
+"GET /books/c066d53b-0e46-433e-b375-57aa6ca32940/ HTTP/1.1" 200 279
+"GET /books/ HTTP/1.1" 200 1406
+"GET /authors/ HTTP/1.1" 200 760
+"GET /books/ HTTP/1.1" 200 1406
+"GET /authors/ HTTP/1.1" 200 760
+"GET /authors/ HTTP/1.1" 200 760
+"GET /authors/ HTTP/1.1" 200 760
+"GET /books/ HTTP/1.1" 200 1406
+"GET /authors/ HTTP/1.1" 200 760
+"GET /books/ HTTP/1.1" 200 1406
+"GET /authors/ HTTP/1.1" 200 760
+"GET /authors/ HTTP/1.1" 200 760
+"GET /authors/ HTTP/1.1" 200 760
+"GET /authors/ HTTP/1.1" 200 760
+"GET /books/ HTTP/1.1" 200 1406
+"GET /readers/ HTTP/1.1" 200 764
+"GET /books/ HTTP/1.1" 200 1406
+"GET /authors/ HTTP/1.1" 200 760
+"GET /authors/ HTTP/1.1" 200 760
+"POST /authors/ HTTP/1.1" 201 131
+"GET /authors/ HTTP/1.1" 200 892
+"GET /books/ HTTP/1.1" 200 1406
+"GET /books/ HTTP/1.1" 200 1406
+"GET /authors/ HTTP/1.1" 200 892
+"GET /authors/ HTTP/1.1" 200 892
+"GET /authors/5af161ed-82a4-41ad-8720-5ae365dd59b5 HTTP/1.1" 301 0
+"GET /authors/5af161ed-82a4-41ad-8720-5ae365dd59b5/ HTTP/1.1" 200 120
+"GET /readers/ HTTP/1.1" 200 764
+"GET /books/ HTTP/1.1" 200 1406
+"POST /books/ HTTP/1.1" 201 100
+"GET /books/ HTTP/1.1" 200 1507
+"GET /books/ HTTP/1.1" 200 14376
+"GET /static/rest_framework/js/jquery-3.4.1.min.js HTTP/1.1" 304 0
+"GET /static/rest_framework/js/default.js HTTP/1.1" 304 0
+"GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0
+"GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0
+"GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0
+"GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 200 3385
+"GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 121457
+"GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0
+"GET /static/rest_framework/css/prettify.css HTTP/1.1" 200 817
+"GET /static/rest_framework/css/default.css HTTP/1.1" 200 1131
+"GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
+"GET /books/ HTTP/1.1" 200 1507
+"GET /readers/ HTTP/1.1" 200 764
+"GET /books/ HTTP/1.1" 200 1507
+"GET /authors/ HTTP/1.1" 200 892
+"GET /books/ HTTP/1.1" 200 1507
+"GET /authors/ HTTP/1.1" 200 892
+"GET /authors/69a8e6ad-fd3d-44da-8c0f-64c6646e31ed HTTP/1.1" 301 0
+"GET /authors/69a8e6ad-fd3d-44da-8c0f-64c6646e31ed/ HTTP/1.1" 200 131
+"GET /books/ HTTP/1.1" 200 1507
+"POST /books/ HTTP/1.1" 201 101
+"GET /books/ HTTP/1.1" 200 1609
+"GET /books/ HTTP/1.1" 200 1609
+"GET /authors/ HTTP/1.1" 200 892
+"GET /authors/69a8e6ad-fd3d-44da-8c0f-64c6646e31ed HTTP/1.1" 301 0
+"GET /authors/69a8e6ad-fd3d-44da-8c0f-64c6646e31ed/ HTTP/1.1" 200 131
+"GET /books/ HTTP/1.1" 200 1609
+"GET /authors/ HTTP/1.1" 200 892
+"GET /authors/5af161ed-82a4-41ad-8720-5ae365dd59b5 HTTP/1.1" 301 0
+"GET /authors/5af161ed-82a4-41ad-8720-5ae365dd59b5/ HTTP/1.1" 200 120
+"GET /books/ HTTP/1.1" 200 1609
+"GET /authors/ HTTP/1.1" 200 892
+"GET /authors/de4b238c-2d76-4ffd-850b-d326259749db HTTP/1.1" 301 0
+"GET /authors/de4b238c-2d76-4ffd-850b-d326259749db/ HTTP/1.1" 200 120
+"GET /books/ HTTP/1.1" 200 1609
+Bad Request: /books/
+"POST /books/ HTTP/1.1" 400 29
+"GET /books/ HTTP/1.1" 200 1609
+"GET /books/ HTTP/1.1" 200 1609
+"GET /authors/ HTTP/1.1" 200 892
+"GET /books/ HTTP/1.1" 200 1609
+"GET /readers/ HTTP/1.1" 200 764
+"GET /readers/10d13330-034c-4653-a15b-a8f5a6611fda HTTP/1.1" 301 0
+"GET /readers/10d13330-034c-4653-a15b-a8f5a6611fda/ HTTP/1.1" 200 105
+"GET /books/ HTTP/1.1" 200 1609
+"POST /books/ HTTP/1.1" 201 168
+"GET /books/ HTTP/1.1" 200 1609
+Bad Request: /books/
+"POST /books/ HTTP/1.1" 400 29
+"GET /books/ HTTP/1.1" 200 2023
+"GET /books/ HTTP/1.1" 200 2023
+"GET /books/ HTTP/1.1" 200 2023
+"GET /books/ HTTP/1.1" 200 2023
+"GET /books/ HTTP/1.1" 200 2023
+"GET /books/ HTTP/1.1" 200 2023
+"GET /books/ HTTP/1.1" 200 2023
+"GET /authors/ HTTP/1.1" 200 892
+"GET /books/ HTTP/1.1" 200 2023
+"GET /books/ HTTP/1.1" 200 2023
+"GET /books/596d59dc-2529-43e4-9432-033a9e0f979d HTTP/1.1" 301 0
+"GET /books/596d59dc-2529-43e4-9432-033a9e0f979d/ HTTP/1.1" 200 413
+"GET /authors/ HTTP/1.1" 200 892
+"GET /readers/ HTTP/1.1" 200 764
+"GET /authors/ HTTP/1.1" 200 892
+"GET /books/ HTTP/1.1" 200 2023
+"GET /authors/ HTTP/1.1" 200 892
+"GET /authors/5af161ed-82a4-41ad-8720-5ae365dd59b5/ HTTP/1.1" 200 120
+"GET /books/ HTTP/1.1" 200 2023
+Bad Request: /books/
+"POST /books/ HTTP/1.1" 400 29
+"GET /books/ HTTP/1.1" 200 2023
+"GET /books/ HTTP/1.1" 200 2023
+"GET /books/ HTTP/1.1" 200 2023
+"GET /books/ HTTP/1.1" 200 2023
+"GET /books/ HTTP/1.1" 200 2023
+"GET /books/ HTTP/1.1" 200 2023
+"GET /books/ HTTP/1.1" 200 2023
+"GET /readers/ HTTP/1.1" 200 764
+"GET /authors/ HTTP/1.1" 200 892
+"GET /authors/f487f2eb-fdce-4a6e-9681-6c02486b7945/ HTTP/1.1" 200 128
+"GET /readers/ HTTP/1.1" 200 764
+"GET /readers/341f19f4-c927-4235-8e54-748013c1241a HTTP/1.1" 301 0
+"GET /readers/341f19f4-c927-4235-8e54-748013c1241a/ HTTP/1.1" 200 110
+"GET /books/ HTTP/1.1" 200 2023
+"POST /books/ HTTP/1.1" 201 168
+"GET /books/ HTTP/1.1" 200 2023
+"GET /books/ HTTP/1.1" 200 2450
+"GET /authors/ HTTP/1.1" 200 892
+"GET /authors/69a8e6ad-fd3d-44da-8c0f-64c6646e31ed HTTP/1.1" 301 0
+"GET /authors/69a8e6ad-fd3d-44da-8c0f-64c6646e31ed/ HTTP/1.1" 200 131
+"GET /books/ HTTP/1.1" 200 2450
+Bad Request: /books/
+"POST /books/ HTTP/1.1" 400 29
+"GET /books/ HTTP/1.1" 200 2450
+"GET /books/ HTTP/1.1" 200 2450
+"GET /books/ HTTP/1.1" 200 2450
+"GET /books/ HTTP/1.1" 200 2450
+"GET /books/ HTTP/1.1" 200 2450
+Bad Request: /books/
+"POST /books/ HTTP/1.1" 400 29
+"GET /books/ HTTP/1.1" 200 2450
+"GET /books/ HTTP/1.1" 200 2450
+"GET /readers/ HTTP/1.1" 200 764
+"GET /readers/f38b2554-608d-45d7-9863-56367c232a65 HTTP/1.1" 301 0
+"GET /readers/f38b2554-608d-45d7-9863-56367c232a65/ HTTP/1.1" 200 105
+"GET /books/ HTTP/1.1" 200 2450
+Bad Request: /books/
+"POST /books/ HTTP/1.1" 400 29
+"GET /books/ HTTP/1.1" 200 2450
+"GET /books/ HTTP/1.1" 200 2450
+"GET /books/ HTTP/1.1" 200 2450
+"GET /readers/ HTTP/1.1" 200 764
+"GET /books/ HTTP/1.1" 200 2450
+"GET /authors/ HTTP/1.1" 200 892
+"GET /authors/10af1a36-bd60-49af-8c65-0125d51a1993 HTTP/1.1" 301 0
+"GET /authors/10af1a36-bd60-49af-8c65-0125d51a1993/ HTTP/1.1" 200 120
+"GET /authors/ HTTP/1.1" 200 892
+"GET /authors/ab10ab11-1ecd-43fb-babb-64d76dd4aeed HTTP/1.1" 301 0
+"GET /authors/ab10ab11-1ecd-43fb-babb-64d76dd4aeed/ HTTP/1.1" 200 134
+"GET /authors/ HTTP/1.1" 200 892
+"GET /authors/ab10ab11-1ecd-43fb-babb-64d76dd4aeed/ HTTP/1.1" 200 134
+"GET /authors/ HTTP/1.1" 200 892
+"GET /authors/ab10ab11-1ecd-43fb-babb-64d76dd4aeed/ HTTP/1.1" 200 134
+"GET /books/ HTTP/1.1" 200 2450
+"GET /authors/ HTTP/1.1" 200 892
+"GET /books/ HTTP/1.1" 200 2450
+"GET /books/c066d53b-0e46-433e-b375-57aa6ca32940 HTTP/1.1" 301 0
+"GET /books/c066d53b-0e46-433e-b375-57aa6ca32940/ HTTP/1.1" 200 279
+"GET /authors/ HTTP/1.1" 200 892
+"GET /authors/ab10ab11-1ecd-43fb-babb-64d76dd4aeed/ HTTP/1.1" 200 134
+"GET /authors/ HTTP/1.1" 200 892
+"GET /authors/10af1a36-bd60-49af-8c65-0125d51a1993 HTTP/1.1" 301 0
+"GET /authors/10af1a36-bd60-49af-8c65-0125d51a1993/ HTTP/1.1" 200 120
+"OPTIONS /authors/10af1a36-bd60-49af-8c65-0125d51a1993/ HTTP/1.1" 200 0
+"PATCH /authors/10af1a36-bd60-49af-8c65-0125d51a1993/ HTTP/1.1" 202 134
+"GET /authors/10af1a36-bd60-49af-8c65-0125d51a1993/ HTTP/1.1" 200 134
+"GET /books/ HTTP/1.1" 200 2450
+"GET /books/b5b9d9ea-1d72-4134-adaf-d86c12cedbba/ HTTP/1.1" 200 435
+"GET /readers/ HTTP/1.1" 200 764
+"GET /readers/f38b2554-608d-45d7-9863-56367c232a65/ HTTP/1.1" 200 105
+"GET /readers/ HTTP/1.1" 200 764
+"GET /books/ HTTP/1.1" 200 2450
+"GET /authors/ HTTP/1.1" 200 906
+"GET /authors/69a8e6ad-fd3d-44da-8c0f-64c6646e31ed HTTP/1.1" 301 0
+"GET /authors/69a8e6ad-fd3d-44da-8c0f-64c6646e31ed/ HTTP/1.1" 200 131
+"GET /books/ HTTP/1.1" 200 2450
+"GET /authors/ HTTP/1.1" 200 906
+"GET /authors/f487f2eb-fdce-4a6e-9681-6c02486b7945 HTTP/1.1" 301 0
+"GET /authors/f487f2eb-fdce-4a6e-9681-6c02486b7945/ HTTP/1.1" 200 128
+"GET /authors/ HTTP/1.1" 200 906
+"GET /authors/ab10ab11-1ecd-43fb-babb-64d76dd4aeed HTTP/1.1" 301 0
+"GET /authors/ab10ab11-1ecd-43fb-babb-64d76dd4aeed/ HTTP/1.1" 200 134
+"GET /readers/ HTTP/1.1" 200 764
+"GET /readers/ HTTP/1.1" 200 764
+"GET /readers/ HTTP/1.1" 200 764
+"GET /readers/ HTTP/1.1" 200 764
+"GET /readers/ HTTP/1.1" 200 764
+"GET /books/ HTTP/1.1" 200 2450
+"GET /readers/ HTTP/1.1" 200 764
+"GET /readers/ HTTP/1.1" 200 764
+"GET /readers/ HTTP/1.1" 200 764
+"GET /readers/ HTTP/1.1" 200 764
+"GET /books/ HTTP/1.1" 200 2450
+"GET /books/c066d53b-0e46-433e-b375-57aa6ca32940/ HTTP/1.1" 200 279
+"GET /readers/ HTTP/1.1" 200 764
+"GET /books/ HTTP/1.1" 200 2450
+"GET /readers/ HTTP/1.1" 200 764
+"GET /books/ HTTP/1.1" 200 2450
+"GET /readers/ HTTP/1.1" 200 764
+"GET /authors/ HTTP/1.1" 200 906
+"GET /readers/ HTTP/1.1" 200 764
+"GET /readers/ HTTP/1.1" 200 764
+"GET /readers/ HTTP/1.1" 200 764
+"GET /readers/ HTTP/1.1" 200 764
+"GET /books/ HTTP/1.1" 200 2450
+"GET /authors/ HTTP/1.1" 200 906
+"GET /readers/ HTTP/1.1" 200 764
+"GET /books/ HTTP/1.1" 200 2450
+"GET /authors/ HTTP/1.1" 200 906
+"GET /books/ HTTP/1.1" 200 2450
+"GET /readers/ HTTP/1.1" 200 764
+"GET /books/ HTTP/1.1" 200 2450
+"GET /authors/ HTTP/1.1" 200 906
+"GET /books/ HTTP/1.1" 200 2450
+"GET /readers/ HTTP/1.1" 200 764
+"GET /authors/ HTTP/1.1" 200 906
+"GET /books/ HTTP/1.1" 200 2450
+"GET /readers/ HTTP/1.1" 200 764
+"GET /readers/ HTTP/1.1" 200 764
+"GET /books/ HTTP/1.1" 200 2450
+"GET /books/ HTTP/1.1" 200 2450
+"GET /readers/ HTTP/1.1" 200 764
+"GET /readers/ HTTP/1.1" 200 764
+"GET /readers/ HTTP/1.1" 200 764
+"GET /readers/341f19f4-c927-4235-8e54-748013c1241a/ HTTP/1.1" 200 110
+"GET /readers/ HTTP/1.1" 200 764
+"GET /readers/341f19f4-c927-4235-8e54-748013c1241a HTTP/1.1" 301 0
+"GET /readers/341f19f4-c927-4235-8e54-748013c1241a/ HTTP/1.1" 200 110
+"GET /books/ HTTP/1.1" 200 2450
+"GET /books/c066d53b-0e46-433e-b375-57aa6ca32940 HTTP/1.1" 301 0
+"GET /books/c066d53b-0e46-433e-b375-57aa6ca32940/ HTTP/1.1" 200 279
+"GET /readers/ HTTP/1.1" 200 764
+"GET /readers/05e98fcf-eb48-40c8-a3b5-8eb12e1cb245 HTTP/1.1" 301 0
+"GET /readers/05e98fcf-eb48-40c8-a3b5-8eb12e1cb245/ HTTP/1.1" 200 107
+"GET /readers/ HTTP/1.1" 200 764
+"GET /readers/05e98fcf-eb48-40c8-a3b5-8eb12e1cb245/ HTTP/1.1" 200 107
+"GET /readers/ HTTP/1.1" 200 764
+"GET /readers/05e98fcf-eb48-40c8-a3b5-8eb12e1cb245/ HTTP/1.1" 200 107
+"GET /readers/ HTTP/1.1" 200 764
+"GET /readers/05e98fcf-eb48-40c8-a3b5-8eb12e1cb245 HTTP/1.1" 301 0
+"GET /readers/05e98fcf-eb48-40c8-a3b5-8eb12e1cb245/ HTTP/1.1" 200 107
+"GET /readers/ HTTP/1.1" 200 764
+"GET /readers/05e98fcf-eb48-40c8-a3b5-8eb12e1cb245/ HTTP/1.1" 200 107
+"GET /readers/ HTTP/1.1" 200 764
+"GET /readers/05e98fcf-eb48-40c8-a3b5-8eb12e1cb245 HTTP/1.1" 301 0
+"GET /readers/05e98fcf-eb48-40c8-a3b5-8eb12e1cb245/ HTTP/1.1" 200 107
+"GET /readers/ HTTP/1.1" 200 764
+"GET /readers/05e98fcf-eb48-40c8-a3b5-8eb12e1cb245 HTTP/1.1" 301 0
+"GET /readers/05e98fcf-eb48-40c8-a3b5-8eb12e1cb245/ HTTP/1.1" 200 107
+"GET /books/ HTTP/1.1" 200 2450
+"GET /books/c066d53b-0e46-433e-b375-57aa6ca32940/ HTTP/1.1" 200 279
+"GET /readers/ HTTP/1.1" 200 764
+"GET /readers/05e98fcf-eb48-40c8-a3b5-8eb12e1cb245/ HTTP/1.1" 200 107
+"GET /readers/ HTTP/1.1" 200 764
+"GET /books/ HTTP/1.1" 200 2450
+"GET /books/c066d53b-0e46-433e-b375-57aa6ca32940 HTTP/1.1" 301 0
+"GET /books/c066d53b-0e46-433e-b375-57aa6ca32940/ HTTP/1.1" 200 279
+"GET /books/ HTTP/1.1" 200 2450
+"GET /books/b5b9d9ea-1d72-4134-adaf-d86c12cedbba/ HTTP/1.1" 200 435
+"GET /books/ HTTP/1.1" 200 2450
+"GET /books/b5b9d9ea-1d72-4134-adaf-d86c12cedbba/ HTTP/1.1" 200 435
+"GET /books/ HTTP/1.1" 200 2450
+"GET /books/b5b9d9ea-1d72-4134-adaf-d86c12cedbba/ HTTP/1.1" 200 435
+"GET /books/ HTTP/1.1" 200 2450
+"GET /books/7ebd3e0a-400a-49e8-b33c-a57ddddcaeb9 HTTP/1.1" 301 0
+"GET /books/7ebd3e0a-400a-49e8-b33c-a57ddddcaeb9/ HTTP/1.1" 200 434
+"GET /books/ HTTP/1.1" 200 2450
+"GET /books/b5b9d9ea-1d72-4134-adaf-d86c12cedbba/ HTTP/1.1" 200 435
+"GET /books/ HTTP/1.1" 200 2450
+"GET /books/b5b9d9ea-1d72-4134-adaf-d86c12cedbba/ HTTP/1.1" 200 435
+"GET /books/ HTTP/1.1" 200 2450
+"GET /books/7ebd3e0a-400a-49e8-b33c-a57ddddcaeb9/ HTTP/1.1" 200 434
+"GET /books/ HTTP/1.1" 200 2450
+"GET /books/c066d53b-0e46-433e-b375-57aa6ca32940 HTTP/1.1" 301 0
+"GET /books/c066d53b-0e46-433e-b375-57aa6ca32940/ HTTP/1.1" 200 279
+"GET /books/ HTTP/1.1" 200 2450
+"GET /books/f94d8b8e-3773-4748-8751-ff5e0fb0e146 HTTP/1.1" 301 0
+"GET /books/f94d8b8e-3773-4748-8751-ff5e0fb0e146/ HTTP/1.1" 200 253
+"GET /books/ HTTP/1.1" 200 2450
+"GET /books/7ebd3e0a-400a-49e8-b33c-a57ddddcaeb9/ HTTP/1.1" 200 434
+"GET /books/ HTTP/1.1" 200 2450
+"GET /books/b5b9d9ea-1d72-4134-adaf-d86c12cedbba/ HTTP/1.1" 200 435
+"GET /books/ HTTP/1.1" 200 2450
+"GET /books/7ebd3e0a-400a-49e8-b33c-a57ddddcaeb9/ HTTP/1.1" 200 434
+"GET /books/ HTTP/1.1" 200 2450
+"GET /books/b5b9d9ea-1d72-4134-adaf-d86c12cedbba/ HTTP/1.1" 200 435
+"GET /books/ HTTP/1.1" 200 2450
+"GET /books/7ebd3e0a-400a-49e8-b33c-a57ddddcaeb9/ HTTP/1.1" 200 434
+"GET /books/ HTTP/1.1" 200 2450
+"GET /books/b5b9d9ea-1d72-4134-adaf-d86c12cedbba/ HTTP/1.1" 200 435
+"GET /books/ HTTP/1.1" 200 2450
+"GET /books/f94d8b8e-3773-4748-8751-ff5e0fb0e146/ HTTP/1.1" 200 253
+"GET /books/ HTTP/1.1" 200 2450
+"GET /books/7ebd3e0a-400a-49e8-b33c-a57ddddcaeb9/ HTTP/1.1" 200 434
+"GET /books/ HTTP/1.1" 200 2450
+"GET /books/b5b9d9ea-1d72-4134-adaf-d86c12cedbba/ HTTP/1.1" 200 435
+"GET /books/ HTTP/1.1" 200 2450
+"GET /books/c066d53b-0e46-433e-b375-57aa6ca32940/ HTTP/1.1" 200 279
+"GET /books/ HTTP/1.1" 200 2450
+"GET /books/b5b9d9ea-1d72-4134-adaf-d86c12cedbba HTTP/1.1" 301 0
+"GET /books/b5b9d9ea-1d72-4134-adaf-d86c12cedbba/ HTTP/1.1" 200 435
+"GET /books/ HTTP/1.1" 200 2450
+"GET /books/b5b9d9ea-1d72-4134-adaf-d86c12cedbba/ HTTP/1.1" 200 435
+"GET /books/ HTTP/1.1" 200 2450
+"GET /books/b5b9d9ea-1d72-4134-adaf-d86c12cedbba HTTP/1.1" 301 0
+"GET /books/b5b9d9ea-1d72-4134-adaf-d86c12cedbba/ HTTP/1.1" 200 435
+"GET /books/ HTTP/1.1" 200 2450
+"GET /books/b5b9d9ea-1d72-4134-adaf-d86c12cedbba/ HTTP/1.1" 200 435
+"GET /books/ HTTP/1.1" 200 2450
+"GET /books/b5b9d9ea-1d72-4134-adaf-d86c12cedbba/ HTTP/1.1" 200 435
+"GET /readers/ HTTP/1.1" 200 764
+"GET /books/ HTTP/1.1" 200 2450
+"GET /books/ca421dda-4a6f-4c79-872a-162a2bb73efc HTTP/1.1" 301 0
+"GET /books/ca421dda-4a6f-4c79-872a-162a2bb73efc/ HTTP/1.1" 200 100
+"GET /books/ HTTP/1.1" 200 2450
+"GET /books/7ebd3e0a-400a-49e8-b33c-a57ddddcaeb9 HTTP/1.1" 301 0
+"GET /books/7ebd3e0a-400a-49e8-b33c-a57ddddcaeb9/ HTTP/1.1" 200 434
+"GET /books/ HTTP/1.1" 200 2450
+"GET /books/c066d53b-0e46-433e-b375-57aa6ca32940 HTTP/1.1" 301 0
+"GET /books/c066d53b-0e46-433e-b375-57aa6ca32940/ HTTP/1.1" 200 279
+"GET /readers/ HTTP/1.1" 200 764
+"GET /authors/ HTTP/1.1" 200 906
+"GET /books/ HTTP/1.1" 200 2450
+"GET /authors/ HTTP/1.1" 200 906
+"GET /books/ HTTP/1.1" 200 2450
+"GET /readers/ HTTP/1.1" 200 764
+"GET /books/ HTTP/1.1" 200 2450
+"GET /books/c066d53b-0e46-433e-b375-57aa6ca32940/ HTTP/1.1" 200 279
+"GET /books/ HTTP/1.1" 200 2450
+"GET /books/c066d53b-0e46-433e-b375-57aa6ca32940/ HTTP/1.1" 200 279
+"GET /books/ HTTP/1.1" 200 2450
+"GET /books/cebb2216-f9f5-4e06-85be-3f870ae2c946 HTTP/1.1" 301 0
+"GET /books/cebb2216-f9f5-4e06-85be-3f870ae2c946/ HTTP/1.1" 200 101
+"GET /books/ HTTP/1.1" 200 2450
+"GET /books/2045a5f5-07d2-4eab-9f93-a17786c2942c HTTP/1.1" 301 0
+"GET /books/2045a5f5-07d2-4eab-9f93-a17786c2942c/ HTTP/1.1" 200 426
+"GET /books/ HTTP/1.1" 200 2450
+"GET /books/ HTTP/1.1" 200 2450
+"GET /books/596d59dc-2529-43e4-9432-033a9e0f979d HTTP/1.1" 301 0
+"GET /books/596d59dc-2529-43e4-9432-033a9e0f979d/ HTTP/1.1" 200 413
+"GET /books/ HTTP/1.1" 200 2450
+"GET /books/ HTTP/1.1" 200 2450
+"GET /authors/ HTTP/1.1" 200 906
+"GET /books/ HTTP/1.1" 200 2450
+"GET /authors/ HTTP/1.1" 200 906
+"GET /readers/ HTTP/1.1" 200 764
+"GET /authors/ HTTP/1.1" 200 906
+"GET /readers/ HTTP/1.1" 200 764
+"GET /books/ HTTP/1.1" 200 2450
+"GET /authors/ HTTP/1.1" 200 906
+"GET /books/ HTTP/1.1" 200 2450
+"GET /readers/ HTTP/1.1" 200 764
+"GET /books/ HTTP/1.1" 200 2450
+"GET /authors/ HTTP/1.1" 200 906
+"GET /authors/10af1a36-bd60-49af-8c65-0125d51a1993 HTTP/1.1" 301 0
+"GET /authors/10af1a36-bd60-49af-8c65-0125d51a1993/ HTTP/1.1" 200 134
+"GET /readers/ HTTP/1.1" 200 764
+"GET /books/ HTTP/1.1" 200 2450
+"GET /books/c066d53b-0e46-433e-b375-57aa6ca32940/ HTTP/1.1" 200 279
+"GET /books/ HTTP/1.1" 200 2450
+"GET /authors/ HTTP/1.1" 200 906
+"GET /authors/f487f2eb-fdce-4a6e-9681-6c02486b7945/ HTTP/1.1" 200 128
+"GET /books/ HTTP/1.1" 200 2450
+"GET /readers/ HTTP/1.1" 200 764
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/requesters/reader_requester.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /books/
+Traceback (most recent call last):
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/urllib3/connection.py", line 157, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/urllib3/util/connection.py", line 84, in create_connection
+    raise err
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/urllib3/util/connection.py", line 74, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 61] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/urllib3/connectionpool.py", line 672, in urlopen
+    chunked=chunked,
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/urllib3/connectionpool.py", line 387, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/http/client.py", line 1229, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/http/client.py", line 1275, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/http/client.py", line 1224, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/http/client.py", line 1016, in _send_output
+    self.send(msg)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/http/client.py", line 956, in send
+    self.connect()
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/urllib3/connection.py", line 184, in connect
+    conn = self._new_conn()
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/urllib3/connection.py", line 169, in _new_conn
+    self, "Failed to establish a new connection: %s" % e
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x10d829710>: Failed to establish a new connection: [Errno 61] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/requests/adapters.py", line 449, in send
+    timeout=timeout
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/urllib3/connectionpool.py", line 720, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/urllib3/util/retry.py", line 436, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='127.0.0.1', port=8001): Max retries exceeded with url: /readers/341f19f4-c927-4235-8e54-748013c1241a/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10d829710>: Failed to establish a new connection: [Errno 61] Connection refused'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/views.py", line 62, in get
+    data, code = self.REQUESTER.get_all_books(request=request)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/requesters/book_requester.py", line 102, in get_all_books
+    response_data[i], status_code = self.set_reader(request, response_data[i])
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/requesters/book_requester.py", line 20, in set_reader
+    reader_json, reader_status = ReaderRequester().get_reader(request=request, uuid=reader_id)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/requesters/reader_requester.py", line 27, in get_reader
+    response = self.get_request(self.READER_HOST + f'{uuid}/')
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/requesters/requester.py", line 11, in get_request
+    response = requests.get(url)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/requests/api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/requests/api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/requests/sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='127.0.0.1', port=8001): Max retries exceeded with url: /readers/341f19f4-c927-4235-8e54-748013c1241a/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10d829710>: Failed to establish a new connection: [Errno 61] Connection refused'))
+"GET /books/ HTTP/1.1" 500 20346
+Internal Server Error: /books/
+Traceback (most recent call last):
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/urllib3/connection.py", line 157, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/urllib3/util/connection.py", line 84, in create_connection
+    raise err
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/urllib3/util/connection.py", line 74, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 61] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/urllib3/connectionpool.py", line 672, in urlopen
+    chunked=chunked,
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/urllib3/connectionpool.py", line 387, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/http/client.py", line 1229, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/http/client.py", line 1275, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/http/client.py", line 1224, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/http/client.py", line 1016, in _send_output
+    self.send(msg)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/http/client.py", line 956, in send
+    self.connect()
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/urllib3/connection.py", line 184, in connect
+    conn = self._new_conn()
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/urllib3/connection.py", line 169, in _new_conn
+    self, "Failed to establish a new connection: %s" % e
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x10d889898>: Failed to establish a new connection: [Errno 61] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/requests/adapters.py", line 449, in send
+    timeout=timeout
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/urllib3/connectionpool.py", line 720, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/urllib3/util/retry.py", line 436, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='127.0.0.1', port=8001): Max retries exceeded with url: /readers/341f19f4-c927-4235-8e54-748013c1241a/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10d889898>: Failed to establish a new connection: [Errno 61] Connection refused'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/views.py", line 62, in get
+    data, code = self.REQUESTER.get_all_books(request=request)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/requesters/book_requester.py", line 102, in get_all_books
+    response_data[i], status_code = self.set_reader(request, response_data[i])
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/requesters/book_requester.py", line 20, in set_reader
+    reader_json, reader_status = ReaderRequester().get_reader(request=request, uuid=reader_id)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/requesters/reader_requester.py", line 27, in get_reader
+    response = self.get_request(self.READER_HOST + f'{uuid}/')
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/requesters/requester.py", line 11, in get_request
+    response = requests.get(url)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/requests/api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/requests/api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/requests/sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='127.0.0.1', port=8001): Max retries exceeded with url: /readers/341f19f4-c927-4235-8e54-748013c1241a/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10d889898>: Failed to establish a new connection: [Errno 61] Connection refused'))
+"GET /books/ HTTP/1.1" 500 20346
+"GET /authors/ HTTP/1.1" 200 906
+Internal Server Error: /readers/
+Traceback (most recent call last):
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/urllib3/connection.py", line 157, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/urllib3/util/connection.py", line 84, in create_connection
+    raise err
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/urllib3/util/connection.py", line 74, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 61] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/urllib3/connectionpool.py", line 672, in urlopen
+    chunked=chunked,
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/urllib3/connectionpool.py", line 387, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/http/client.py", line 1229, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/http/client.py", line 1275, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/http/client.py", line 1224, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/http/client.py", line 1016, in _send_output
+    self.send(msg)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/http/client.py", line 956, in send
+    self.connect()
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/urllib3/connection.py", line 184, in connect
+    conn = self._new_conn()
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/urllib3/connection.py", line 169, in _new_conn
+    self, "Failed to establish a new connection: %s" % e
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x10d87fef0>: Failed to establish a new connection: [Errno 61] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/requests/adapters.py", line 449, in send
+    timeout=timeout
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/urllib3/connectionpool.py", line 720, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/urllib3/util/retry.py", line 436, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='127.0.0.1', port=8001): Max retries exceeded with url: /readers/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10d87fef0>: Failed to establish a new connection: [Errno 61] Connection refused'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/views.py", line 9, in get
+    data, code = self.REQUESTER.get_all_readers(request=request)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/requesters/reader_requester.py", line 13, in get_all_readers
+    response = self.get_request(host)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/requesters/requester.py", line 11, in get_request
+    response = requests.get(url)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/requests/api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/requests/api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/requests/sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='127.0.0.1', port=8001): Max retries exceeded with url: /readers/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10d87fef0>: Failed to establish a new connection: [Errno 61] Connection refused'))
+"GET /readers/ HTTP/1.1" 500 19801
+"GET /books/ HTTP/1.1" 200 2450
+"GET /readers/ HTTP/1.1" 200 764
+"GET /readers/ HTTP/1.1" 200 764
+"GET /readers/ HTTP/1.1" 200 764
+"GET /readers/ HTTP/1.1" 200 764
+"GET /readers/ HTTP/1.1" 200 764
+"GET /readers/f38b2554-608d-45d7-9863-56367c232a65/ HTTP/1.1" 200 105
+"GET /readers/ HTTP/1.1" 200 764
+"GET /readers/10d13330-034c-4653-a15b-a8f5a6611fda/ HTTP/1.1" 200 105
+"GET /readers/ HTTP/1.1" 200 764
+"GET /readers/ HTTP/1.1" 200 764
+"GET /readers/ HTTP/1.1" 200 764
+"GET /readers/ HTTP/1.1" 200 764
+"GET /readers/ HTTP/1.1" 200 764
+"GET /books/ HTTP/1.1" 200 2450
+"GET /authors/ HTTP/1.1" 200 906
+"GET /readers/ HTTP/1.1" 200 764
+"GET /books/ HTTP/1.1" 200 2450
+"GET /authors/ HTTP/1.1" 200 906
+"GET /readers/ HTTP/1.1" 200 764
+"GET /readers/ HTTP/1.1" 200 764
+"GET /readers/05e98fcf-eb48-40c8-a3b5-8eb12e1cb245/ HTTP/1.1" 200 107
+"GET /authors/ HTTP/1.1" 200 906
+"GET /readers/ HTTP/1.1" 200 764
+"GET /authors/ HTTP/1.1" 200 906
+"GET /authors/ab10ab11-1ecd-43fb-babb-64d76dd4aeed HTTP/1.1" 301 0
+"GET /authors/ab10ab11-1ecd-43fb-babb-64d76dd4aeed/ HTTP/1.1" 200 134
+"GET /books/ HTTP/1.1" 200 2450
+"GET /books/c066d53b-0e46-433e-b375-57aa6ca32940 HTTP/1.1" 301 0
+"GET /books/c066d53b-0e46-433e-b375-57aa6ca32940/ HTTP/1.1" 200 279
+"GET /books/ HTTP/1.1" 200 2450
+"GET /books/7ebd3e0a-400a-49e8-b33c-a57ddddcaeb9/ HTTP/1.1" 200 434
+"GET /books/ HTTP/1.1" 200 2450
+"GET /books/ HTTP/1.1" 200 2450
+"GET /books/b5b9d9ea-1d72-4134-adaf-d86c12cedbba/ HTTP/1.1" 200 435
+"GET /books/ HTTP/1.1" 200 2450
+"GET /books/7ebd3e0a-400a-49e8-b33c-a57ddddcaeb9/ HTTP/1.1" 200 434
+"GET /books/ HTTP/1.1" 200 2450
+"GET /books/c066d53b-0e46-433e-b375-57aa6ca32940/ HTTP/1.1" 200 279
+"GET /readers/ HTTP/1.1" 200 764
+"GET /books/ HTTP/1.1" 200 2450
+"GET /books/b5b9d9ea-1d72-4134-adaf-d86c12cedbba HTTP/1.1" 301 0
+"GET /books/b5b9d9ea-1d72-4134-adaf-d86c12cedbba/ HTTP/1.1" 200 435
+"GET /books/ HTTP/1.1" 200 2450
+"GET /books/c066d53b-0e46-433e-b375-57aa6ca32940 HTTP/1.1" 301 0
+"GET /books/c066d53b-0e46-433e-b375-57aa6ca32940/ HTTP/1.1" 200 279
+"GET /books/ HTTP/1.1" 200 2450
+"GET /books/c066d53b-0e46-433e-b375-57aa6ca32940/ HTTP/1.1" 200 279
+"GET /books/ HTTP/1.1" 200 2450
+"GET /books/ HTTP/1.1" 200 2450
+"GET /books/ HTTP/1.1" 200 2450
+"GET /books/ HTTP/1.1" 200 2450
+"GET /books/ca421dda-4a6f-4c79-872a-162a2bb73efc HTTP/1.1" 301 0
+"GET /books/ca421dda-4a6f-4c79-872a-162a2bb73efc/ HTTP/1.1" 200 100
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /books/ HTTP/1.1" 200 2450
+Bad Request: /books/
+"POST /books/ HTTP/1.1" 400 29
+"GET /books/ HTTP/1.1" 200 2450
+Watching for file changes with StatReloader
+"GET /books/ HTTP/1.1" 200 2450
+"GET /books/c066d53b-0e46-433e-b375-57aa6ca32940 HTTP/1.1" 301 0
+"GET /books/c066d53b-0e46-433e-b375-57aa6ca32940/ HTTP/1.1" 200 279
+"GET /books/ HTTP/1.1" 200 2450
+"GET /books/b5b9d9ea-1d72-4134-adaf-d86c12cedbba HTTP/1.1" 301 0
+"GET /books/b5b9d9ea-1d72-4134-adaf-d86c12cedbba/ HTTP/1.1" 200 435
+"GET /books/ HTTP/1.1" 200 2450
+"GET /books/b5b9d9ea-1d72-4134-adaf-d86c12cedbba/ HTTP/1.1" 200 435
+"OPTIONS /books/b5b9d9ea-1d72-4134-adaf-d86c12cedbba/ HTTP/1.1" 200 0
+"DELETE /books/b5b9d9ea-1d72-4134-adaf-d86c12cedbba/ HTTP/1.1" 204 2
+"GET /books/ HTTP/1.1" 200 2014
+"GET /books/ HTTP/1.1" 200 2014
+"GET /authors/ HTTP/1.1" 200 906
+"GET /books/ HTTP/1.1" 200 2014
+"GET /books/7ebd3e0a-400a-49e8-b33c-a57ddddcaeb9 HTTP/1.1" 301 0
+"GET /books/7ebd3e0a-400a-49e8-b33c-a57ddddcaeb9/ HTTP/1.1" 200 434
+"GET /readers/ HTTP/1.1" 200 764
+"GET /readers/341f19f4-c927-4235-8e54-748013c1241a HTTP/1.1" 301 0
+"GET /readers/341f19f4-c927-4235-8e54-748013c1241a/ HTTP/1.1" 200 110
+"GET /readers/ HTTP/1.1" 200 764
+"GET /readers/341f19f4-c927-4235-8e54-748013c1241a/ HTTP/1.1" 200 110
+"GET /readers/ HTTP/1.1" 200 764
+"GET /readers/341f19f4-c927-4235-8e54-748013c1241a/ HTTP/1.1" 200 110
+"GET /books/ HTTP/1.1" 200 2014
+"GET /books/c066d53b-0e46-433e-b375-57aa6ca32940 HTTP/1.1" 301 0
+"GET /books/c066d53b-0e46-433e-b375-57aa6ca32940/ HTTP/1.1" 200 279
+"GET /readers/ HTTP/1.1" 200 764
+"GET /readers/341f19f4-c927-4235-8e54-748013c1241a HTTP/1.1" 301 0
+"GET /readers/341f19f4-c927-4235-8e54-748013c1241a/ HTTP/1.1" 200 110
+"GET /readers/ HTTP/1.1" 200 764
+"GET /readers/341f19f4-c927-4235-8e54-748013c1241a/ HTTP/1.1" 200 110
+"GET /books/ HTTP/1.1" 200 2014
+"GET /books/7ebd3e0a-400a-49e8-b33c-a57ddddcaeb9/ HTTP/1.1" 200 434
+"GET /authors/ HTTP/1.1" 200 906
+"GET /authors/f487f2eb-fdce-4a6e-9681-6c02486b7945 HTTP/1.1" 301 0
+"GET /authors/f487f2eb-fdce-4a6e-9681-6c02486b7945/ HTTP/1.1" 200 128
+"GET /readers/ HTTP/1.1" 200 764
+"GET /readers/10d13330-034c-4653-a15b-a8f5a6611fda HTTP/1.1" 301 0
+"GET /readers/10d13330-034c-4653-a15b-a8f5a6611fda/ HTTP/1.1" 200 105
+"GET /readers/ HTTP/1.1" 200 764
+"GET /readers/05e98fcf-eb48-40c8-a3b5-8eb12e1cb245/ HTTP/1.1" 200 107
+"GET /readers/ HTTP/1.1" 200 764
+"GET /readers/10d13330-034c-4653-a15b-a8f5a6611fda/ HTTP/1.1" 200 105
+"GET /readers/ HTTP/1.1" 200 764
+"GET /readers/05e98fcf-eb48-40c8-a3b5-8eb12e1cb245 HTTP/1.1" 301 0
+"GET /readers/05e98fcf-eb48-40c8-a3b5-8eb12e1cb245/ HTTP/1.1" 200 107
+Watching for file changes with StatReloader
+"GET /authors/ HTTP/1.1" 200 906
+"GET /books/ HTTP/1.1" 200 2014
+"GET /authors/ HTTP/1.1" 200 906

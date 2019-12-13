@@ -9,7 +9,7 @@ class ReaderRequester(Requester):
 		l_o = self.get_limit_and_offset(request)
 		if l_o is not None:
 			host += f'?limit={l_o[0]}&offset={l_o[1]}'
-		print(f'host: {host}')
+		#print(f'host: {host}')
 		response = self.get_request(host)
 		if response is None:
 			return self.BASE_HTTP_ERROR

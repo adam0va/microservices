@@ -63,7 +63,9 @@ class AllBooksView(APIView):
 		return Response(data, status=code)
 	def post(self, request):
 		data, code = self.REQUESTER.post_book(request=request, data=request.data)
+		print(request.data)
 		return Response(data, status=code)
+
 
 class BookView(APIView):
 	REQUESTER = BookRequester()
@@ -77,6 +79,7 @@ class BookView(APIView):
 
 	def patch(self, request, book_uuid):
 		data, code = self.REQUESTER.patch_book(request=request, uuid=book_uuid, data=request.data)
+		print(request.data)
 		return Response(data, status=code)
 
 

@@ -25,7 +25,7 @@ SECRET_KEY = ')sb6g)_ns1@)cj_40dfmfqn@3kh=p+yj&^e+j8!yvvc%pyrw2i'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1']
 
 
 # Application definition
@@ -71,6 +71,10 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'authors.wsgi.application'
 
+renderer_classes = ['rest_framework.renderers.JSONRenderer']
+if DEBUG:
+    renderer_classes += ['rest_framework.renderers.BrowsableAPIRenderer']
+    
 REST_FRAMEWORK = {
     'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.LimitOffsetPagination',
 }
