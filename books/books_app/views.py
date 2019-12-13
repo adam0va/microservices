@@ -34,7 +34,7 @@ class BookDetail(APIView):
         try:
             book = Book.objects.get(pk=uuid)
         except Book.DoesNotExist:
-            return Response({'error' : 'wrong query parameters'}, status = status.HTTP_400_BAD_REQUEST)
+            return Response(status=status.HTTP_404_NOT_FOUND)
         
         serializer = BookSerializer(book)
         return Response(serializer.data, status = status.HTTP_200_OK)
