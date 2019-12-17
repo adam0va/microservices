@@ -1,36 +1,43 @@
 import requests
 import json
 import re
+import pybreaker
 
 class Requester:
 	HOST = 'http://127.0.0.1'
 	BASE_HTTP_ERROR = (json.dumps({'error': 'BaseHTTPError'}), 500)
+	DB_BREAKER = pybreaker.CircuitBreaker(fail_max=2, reset_timeout=10)
+
+	@DB_BREAKER
+	def simple_get_request(self, url):
+		print('Im here')
+		return requests.get(url)
 
 	def get_request(self, url):
 		try:
 			response = requests.get(url)
-		except requests.exceptions.BaseHTTPError:
+		except (requests.exceptions.BaseHTTPError, requests.exceptions.ConnectionError):
 			return None
 		return response
 
 	def post_request(self, url, data):
 		try:
 			response = requests.post(url=url, json=data)
-		except requests.exceptions.BaseHTTPError:
+		except (requests.exceptions.BaseHTTPError, requests.exceptions.ConnectionError):
 			return None
 		return response
 
 	def patch_request(self, url, data):
 		try:
 			response = requests.patch(url=url, json=data)
-		except requests.exceptions.BaseHTTPError:
+		except (requests.exceptions.BaseHTTPError, requests.exceptions.ConnectionError):
 			return None
 		return response
 
 	def delete_request(self, url):
 		try:
 			response = requests.delete(url=url)
-		except requests.exceptions.BaseHTTPError:
+		except (requests.exceptions.BaseHTTPError, requests.exceptions.ConnectionError):
 			return None
 		return response
 

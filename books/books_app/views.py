@@ -44,7 +44,13 @@ class BookDetail(APIView):
             book = Book.objects.get(pk=uuid)
         except Book.DoesNotExist:
             return Response(status=status.HTTP_404_NOT_FOUND)
-        serializer = BookSerializer(instance=book, data=request.data, partial=True)
+        print(request.data)
+        data = request.data
+        if (data['reader_uuid'] == ''):
+            data['reader_uuid'] = None
+        if (data['author_uuid'] == ''):
+            data['author_uuid'] = None
+        serializer = BookSerializer(instance=book, data=data, partial=True)
         if serializer.is_valid():
             serializer.save()
             print('---')

@@ -29,6 +29,21 @@ class ReaderRequester(Requester):
 			return self.BASE_HTTP_ERROR
 		return self.get_data_from_response(response), response.status_code
 
+	def get_reader_db_breaker(self, request, uuid):
+		import requests
+		import pybreaker
+		try:
+			response = self.simple_get_request(self.READER_HOST + f'{uuid}/')
+		except (requests.exceptions.BaseHTTPError, requests.exceptions.ConnectionError):
+			response = None
+		except pybreaker.CircuitBreakerError:
+			response = None
+			print('Breaker is on')
+		if response is None:
+			return self.BASE_HTTP_ERROR
+		return self.get_data_from_response(response), response.status_code
+
+
 	def post_reader(self, request, data):
 		response = self.post_request(self.READER_HOST, data=data)
 		if response is None:
