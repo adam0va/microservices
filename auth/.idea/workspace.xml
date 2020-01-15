@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="cd42b829-40d6-4437-a2e7-8a154115198b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/auth.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth/settings.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth/wsgi.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth_app/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth_app/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth_app/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth_app/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth_app/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth_app/templates/auth_app/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth_app/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth_app/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth_app/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manage.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../authors/authors_app/migrations/0002_auto_20200115_1937.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../authors/authors_app/permissions.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gateway/gateway_app/permissions.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gateway/gateway_app/requesters/auth_requester.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../authors/.idea/authors.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../authors/.idea/authors.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../authors/authors/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/../authors/authors/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../authors/authors_app/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/../authors/authors_app/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../authors/authors_app/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/../authors/authors_app/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../authors/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/../authors/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../books/.idea/books.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../books/.idea/books.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../books/books_app/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/../books/books_app/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../books/books_app/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/../books/books_app/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../books/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/../books/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gateway/.idea/gateway.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../gateway/.idea/gateway.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gateway/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/../gateway/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gateway/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/../gateway/debug.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gateway/gateway/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/../gateway/gateway/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gateway/gateway_app/requesters/author_requester.py" beforeDir="false" afterPath="$PROJECT_DIR$/../gateway/gateway_app/requesters/author_requester.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gateway/gateway_app/requesters/book_requester.py" beforeDir="false" afterPath="$PROJECT_DIR$/../gateway/gateway_app/requesters/book_requester.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gateway/gateway_app/requesters/reader_requester.py" beforeDir="false" afterPath="$PROJECT_DIR$/../gateway/gateway_app/requesters/reader_requester.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gateway/gateway_app/requesters/requester.py" beforeDir="false" afterPath="$PROJECT_DIR$/../gateway/gateway_app/requesters/requester.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gateway/gateway_app/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/../gateway/gateway_app/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gateway/gateway_app/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/../gateway/gateway_app/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../readers/.idea/readers.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../readers/.idea/readers.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../readers/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/../readers/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../readers/readers_app/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/../readers/readers_app/views.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="$PROJECT_DIR$/.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectId" id="1WG7hgSVG9PuTrpBI2AjeENE7nP" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.django.DjangoModulesConfigurable" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="Python.DjangoServer" factoryName="Django server">
+      <module name="auth" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8004" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="auth" type="Python.DjangoServer" factoryName="Django server">
+      <module name="auth" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="auth.settings" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8004" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="cd42b829-40d6-4437-a2e7-8a154115198b" name="Default Changelist" comment="" />
+      <created>1578764198366</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1578764198366</updated>
+      <workItem from="1578764578474" duration="4286000" />
+      <workItem from="1578936742394" duration="3801000" />
+      <workItem from="1579022605754" duration="1536000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="157" y="112" width="1071" height="711" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1578765042377">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="157" y="112" width="1071" height="711" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1578765042377" />
+    <state x="508" y="211" key="FileChooserDialogImpl" timestamp="1578764701550">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="508" y="211" key="FileChooserDialogImpl/0.0.1440.900@0.0.1440.900" timestamp="1578764701550" />
+    <state width="1398" height="245" key="GridCell.Tab.0.bottom" timestamp="1579009328912">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="245" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1579009328912" />
+    <state width="1398" height="245" key="GridCell.Tab.0.bottom/0.23.1440.796@0.23.1440.796" timestamp="1578779948777" />
+    <state width="1398" height="245" key="GridCell.Tab.0.center" timestamp="1579009328910">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="245" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1579009328910" />
+    <state width="1398" height="245" key="GridCell.Tab.0.center/0.23.1440.796@0.23.1440.796" timestamp="1578779948771" />
+    <state width="1398" height="245" key="GridCell.Tab.0.left" timestamp="1579009328909">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="245" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1579009328909" />
+    <state width="1398" height="245" key="GridCell.Tab.0.left/0.23.1440.796@0.23.1440.796" timestamp="1578779948770" />
+    <state width="1398" height="245" key="GridCell.Tab.0.right" timestamp="1579009328911">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="245" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1579009328911" />
+    <state width="1398" height="245" key="GridCell.Tab.0.right/0.23.1440.796@0.23.1440.796" timestamp="1578779948773" />
+    <state x="229" y="89" key="SettingsEditor" timestamp="1578764985426">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="229" y="89" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1578764985426" />
+    <state x="0" y="0" key="com.intellij.ide.util.TipDialog" timestamp="1579022609815">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="0" y="0" key="com.intellij.ide.util.TipDialog/0.0.1440.900@0.0.1440.900" timestamp="1579022609815" />
+    <state x="0" y="23" key="com.intellij.ide.util.TipDialog/0.23.1440.796@0.23.1440.796" timestamp="1578764577482" />
+  </component>
+</project>
