@@ -87,13 +87,10 @@ class BookRequester(Requester):
 	def get_all_books(self, request):
 		
 		host = self.BOOK_HOST
-
-		response = self.get_request(host)
 		l_o = self.get_limit_and_offset(request)
 		if l_o is not None:
 			host += f'?limit={l_o[0]}&offset={l_o[1]}'
 		print(f'host: {host}')
-		response = self.get_request(host)
 		if response is None:
 			return self.BASE_HTTP_ERROR
 		response_data = self.next_and_prev_links_to_params(self.get_data_from_response(response))
@@ -116,6 +113,7 @@ class BookRequester(Requester):
 				response_data[i], status_code = self.set_author(request, response_data[i])
 				if status_code != 200:
 					return response_data, response.status_code
+
 		return response_data, status_code
 		
 
@@ -167,7 +165,6 @@ class BookRequester(Requester):
 			return {'error' : 'Wrong reader uuid'}, 400
 		if not self.author_excists(request, data):
 			return {'error' : 'Wrong author uuid'}, 400
-
 		response = self.post_request(self.BOOK_HOST, data=data)
 		if response is None:
 			return Requester.BASE_HTTP_ERROR

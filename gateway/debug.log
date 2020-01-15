@@ -6385,3 +6385,1459 @@ Internal Server Error: /authors/
 "POST /authors/ HTTP/1.1" 500 32
 "GET /authors/ HTTP/1.1" 200 57647
 "GET /authors/ HTTP/1.1" 200 57774
+Watching for file changes with StatReloader
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/requesters/book_requester.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /books/ HTTP/1.1" 200 1754
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/requesters/book_requester.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/core/handlers/base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/core/handlers/base.py", line 143, in _get_response
+    response = response.render()
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/template/response.py", line 106, in render
+    self.content = self.rendered_content
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/template/response.py", line 81, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/template/response.py", line 63, in resolve_template
+    return select_template(template, using=self.using)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/template/loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(', '.join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: gateway/main.html
+"GET / HTTP/1.1" 500 77031
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 3501
+"GET /books/ HTTP/1.1" 200 14908
+"GET /static/rest_framework/css/prettify.css HTTP/1.1" 200 817
+"GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 8192
+"GET /static/rest_framework/css/default.css HTTP/1.1" 200 1131
+"GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 200 3385
+"GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
+"GET /readers/ HTTP/1.1" 200 441
+"GET /readers/ HTTP/1.1" 200 441
+"GET /books/ HTTP/1.1" 200 1754
+"GET /authors/ HTTP/1.1" 200 56022
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/requesters/author_requester.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /authors/
+Traceback (most recent call last):
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/views.py", line 36, in get
+    data, code = self.REQUESTER.get_all_authors(request=request)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/requesters/author_requester.py", line 19, in get_all_authors
+    if ar['name'] == 'Dima':
+TypeError: byte indices must be integers or slices, not str
+"GET /authors/ HTTP/1.1" 500 15142
+Internal Server Error: /authors/
+Traceback (most recent call last):
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/views.py", line 36, in get
+    data, code = self.REQUESTER.get_all_authors(request=request)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/requesters/author_requester.py", line 19, in get_all_authors
+    if ar['name'] == 'Dima':
+TypeError: byte indices must be integers or slices, not str
+"GET /authors/ HTTP/1.1" 500 15142
+Internal Server Error: /authors/
+Traceback (most recent call last):
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/views.py", line 36, in get
+    data, code = self.REQUESTER.get_all_authors(request=request)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/requesters/author_requester.py", line 19, in get_all_authors
+    if ar['name'] == 'Dima':
+TypeError: byte indices must be integers or slices, not str
+"GET /authors/ HTTP/1.1" 500 15142
+Internal Server Error: /authors/
+Traceback (most recent call last):
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/views.py", line 36, in get
+    data, code = self.REQUESTER.get_all_authors(request=request)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/requesters/author_requester.py", line 19, in get_all_authors
+    if ar['name'] == 'Dima':
+TypeError: byte indices must be integers or slices, not str
+"GET /authors/ HTTP/1.1" 500 15142
+"GET /books/ HTTP/1.1" 200 1754
+"GET /readers/ HTTP/1.1" 200 441
+Internal Server Error: /authors/
+Traceback (most recent call last):
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/views.py", line 36, in get
+    data, code = self.REQUESTER.get_all_authors(request=request)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/requesters/author_requester.py", line 19, in get_all_authors
+    if ar['name'] == 'Dima':
+TypeError: byte indices must be integers or slices, not str
+"GET /authors/ HTTP/1.1" 500 15142
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/requesters/author_requester.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/requesters/author_requester.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /authors/
+Traceback (most recent call last):
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/views.py", line 36, in get
+    data, code = self.REQUESTER.get_all_authors(request=request)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/requesters/author_requester.py", line 20, in get_all_authors
+    self.delete_request(self.AUTHOR_HOST + ar[uuid] +'/')
+NameError: name 'uuid' is not defined
+"GET /authors/ HTTP/1.1" 500 15128
+"GET /books/ HTTP/1.1" 200 1754
+Internal Server Error: /authors/
+Traceback (most recent call last):
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/views.py", line 36, in get
+    data, code = self.REQUESTER.get_all_authors(request=request)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/requesters/author_requester.py", line 20, in get_all_authors
+    self.delete_request(self.AUTHOR_HOST + ar[uuid] +'/')
+NameError: name 'uuid' is not defined
+"GET /authors/ HTTP/1.1" 500 15128
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/requesters/author_requester.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /authors/ HTTP/1.1" 200 56022
+"GET /authors/ HTTP/1.1" 200 397
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/requesters/author_requester.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /authors/ HTTP/1.1" 200 397
+"GET /books/ HTTP/1.1" 200 1754
+"GET /readers/ HTTP/1.1" 200 441
+"GET /readers/ HTTP/1.1" 200 441
+"POST /readers/ HTTP/1.1" 201 107
+"GET /readers/ HTTP/1.1" 200 549
+"GET /books/ HTTP/1.1" 200 1754
+"GET /authors/ HTTP/1.1" 200 397
+"POST /authors/ HTTP/1.1" 201 123
+"GET /authors/ HTTP/1.1" 200 521
+"GET /authors/37fbfd8f-cdd3-4901-b158-41dd51c584e5/ HTTP/1.1" 200 123
+"OPTIONS /authors/37fbfd8f-cdd3-4901-b158-41dd51c584e5/ HTTP/1.1" 200 0
+"GET /authors/ HTTP/1.1" 200 521
+"DELETE /authors/37fbfd8f-cdd3-4901-b158-41dd51c584e5/ HTTP/1.1" 204 2
+"GET /authors/ HTTP/1.1" 200 397
+"GET /books/ HTTP/1.1" 200 1754
+Bad Request: /books/
+"POST /books/ HTTP/1.1" 400 29
+"GET /books/ HTTP/1.1" 200 1754
+"GET /books/2045a5f5-07d2-4eab-9f93-a17786c2942c HTTP/1.1" 301 0
+"GET /books/2045a5f5-07d2-4eab-9f93-a17786c2942c/ HTTP/1.1" 200 426
+"GET /books/ HTTP/1.1" 200 1754
+"GET /books/e541a74f-14a7-4584-88d8-f40d1a89787b/ HTTP/1.1" 200 252
+"OPTIONS /books/e541a74f-14a7-4584-88d8-f40d1a89787b/ HTTP/1.1" 200 0
+"DELETE /books/e541a74f-14a7-4584-88d8-f40d1a89787b/ HTTP/1.1" 204 2
+"GET /books/ HTTP/1.1" 200 1501
+"GET /books/ HTTP/1.1" 200 1501
+"GET /authors/ HTTP/1.1" 200 397
+Not Found: /authors/dddd/
+"GET /authors/dddd/ HTTP/1.1" 404 3507
+"GET /authors/ HTTP/1.1" 200 397
+Not Found: /authors/ab10ab11-1ecd-43fb-babb-64d76dd4aeea/
+"GET /authors/ab10ab11-1ecd-43fb-babb-64d76dd4aeea/ HTTP/1.1" 404 2
+Bad Request: /authors/
+"POST /authors/ HTTP/1.1" 400 39
+"GET /books/ HTTP/1.1" 200 1501
+"GET /readers/ HTTP/1.1" 200 549
+"GET /authors/ HTTP/1.1" 200 397
+"GET /books/ HTTP/1.1" 200 1501
+"GET /books/c066d53b-0e46-433e-b375-57aa6ca32940 HTTP/1.1" 301 0
+"GET /books/c066d53b-0e46-433e-b375-57aa6ca32940/ HTTP/1.1" 200 279
+"GET /books/ HTTP/1.1" 200 1501
+"GET /books/c066d53b-0e46-433e-b375-57aa6ca32940/ HTTP/1.1" 200 279
+"GET /authors/ HTTP/1.1" 200 397
+"GET /books/ HTTP/1.1" 200 1501
+Bad Request: /books/
+"POST /books/ HTTP/1.1" 400 29
+"GET /books/ HTTP/1.1" 200 1501
+Bad Request: /books/
+"POST /books/ HTTP/1.1" 400 29
+"GET /books/ HTTP/1.1" 200 1501
+"GET /authors/ HTTP/1.1" 200 397
+"GET /authors/ab10ab11-1ecd-43fb-babb-64d76dd4aeed/ HTTP/1.1" 200 134
+"GET /books/ HTTP/1.1" 200 1501
+Bad Request: /books/
+"POST /books/ HTTP/1.1" 400 29
+"GET /books/ HTTP/1.1" 200 1501
+"GET /books/ HTTP/1.1" 200 1501
+"GET /books/7ebd3e0a-400a-49e8-b33c-a57ddddcaeb9 HTTP/1.1" 301 0
+"GET /books/7ebd3e0a-400a-49e8-b33c-a57ddddcaeb9/ HTTP/1.1" 200 435
+"GET /authors/ HTTP/1.1" 200 397
+Not Found: /authors/ab10ab11-1ecd-43fb-babb-64d76dd4aeea/
+"GET /authors/ab10ab11-1ecd-43fb-babb-64d76dd4aeea/ HTTP/1.1" 404 2
+"POST /authors/ HTTP/1.1" 201 128
+Bad Request: /authors/
+"POST /authors/ HTTP/1.1" 400 39
+Internal Server Error: /readers/
+"GET /readers/ HTTP/1.1" 500 32
+Internal Server Error: /readers/
+"GET /readers/ HTTP/1.1" 500 32
+Internal Server Error: /readers/05e98fcf-eb48-40c8-a3b5-8eb12e1cb245/
+"GET /readers/05e98fcf-eb48-40c8-a3b5-8eb12e1cb245/ HTTP/1.1" 500 32
+Internal Server Error: /readers/05e98fcf-eb48-40c8-a3b5-8eb12e1cb245/
+"GET /readers/05e98fcf-eb48-40c8-a3b5-8eb12e1cb245/ HTTP/1.1" 500 32
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/requesters/reader_requester.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/requesters/reader_requester.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /readers/05e98fcf-eb48-40c8-a3b5-8eb12e1cb245/
+"GET /readers/05e98fcf-eb48-40c8-a3b5-8eb12e1cb245/ HTTP/1.1" 500 32
+Internal Server Error: /readers/05e98fcf-eb48-40c8-a3b5-8eb12e1cb245/
+"GET /readers/05e98fcf-eb48-40c8-a3b5-8eb12e1cb245/ HTTP/1.1" 500 32
+Watching for file changes with StatReloader
+"GET /readers/05e98fcf-eb48-40c8-a3b5-8eb12e1cb245/ HTTP/1.1" 200 108
+Watching for file changes with StatReloader
+Internal Server Error: /readers/05e98fcf-eb48-40c8-a3b5-8eb12e1cb245/
+"GET /readers/05e98fcf-eb48-40c8-a3b5-8eb12e1cb245/ HTTP/1.1" 500 32
+Internal Server Error: /readers/05e98fcf-eb48-40c8-a3b5-8eb12e1cb245/
+"GET /readers/05e98fcf-eb48-40c8-a3b5-8eb12e1cb245/ HTTP/1.1" 500 32
+Internal Server Error: /readers/05e98fcf-eb48-40c8-a3b5-8eb12e1cb245/
+"GET /readers/05e98fcf-eb48-40c8-a3b5-8eb12e1cb245/ HTTP/1.1" 500 32
+"GET /books/ HTTP/1.1" 200 1145
+"GET /books/ HTTP/1.1" 200 1145
+"GET /books/c066d53b-0e46-433e-b375-57aa6ca32940/ HTTP/1.1" 200 279
+"GET /books/c066d53b-0e46-433e-b375-57aa6ca32940/ HTTP/1.1" 200 279
+"GET /books/c066d53b-0e46-433e-b375-57aa6ca32940/ HTTP/1.1" 200 279
+"GET /books/c066d53b-0e46-433e-b375-57aa6ca32940/ HTTP/1.1" 200 279
+"GET /books/ HTTP/1.1" 200 1145
+"GET /books/7ebd3e0a-400a-49e8-b33c-a57ddddcaeb9/ HTTP/1.1" 200 317
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/requesters/requester.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /books/7ebd3e0a-400a-49e8-b33c-a57ddddcaeb9/ HTTP/1.1" 200 317
+"GET /books/7ebd3e0a-400a-49e8-b33c-a57ddddcaeb9/ HTTP/1.1" 200 317
+"GET /books/7ebd3e0a-400a-49e8-b33c-a57ddddcaeb9/ HTTP/1.1" 200 317
+"GET /books/7ebd3e0a-400a-49e8-b33c-a57ddddcaeb9/ HTTP/1.1" 200 435
+Internal Server Error: /authors/
+"POST /authors/ HTTP/1.1" 500 32
+"GET /authors/ HTTP/1.1" 200 526
+"GET /authors/ HTTP/1.1" 200 651
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Not Found: /api/o/redirect/
+"GET /api/o/redirect/?code=Nc5mPvQEqVzqgGHy1afBhkc1G6bnRm HTTP/1.1" 404 3549
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 3501
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/requesters/auth_requester.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/requesters/auth_requester.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/requesters/auth_requester.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/urls.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/requesters/auth_requester.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/requesters/auth_requester.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/urls.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/requesters/requester.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/requesters/requester.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/requesters/auth_requester.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/requesters/auth_requester.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/requesters/auth_requester.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/urls.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /ologin HTTP/1.1" 301 0
+"GET /ologin/ HTTP/1.1" 302 0
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /ologin/ HTTP/1.1" 302 0
+Not Found: /api/o/redirect/
+"GET /api/o/redirect/?code=SbqMKNl6AjTSbHNqAGz70cqzhakuVC HTTP/1.1" 404 3856
+Not Found: /api/o/redirect/
+"GET /api/o/redirect/?code=ec4fzq4rpsXSXRskS5oD4B5HueZSNk HTTP/1.1" 404 3856
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/urls.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /ologin/ HTTP/1.1" 302 0
+"GET /api/o/redirect/?code=l4W9VUIZihT7D5eB7qHsbDnJYLrGKf HTTP/1.1" 200 10054
+"GET /static/rest_framework/css/prettify.css HTTP/1.1" 200 817
+"GET /static/rest_framework/js/csrf.js HTTP/1.1" 200 1719
+"GET /static/rest_framework/css/default.css HTTP/1.1" 200 1131
+"GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 200 3385
+"GET /static/rest_framework/js/default.js HTTP/1.1" 200 1268
+"GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 200 13632
+"GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 121457
+"GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 200 37608
+"GET /static/rest_framework/js/jquery-3.4.1.min.js HTTP/1.1" 200 88145
+"GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 200 3597
+"GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 3813
+Internal Server Error: /authors/
+"GET /authors/ HTTP/1.1" 500 11277
+"GET /authors/ HTTP/1.1" 200 12648
+"GET /books/ HTTP/1.1" 200 14370
+"GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 200 3385
+"GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 121457
+"GET /static/rest_framework/css/prettify.css HTTP/1.1" 200 817
+"GET /static/rest_framework/css/default.css HTTP/1.1" 200 1131
+"GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 200 3597
+"GET /static/rest_framework/js/csrf.js HTTP/1.1" 200 1719
+"GET /static/rest_framework/js/default.js HTTP/1.1" 200 1268
+"GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 200 37608
+"GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 200 13632
+"GET /static/rest_framework/js/jquery-3.4.1.min.js HTTP/1.1" 200 88145
+"GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 3813
+Forbidden: /readers/
+"GET /readers/ HTTP/1.1" 403 9352
+Forbidden: /readers/
+"GET /readers/ HTTP/1.1" 403 9352
+"GET /books/ HTTP/1.1" 200 14370
+"GET /static/rest_framework/css/prettify.css HTTP/1.1" 200 817
+"GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 200 3385
+"GET /static/rest_framework/css/default.css HTTP/1.1" 200 1131
+"GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 121457
+"GET /static/rest_framework/js/csrf.js HTTP/1.1" 200 1719
+"GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 200 3597
+"GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 200 37608
+"GET /static/rest_framework/js/default.js HTTP/1.1" 200 1268
+"GET /static/rest_framework/js/jquery-3.4.1.min.js HTTP/1.1" 200 88145
+"GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 200 13632
+"GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 3813
+"GET /ologin/ HTTP/1.1" 302 0
+"GET /api/o/redirect/?code=WVig0aKTBXBgrMHERMvbQF2QVrJp19 HTTP/1.1" 200 10054
+Forbidden: /readers/
+"GET /readers/ HTTP/1.1" 403 9352
+Not Found: /
+"GET / HTTP/1.1" 404 3762
+Forbidden: /readers/
+"GET /readers/ HTTP/1.1" 403 9352
+Internal Server Error: /readers/
+Traceback (most recent call last):
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/rest_framework/views.py", line 493, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/rest_framework/views.py", line 411, in initial
+    self.check_permissions(request)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/rest_framework/views.py", line 332, in check_permissions
+    if not permission.has_permission(request, self):
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/permissions.py", line 7, in has_permission
+    _, code = AuthRequester().get_user_info(request=request)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/requesters/auth_requester.py", line 17, in get_user_info
+    response = self.get_request(self.AUTH_HOST + 'user_info/', headers=self._create_auth_header(token))
+TypeError: get_request() got an unexpected keyword argument 'headers'
+"GET /readers/ HTTP/1.1" 500 15955
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/requesters/requester.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/requesters/requester.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /readers/
+Traceback (most recent call last):
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/views.py", line 25, in get
+    data, code = self.REQUESTER.get_all_readers(request=request)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/requesters/reader_requester.py", line 12, in get_all_readers
+    response = self.get_request(host)
+TypeError: get_request() missing 1 required positional argument: 'headers'
+"GET /readers/ HTTP/1.1" 500 15536
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/requesters/requester.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /readers/ HTTP/1.1" 200 549
+"GET /ologin/ HTTP/1.1" 302 0
+"GET /api/o/redirect/?code=WWihxeBoVDXdWYlGTK3rJFwtHDLhiF HTTP/1.1" 200 10054
+"GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
+Forbidden: /readers/
+"GET /readers/ HTTP/1.1" 403 9352
+"GET /ologin/ HTTP/1.1" 302 0
+"GET /api/o/redirect/?code=v5qraaRacqEsNUPXNlkBms39EhUps9 HTTP/1.1" 200 10054
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 3813
+Bad Request: /api/o/redirect/
+"GET /api/o/redirect/?code=v5qraaRacqEsNUPXNlkBms39EhUps9 HTTP/1.1" 400 9834
+"GET /api/o/redirect/?code=qUIo7UPeydh3vfO15XNKwNBpqeqLiS HTTP/1.1" 200 10054
+"GET /ologin/ HTTP/1.1" 302 0
+"GET /api/o/redirect/?code=ShIlermfSzTkAnoZnvNO3d0aXB9Yls HTTP/1.1" 200 10054
+"GET /ologin/ HTTP/1.1" 302 0
+"GET /ologin/ HTTP/1.1" 302 0
+"GET /api/o/redirect/?code=0nEtIIsI3EI5Z0J1l3PRmq5X1wh1Cs HTTP/1.1" 200 10054
+Forbidden: /readers/
+"GET /readers/ HTTP/1.1" 403 58
+"GET /readers/ HTTP/1.1" 200 549
+"GET /readers/ HTTP/1.1" 200 549
+Forbidden: /readers/
+"GET /readers/ HTTP/1.1" 403 58
+Watching for file changes with StatReloader
+"GET /books/ HTTP/1.1" 200 1501
+"GET /books/ HTTP/1.1" 200 1501
+"GET /books/c066d53b-0e46-433e-b375-57aa6ca32940 HTTP/1.1" 301 0
+Forbidden: /books/c066d53b-0e46-433e-b375-57aa6ca32940/
+"GET /books/c066d53b-0e46-433e-b375-57aa6ca32940/ HTTP/1.1" 403 58
+"GET /authors/ HTTP/1.1" 200 651
+Forbidden: /authors/ab10ab11-1ecd-43fb-babb-64d76dd4aeed/
+"GET /authors/ab10ab11-1ecd-43fb-babb-64d76dd4aeed/ HTTP/1.1" 403 58
+Forbidden: /readers/
+"GET /readers/ HTTP/1.1" 403 58
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/urls.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/urls.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /main HTTP/1.1" 301 0
+Internal Server Error: /main/
+Traceback (most recent call last):
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/core/handlers/base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/core/handlers/base.py", line 143, in _get_response
+    response = response.render()
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/template/response.py", line 106, in render
+    self.content = self.rendered_content
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/template/response.py", line 81, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/template/response.py", line 63, in resolve_template
+    return select_template(template, using=self.using)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/template/loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(', '.join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: templates/index.html
+"GET /main/ HTTP/1.1" 500 78210
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/urls.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /main/
+Traceback (most recent call last):
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/core/handlers/base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/core/handlers/base.py", line 143, in _get_response
+    response = response.render()
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/template/response.py", line 106, in render
+    self.content = self.rendered_content
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/template/response.py", line 81, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/template/response.py", line 63, in resolve_template
+    return select_template(template, using=self.using)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/template/loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(', '.join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: templates/index.html
+"GET /main/ HTTP/1.1" 500 78130
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/urls.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /main/
+Traceback (most recent call last):
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/views.py", line 11, in main_page
+    return render(request, "templates/index.html")
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: templates/index.html
+"GET /main/ HTTP/1.1" 500 78040
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway/settings.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway/settings.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /main/
+Traceback (most recent call last):
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/views.py", line 11, in main_page
+    return render(request, "templates/index.html")
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: templates/index.html
+"GET /main/ HTTP/1.1" 500 78214
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /main/ HTTP/1.1" 200 611
+Not Found: /jquery/jquery_validate.js
+"GET /jquery/jquery_validate.js HTTP/1.1" 404 4009
+Not Found: /main/styles.css
+"GET /main/styles.css HTTP/1.1" 404 3979
+Not Found: /main/script.js
+Not Found: /jquery/jquery-3.4.1.js
+"GET /jquery/jquery-3.4.1.js HTTP/1.1" 404 4000
+"GET /main/script.js HTTP/1.1" 404 3976
+Not Found: /jquery/jquery_validate.js
+"GET /jquery/jquery_validate.js HTTP/1.1" 404 4009
+Not Found: /main/script.js
+"GET /main/script.js HTTP/1.1" 404 3976
+Not Found: /main/styles.css
+"GET /main/styles.css HTTP/1.1" 404 3979
+"GET /main/ HTTP/1.1" 200 611
+Not Found: /jquery/jquery-3.4.1.js
+Not Found: /jquery/jquery_validate.js
+"GET /jquery/jquery-3.4.1.js HTTP/1.1" 404 4000
+"GET /jquery/jquery_validate.js HTTP/1.1" 404 4009
+Not Found: /main/styles.css
+Not Found: /main/script.js
+"GET /main/script.js HTTP/1.1" 404 3976
+"GET /main/styles.css HTTP/1.1" 404 3979
+Not Found: /jquery/jquery_validate.js
+"GET /jquery/jquery_validate.js HTTP/1.1" 404 4009
+Not Found: /main/script.js
+"GET /main/script.js HTTP/1.1" 404 3976
+Not Found: /main/styles.css
+"GET /main/styles.css HTTP/1.1" 404 3979
+"GET /main/ HTTP/1.1" 200 611
+Not Found: /jquery/jquery-3.4.1.js
+Not Found: /jquery/jquery_validate.js
+"GET /jquery/jquery-3.4.1.js HTTP/1.1" 404 4000
+Not Found: /main/styles.css
+Not Found: /main/script.js
+"GET /main/script.js HTTP/1.1" 404 3976
+"GET /main/styles.css HTTP/1.1" 404 3979
+"GET /jquery/jquery_validate.js HTTP/1.1" 404 4009
+Not Found: /main/script.js
+"GET /main/script.js HTTP/1.1" 404 3976
+Not Found: /main/styles.css
+"GET /main/styles.css HTTP/1.1" 404 3979
+"GET /main/ HTTP/1.1" 200 611
+Not Found: /jquery/jquery_validate.js
+Not Found: /main/script.js
+"GET /jquery/jquery_validate.js HTTP/1.1" 404 4009
+Not Found: /main/styles.css
+"GET /main/script.js HTTP/1.1" 404 3976
+Not Found: /jquery/jquery-3.4.1.js
+"GET /main/styles.css HTTP/1.1" 404 3979
+"GET /jquery/jquery-3.4.1.js HTTP/1.1" 404 4000
+Not Found: /jquery/jquery_validate.js
+"GET /jquery/jquery_validate.js HTTP/1.1" 404 4009
+Not Found: /main/script.js
+"GET /main/script.js HTTP/1.1" 404 3976
+Not Found: /main/styles.css
+"GET /main/styles.css HTTP/1.1" 404 3979
+"GET /main/ HTTP/1.1" 200 611
+Not Found: /jquery/jquery-3.4.1.js
+Not Found: /jquery/jquery_validate.js
+"GET /jquery/jquery_validate.js HTTP/1.1" 404 4009
+"GET /jquery/jquery-3.4.1.js HTTP/1.1" 404 4000
+Not Found: /main/styles.css
+"GET /main/styles.css HTTP/1.1" 404 3979
+Not Found: /main/script.js
+"GET /main/script.js HTTP/1.1" 404 3976
+Not Found: /jquery/jquery_validate.js
+"GET /jquery/jquery_validate.js HTTP/1.1" 404 4009
+Not Found: /main/script.js
+"GET /main/script.js HTTP/1.1" 404 3976
+Not Found: /main/styles.css
+"GET /main/styles.css HTTP/1.1" 404 3979
+"GET /main/ HTTP/1.1" 200 611
+Not Found: /jquery/jquery_validate.js
+Not Found: /main/script.js
+Not Found: /jquery/jquery-3.4.1.js
+"GET /main/script.js HTTP/1.1" 404 3976
+Not Found: /main/styles.css
+"GET /jquery/jquery_validate.js HTTP/1.1" 404 4009
+"GET /jquery/jquery-3.4.1.js HTTP/1.1" 404 4000
+"GET /main/styles.css HTTP/1.1" 404 3979
+Not Found: /jquery/jquery_validate.js
+"GET /jquery/jquery_validate.js HTTP/1.1" 404 4009
+Not Found: /main/script.js
+"GET /main/script.js HTTP/1.1" 404 3976
+Not Found: /main/styles.css
+"GET /main/styles.css HTTP/1.1" 404 3979
+"GET /main/ HTTP/1.1" 200 611
+Not Found: /jquery/jquery-3.4.1.js
+Not Found: /main/script.js
+Not Found: /jquery/jquery_validate.js
+"GET /main/script.js HTTP/1.1" 404 3976
+"GET /jquery/jquery-3.4.1.js HTTP/1.1" 404 4000
+"GET /jquery/jquery_validate.js HTTP/1.1" 404 4009
+Not Found: /main/styles.css
+"GET /main/styles.css HTTP/1.1" 404 3979
+Not Found: /main/script.js
+"GET /main/script.js HTTP/1.1" 404 3976
+Not Found: /main/styles.css
+"GET /main/styles.css HTTP/1.1" 404 3979
+"GET /authors/ HTTP/1.1" 200 12648
+"GET /static/rest_framework/css/default.css HTTP/1.1" 200 1131
+"GET /static/rest_framework/css/prettify.css HTTP/1.1" 200 817
+"GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 200 3385
+"GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 8192
+"GET /main/ HTTP/1.1" 200 611
+Not Found: /jquery/jquery-3.4.1.js
+Not Found: /main/script.js
+"GET /main/script.js HTTP/1.1" 404 3976
+Not Found: /jquery/jquery_validate.js
+"GET /jquery/jquery-3.4.1.js HTTP/1.1" 404 4000
+Not Found: /main/styles.css
+"GET /jquery/jquery_validate.js HTTP/1.1" 404 4009
+"GET /main/styles.css HTTP/1.1" 404 3979
+Not Found: /main/script.js
+"GET /main/script.js HTTP/1.1" 404 3976
+Not Found: /main/styles.css
+"GET /main/styles.css HTTP/1.1" 404 3979
+"GET /main/ HTTP/1.1" 200 611
+Not Found: /jquery/jquery-3.4.1.js
+Not Found: /main/script.js
+Not Found: /jquery/jquery_validate.js
+Not Found: /main/styles.css
+"GET /jquery/jquery-3.4.1.js HTTP/1.1" 404 4000
+"GET /main/script.js HTTP/1.1" 404 3976
+"GET /jquery/jquery_validate.js HTTP/1.1" 404 4009
+"GET /main/styles.css HTTP/1.1" 404 3979
+Not Found: /main/script.js
+"GET /main/script.js HTTP/1.1" 404 3976
+Not Found: /main/styles.css
+"GET /main/styles.css HTTP/1.1" 404 3979
+"GET /main/ HTTP/1.1" 200 611
+Not Found: /main/styles.css
+Not Found: /jquery/jquery_validate.js
+Not Found: /jquery/jquery-3.4.1.js
+"GET /main/styles.css HTTP/1.1" 404 3979
+Not Found: /main/script.js
+"GET /jquery/jquery_validate.js HTTP/1.1" 404 4009
+"GET /jquery/jquery-3.4.1.js HTTP/1.1" 404 4000
+"GET /main/script.js HTTP/1.1" 404 3976
+Not Found: /jquery/jquery_validate.js
+"GET /jquery/jquery_validate.js HTTP/1.1" 404 4009
+Not Found: /main/script.js
+"GET /main/script.js HTTP/1.1" 404 3976
+Not Found: /main/styles.css
+"GET /main/styles.css HTTP/1.1" 404 3979
+"GET /main/ HTTP/1.1" 200 611
+Not Found: /jquery/jquery_validate.js
+Not Found: /jquery/jquery-3.4.1.js
+Not Found: /main/styles.css
+"GET /jquery/jquery-3.4.1.js HTTP/1.1" 404 4000
+Not Found: /main/script.js
+"GET /jquery/jquery_validate.js HTTP/1.1" 404 4009
+"GET /main/script.js HTTP/1.1" 404 3976
+"GET /main/styles.css HTTP/1.1" 404 3979
+"GET /main/ HTTP/1.1" 200 611
+Not Found: /main/styles.css
+Not Found: /jquery/jquery_validate.js
+Not Found: /jquery/jquery-3.4.1.js
+"GET /main/styles.css HTTP/1.1" 404 3979
+Not Found: /main/script.js
+"GET /jquery/jquery_validate.js HTTP/1.1" 404 4009
+"GET /jquery/jquery-3.4.1.js HTTP/1.1" 404 4000
+"GET /main/script.js HTTP/1.1" 404 3976
+Not Found: /jquery/jquery_validate.js
+"GET /jquery/jquery_validate.js HTTP/1.1" 404 4009
+Not Found: /main/script.js
+"GET /main/script.js HTTP/1.1" 404 3976
+Not Found: /main/styles.css
+"GET /main/styles.css HTTP/1.1" 404 3979
+"GET /main/ HTTP/1.1" 200 611
+Not Found: /jquery/jquery_validate.js
+Not Found: /main/styles.css
+Not Found: /jquery/jquery-3.4.1.js
+Not Found: /main/script.js
+"GET /jquery/jquery_validate.js HTTP/1.1" 404 4009
+"GET /main/styles.css HTTP/1.1" 404 3979
+"GET /main/script.js HTTP/1.1" 404 3976
+"GET /jquery/jquery-3.4.1.js HTTP/1.1" 404 4000
+Not Found: /jquery/jquery_validate.js
+"GET /jquery/jquery_validate.js HTTP/1.1" 404 4009
+Not Found: /main/script.js
+"GET /main/script.js HTTP/1.1" 404 3976
+Not Found: /main/styles.css
+"GET /main/styles.css HTTP/1.1" 404 3979
+"GET /main/ HTTP/1.1" 200 611
+Not Found: /jquery/jquery-3.4.1.js
+Not Found: /main/styles.css
+"GET /jquery/jquery-3.4.1.js HTTP/1.1" 404 4000
+Not Found: /main/script.js
+"GET /main/script.js HTTP/1.1" 404 3976
+Not Found: /jquery/jquery_validate.js
+"GET /jquery/jquery_validate.js HTTP/1.1" 404 4009
+"GET /main/styles.css HTTP/1.1" 404 3979
+Not Found: /main/script.js
+"GET /main/script.js HTTP/1.1" 404 3976
+Not Found: /main/styles.css
+"GET /main/styles.css HTTP/1.1" 404 3979
+"GET /main/ HTTP/1.1" 200 611
+Not Found: /jquery/jquery_validate.js
+Not Found: /main/script.js
+"GET /main/script.js HTTP/1.1" 404 3976
+"GET /jquery/jquery_validate.js HTTP/1.1" 404 4009
+Not Found: /jquery/jquery-3.4.1.js
+"GET /jquery/jquery-3.4.1.js HTTP/1.1" 404 4000
+Not Found: /main/styles.css
+"GET /main/styles.css HTTP/1.1" 404 3979
+Not Found: /jquery/jquery_validate.js
+"GET /jquery/jquery_validate.js HTTP/1.1" 404 4009
+Not Found: /main/script.js
+"GET /main/script.js HTTP/1.1" 404 3976
+Not Found: /main/styles.css
+"GET /main/styles.css HTTP/1.1" 404 3979
+"GET /main/ HTTP/1.1" 200 611
+Not Found: /jquery/jquery_validate.js
+Not Found: /main/script.js
+"GET /jquery/jquery_validate.js HTTP/1.1" 404 4009
+Not Found: /main/styles.css
+Not Found: /jquery/jquery-3.4.1.js
+"GET /main/script.js HTTP/1.1" 404 3976
+"GET /jquery/jquery-3.4.1.js HTTP/1.1" 404 4000
+"GET /main/styles.css HTTP/1.1" 404 3979
+Not Found: /jquery/jquery_validate.js
+"GET /jquery/jquery_validate.js HTTP/1.1" 404 4009
+Not Found: /main/script.js
+"GET /main/script.js HTTP/1.1" 404 3976
+Not Found: /main/styles.css
+"GET /main/styles.css HTTP/1.1" 404 3979
+Forbidden: /readers/
+"GET /readers/ HTTP/1.1" 403 58
+"GET /books/ HTTP/1.1" 200 1501
+"GET /books/ HTTP/1.1" 200 1501
+"GET /main/ HTTP/1.1" 200 591
+Not Found: /main/jquery_validate.js
+Not Found: /main/jquery-3.4.1.js
+Not Found: /main/script.js
+"GET /main/jquery_validate.js HTTP/1.1" 404 4003
+"GET /main/jquery-3.4.1.js HTTP/1.1" 404 3994
+"GET /main/script.js HTTP/1.1" 404 3976
+Not Found: /main/styles.css
+"GET /main/styles.css HTTP/1.1" 404 3979
+Not Found: /main/jquery_validate.js
+"GET /main/jquery_validate.js HTTP/1.1" 404 4003
+Not Found: /main/script.js
+"GET /main/script.js HTTP/1.1" 404 3976
+Not Found: /main/styles.css
+"GET /main/styles.css HTTP/1.1" 404 3979
+"GET /main/ HTTP/1.1" 200 591
+Not Found: /main/styles.css
+"GET /main/styles.css HTTP/1.1" 404 3979
+Not Found: /main/script.js
+Not Found: /main/jquery_validate.js
+Not Found: /main/jquery-3.4.1.js
+"GET /main/jquery_validate.js HTTP/1.1" 404 4003
+"GET /main/script.js HTTP/1.1" 404 3976
+"GET /main/jquery-3.4.1.js HTTP/1.1" 404 3994
+Not Found: /main/jquery_validate.js
+"GET /main/jquery_validate.js HTTP/1.1" 404 4003
+Not Found: /main/script.js
+"GET /main/script.js HTTP/1.1" 404 3976
+Not Found: /main/styles.css
+"GET /main/styles.css HTTP/1.1" 404 3979
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/views.py changed, reloading.
+Watching for file changes with StatReloader
+Not Found: /
+"GET / HTTP/1.1" 404 3916
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 3967
+Internal Server Error: /authors/
+Traceback (most recent call last):
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/views.py", line 78, in get
+    self._get_token()
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/views.py", line 72, in _get_token
+    print(ret.json())
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/requests/models.py", line 897, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/__init__.py", line 348, in loads
+    return _default_decoder.decode(s)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+"GET /authors/ HTTP/1.1" 500 130647
+Internal Server Error: /authors/
+Traceback (most recent call last):
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/views.py", line 78, in get
+    self._get_token()
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/views.py", line 72, in _get_token
+    print(ret.json())
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/requests/models.py", line 897, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/__init__.py", line 348, in loads
+    return _default_decoder.decode(s)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+"GET /authors/ HTTP/1.1" 500 134570
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/requesters/author_requester.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/requesters/book_requester.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/requesters/book_requester.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /authors/
+Traceback (most recent call last):
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/views.py", line 78, in get
+    self._get_token()
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/views.py", line 72, in _get_token
+    print(ret.json())
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/requests/models.py", line 897, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/__init__.py", line 348, in loads
+    return _default_decoder.decode(s)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+"GET /authors/ HTTP/1.1" 500 134570
+Internal Server Error: /authors/
+Traceback (most recent call last):
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/views.py", line 78, in get
+    self._get_token()
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/views.py", line 72, in _get_token
+    print(ret.json())
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/requests/models.py", line 897, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/__init__.py", line 348, in loads
+    return _default_decoder.decode(s)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+"GET /authors/ HTTP/1.1" 500 134570
+Internal Server Error: /authors/
+Traceback (most recent call last):
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/views.py", line 78, in get
+    self._get_token()
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/views.py", line 72, in _get_token
+    print(ret.json())
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/requests/models.py", line 897, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/__init__.py", line 348, in loads
+    return _default_decoder.decode(s)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+"GET /authors/ HTTP/1.1" 500 134290
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/requesters/book_requester.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /admin/ HTTP/1.1" 302 0
+"GET /admin/login/?next=/admin/ HTTP/1.1" 200 1819
+"GET /static/admin/css/base.css HTTP/1.1" 200 16378
+"GET /static/admin/css/login.css HTTP/1.1" 200 1233
+"GET /static/admin/css/responsive.css HTTP/1.1" 200 17944
+"GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+"GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 85692
+"GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 85876
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/urls.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /authors/
+Traceback (most recent call last):
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/views.py", line 78, in get
+    self._get_token()
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/views.py", line 72, in _get_token
+    print(ret.json())
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/requests/models.py", line 897, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/__init__.py", line 348, in loads
+    return _default_decoder.decode(s)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+"GET /authors/ HTTP/1.1" 500 134505
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 3962
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/requesters/book_requester.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/requesters/book_requester.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/requesters/author_requester.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/requesters/author_requester.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/requesters/author_requester.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /authors/
+Traceback (most recent call last):
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/views.py", line 78, in get
+    self._get_token()
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/views.py", line 72, in _get_token
+    print(ret.json())
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/requests/models.py", line 897, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/__init__.py", line 348, in loads
+    return _default_decoder.decode(s)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+"GET /authors/ HTTP/1.1" 500 134290
+Internal Server Error: /authors/
+Traceback (most recent call last):
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/views.py", line 78, in get
+    self._get_token()
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/views.py", line 72, in _get_token
+    print(ret.json())
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/requests/models.py", line 897, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/__init__.py", line 348, in loads
+    return _default_decoder.decode(s)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+"GET /authors/ HTTP/1.1" 500 134155
+Internal Server Error: /authors/
+Traceback (most recent call last):
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/views.py", line 78, in get
+    self._get_token()
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/views.py", line 72, in _get_token
+    print(ret.json())
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/requests/models.py", line 897, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/__init__.py", line 348, in loads
+    return _default_decoder.decode(s)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+"GET /authors/ HTTP/1.1" 500 134290
+Watching for file changes with StatReloader
+Internal Server Error: /authors/
+Traceback (most recent call last):
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/views.py", line 78, in get
+    self._get_token()
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/views.py", line 73, in _get_token
+    TOKEN = ret.json()['token']
+KeyError: 'token'
+"GET /authors/ HTTP/1.1" 500 93695
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 3962
+"GET /ologin/ HTTP/1.1" 302 0
+Not Found: /api/o/redirect/
+"GET /api/o/redirect/?error=unauthorized_client HTTP/1.1" 404 4000
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/urls.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /ologin/ HTTP/1.1" 302 0
+Internal Server Error: /api/o/redirect/
+Traceback (most recent call last):
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/utils/datastructures.py", line 78, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'code'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/views.py", line 158, in get
+    code = request.query_params['code']
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/utils/datastructures.py", line 80, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'code'
+"GET /api/o/redirect/?error=unauthorized_client HTTP/1.1" 500 98240
+Watching for file changes with StatReloader
+Internal Server Error: /authors/
+Traceback (most recent call last):
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/views.py", line 78, in get
+    self._get_token()
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/views.py", line 73, in _get_token
+    TOKEN = ret.json()['token']
+KeyError: 'token'
+"GET /authors/ HTTP/1.1" 500 93695
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 3967
+Forbidden: /authors/
+"GET /authors/ HTTP/1.1" 403 9597
+"GET /static/rest_framework/js/jquery-3.4.1.min.js HTTP/1.1" 304 0
+"GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0
+"GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 200 3385
+"GET /static/rest_framework/css/default.css HTTP/1.1" 200 1131
+"GET /static/rest_framework/css/prettify.css HTTP/1.1" 200 817
+"GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0
+"GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0
+"GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0
+"GET /static/rest_framework/js/default.js HTTP/1.1" 304 0
+"GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 121457
+"GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 3967
+Forbidden: /authors/
+"GET /authors/ HTTP/1.1" 403 9597
+"GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 8192
+"GET /static/rest_framework/css/prettify.css HTTP/1.1" 200 817
+"GET /static/rest_framework/css/default.css HTTP/1.1" 200 1131
+"GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 200 3385
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/views.py changed, reloading.
+Watching for file changes with StatReloader
+Forbidden: /authors/
+"GET /authors/ HTTP/1.1" 403 9597
+"GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 200 3385
+"GET /static/rest_framework/css/prettify.css HTTP/1.1" 200 817
+"GET /static/rest_framework/css/default.css HTTP/1.1" 200 1131
+"GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 57344
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 3967
+Forbidden: /authors/
+"GET /authors/ HTTP/1.1" 403 9597
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/views.py changed, reloading.
+Watching for file changes with StatReloader
+Forbidden: /authors/
+"GET /authors/ HTTP/1.1" 403 9597
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/requesters/author_requester.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/requesters/author_requester.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /authors/ HTTP/1.1" 200 12648
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/urls.py changed, reloading.
+Watching for file changes with StatReloader

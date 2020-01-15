@@ -5,6 +5,7 @@ class BookSerializer(serializers.ModelSerializer):
     class Meta:
         model = Book
         fields = ['title', 'uuid', 'author_uuid', 'reader_uuid']
+
     def create(self, validated_data):
     	new = Book(**validated_data)
     	new.save()

@@ -6,37 +6,37 @@ import pybreaker
 class Requester:
 	HOST = 'http://127.0.0.1'
 	BASE_HTTP_ERROR = (json.dumps({'error': 'BaseHTTPError'}), 500)
-	DB_BREAKER = pybreaker.CircuitBreaker(fail_max=2, reset_timeout=10)
+	DB_BREAKER = pybreaker.CircuitBreaker(fail_max=3, reset_timeout=10)
 
 	@DB_BREAKER
-	def simple_get_request(self, url):
+	def simple_get_request(self, url, headers: dict={}):
 		print('Im here')
-		return requests.get(url)
+		return requests.get(url, headers=headers)
 
-	def get_request(self, url):
+	def get_request(self, url, headers: dict={}):
 		try:
-			response = requests.get(url)
+			response = requests.get(url, headers=headers)
 		except (requests.exceptions.BaseHTTPError, requests.exceptions.ConnectionError):
 			return None
 		return response
 
-	def post_request(self, url, data):
+	def post_request(self, url, data, headers: dict={}):
 		try:
-			response = requests.post(url=url, json=data)
+			response = requests.post(url=url, json=data, headers=headers)
 		except (requests.exceptions.BaseHTTPError, requests.exceptions.ConnectionError):
 			return None
 		return response
 
-	def patch_request(self, url, data):
+	def patch_request(self, url, data, headers: dict={}):
 		try:
-			response = requests.patch(url=url, json=data)
+			response = requests.patch(url=url, json=data, headers=headers)
 		except (requests.exceptions.BaseHTTPError, requests.exceptions.ConnectionError):
 			return None
 		return response
 
-	def delete_request(self, url):
+	def delete_request(self, url, headers: dict={}):
 		try:
-			response = requests.delete(url=url)
+			response = requests.delete(url=url, headers=headers)
 		except (requests.exceptions.BaseHTTPError, requests.exceptions.ConnectionError):
 			return None
 		return response
@@ -77,4 +77,10 @@ class Requester:
 			data['previous'] = f'?limit={limit}&offset={offset}'
 		return data
 
- 
+	def get_token_from_request(self, request):
+		token_str = request.META.get('HTTP_AUTHORIZATION')
+		try:
+			token = token_str[6:].strip()
+		except TypeError:
+			return None
+		return token

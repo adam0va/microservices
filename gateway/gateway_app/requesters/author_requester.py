@@ -6,18 +6,17 @@ class AuthorRequester(Requester):
 	AUTHOR_HOST = Requester.HOST + ':8002/authors/'
 
 	def get_all_authors(self, request):
-
 		host = self.AUTHOR_HOST
 		l_o = self.get_limit_and_offset(request)
 		if l_o is not None:
 			host += f'?limit={l_o[0]}&offset={l_o[1]}'
-		response = self.get_request(host)
+		from gateway_app.views import TOKEN
+		response = self.get_request(host, headers={'Authorization': f'Bearer {TOKEN}'})
 		if response is None:
 			return self.BASE_HTTP_ERROR
 		response_json = self.next_and_prev_links_to_params(self.get_data_from_response(response))
 		AuthorRequester.author_queue.send_requests()
 		return response_json, response.status_code
-
 
 	def get_author(self, request, uuid):
 		response = self.get_request(self.AUTHOR_HOST + f'{uuid}/')
@@ -27,7 +26,8 @@ class AuthorRequester(Requester):
 		return self.get_data_from_response(response), response.status_code
 
 	def post_author(self, request, data):
-		response = self.post_request(self.AUTHOR_HOST, data=data)
+		from gateway_app.views import TOKEN
+		response = self.perform_post_request(self.AUTHOR_HOST, data=data, headers={'Authorization': f'Bearer {TOKEN}'})
 		if response is None:
 			AuthorRequester.author_queue.add_post(data)
 			return self.BASE_HTTP_ERROR
