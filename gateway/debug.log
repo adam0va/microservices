@@ -8076,6 +8076,7 @@ AssertionError: Expected a `Response`, `HttpResponse` or `HttpStreamingResponse`
 "GET /api/o/redirect/?code=yyyQXeAAcBz8osGHoqQjCq50vkOl3o HTTP/1.1" 500 78371
 /Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/views.py changed, reloading.
 Watching for file changes with StatReloader
+<<<<<<< Updated upstream
 "GET /api/o/redirect/?code=5eisdcNzwlWOGz5LkoJ7B5k98PVMMe HTTP/1.1" 200 10054
 "GET /authors/ HTTP/1.1" 200 651
 Forbidden: /readers/
@@ -8109,3 +8110,10 @@ Watching for file changes with StatReloader
 "GET /readers/05e98fcf-eb48-40c8-a3b5-8eb12e1cb245/ HTTP/1.1" 200 108
 Forbidden: /readers/05e98fcf-eb48-40c8-a3b5-8eb12e1cb245/
 "GET /readers/05e98fcf-eb48-40c8-a3b5-8eb12e1cb245/ HTTP/1.1" 403 58
+=======
+"POST /authors/ HTTP/1.1" 201 0
+"GET /authors/ HTTP/1.1" 200 657
+"GET /authors/ HTTP/1.1" 200 786
+Watching for file changes with StatReloader
+>>>>>>> Stashed changes
+Watching for file changes with StatReloader
