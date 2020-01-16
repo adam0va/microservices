@@ -144,6 +144,8 @@ class BookView(APIView):
 
 from django.shortcuts import redirect
 from django.views import View
+
+
 class OLoginView(View):
     def get(self, request):
         uri = 'http://127.0.0.1:8004/o/authorize/?' \
@@ -152,9 +154,12 @@ class OLoginView(View):
               'response_type=token'
         return redirect(uri)
 
+
 class ORedirectView(APIView):
     def get(self, request: Request):
         import requests
+        print('oredirect')
+        print(f'URI: {request.build_absolute_uri()}')
         code = request.query_params['code']
         data_to_send = f'client_id=Gateway_id&client_secret=Gateway_secret&code={code}&grant_type=authorization_code'
         ret = requests.post(url='http://127.0.0.1:8004/o/token/', data=data_to_send,

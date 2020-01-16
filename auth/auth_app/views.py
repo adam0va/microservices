@@ -24,6 +24,7 @@ class LogInForOAuth2(View):
         if user is None:
             return redirect(request.get_raw_uri())
         login(request, user)
+        print(f'http://{request.get_host()}{request.GET["next"]}')
         ret = redirect(f'http://{request.get_host()}{request.GET["next"]}')
         return ret
 
