@@ -96,6 +96,8 @@ class BookRequester(Requester):
 		response = self.get_request(host)
 		if response is None:
 			return self.BASE_HTTP_ERROR
+		if response is 1:
+			return self.ERROR_503
 		response_data = self.next_and_prev_links_to_params(self.get_data_from_response(response))
 
 		if isinstance(response_data, dict):
@@ -123,6 +125,8 @@ class BookRequester(Requester):
 		response = self.get_request(self.BOOK_HOST + uuid + '/')
 		if response is None:
 			return self.BASE_HTTP_ERROR
+		if response is 1:
+			return self.ERROR_503
 		if response.status_code != 200:
 			return response, response.status_code
 
@@ -145,6 +149,8 @@ class BookRequester(Requester):
 		response = self.delete_request(self.BOOK_HOST + uuid + '/')
 		if response is None:
 			return self.BASE_HTTP_ERROR
+		if response is 1:
+			return self.ERROR_503
 		return self.get_data_from_response(response), response.status_code
 	
 	def patch_book(self, request, uuid, data):
@@ -160,6 +166,8 @@ class BookRequester(Requester):
 		
 		if response is None:
 			return self.BASE_HTTP_ERROR
+		if response is 1:
+			return self.ERROR_503
 		return self.get_data_from_response(response), response.status_code
 
 	def post_book(self, request, data):
@@ -170,8 +178,9 @@ class BookRequester(Requester):
 
 		response = self.post_request(self.BOOK_HOST, data=data)
 		if response is None:
-			return Requester.BASE_HTTP_ERROR
-		
+			return self.BASE_HTTP_ERROR
+		if response is 1:
+			return self.ERROR_503
 		return self.get_data_from_response(response), response.status_code
 
 

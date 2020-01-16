@@ -13,6 +13,8 @@ class ReaderRequester(Requester):
 		response = self.get_request(host)
 		if response is None:
 			return self.BASE_HTTP_ERROR
+		if response is 1:
+			return self.ERROR_503
 		response_json = self.next_and_prev_links_to_params(self.get_data_from_response(response))
 		return response_json, response.status_code
 
@@ -20,6 +22,8 @@ class ReaderRequester(Requester):
 		response = self.get_request(self.READER_HOST + f'{uuid}/')
 		if response is None:
 			return self.BASE_HTTP_ERROR
+		if response is 1:
+			return self.ERROR_503
 		return self.get_data_from_response(response), response.status_code
 
 	def get_reader_db_breaker(self, request, uuid):
@@ -27,25 +31,33 @@ class ReaderRequester(Requester):
 		import pybreaker
 		try:
 			response = self.simple_get_request(self.READER_HOST + f'{uuid}/')
-		except (requests.exceptions.BaseHTTPError, requests.exceptions.ConnectionError):
+		except requests.exceptions.BaseHTTPError:
 			response = None
+		except requests.exceptions.ConnectionError:
+			response = 1
 		except pybreaker.CircuitBreakerError:
 			response = None
 			print('Breaker is on')
 		if response is None:
 			return self.BASE_HTTP_ERROR
+		if response is 1:
+			return self.ERROR_503
 		return self.get_data_from_response(response), response.status_code
 
 	def post_reader(self, request, data):
 		response = self.post_request(self.READER_HOST, data=data)
 		if response is None:
 			return self.BASE_HTTP_ERROR
+		if response is 1:
+			return self.ERROR_503
 		return self.get_data_from_response(response), response.status_code
 
 	def patch_reader(self, request, uuid, data):
 		response = self.patch_request(self.READER_HOST + f'{uuid}/', data=data)
 		if response is None:
 			return self.BASE_HTTP_ERROR
+		if response is 1:
+			return self.ERROR_503
 		return self.get_data_from_response(response), response.status_code
 
 	def delete_reader(self, request, uuid):
@@ -54,6 +66,8 @@ class ReaderRequester(Requester):
 		response = self.delete_request(self.READER_HOST + f'{uuid}/')
 		if response is None:
 			return self.BASE_HTTP_ERROR
+		if response is 1:
+			return self.ERROR_503
 		if response.status_code != 204:
 			return self.get_data_from_response(response), response.status_code
 		BookRequester().erase_deleted_readers_uuid(uuid)

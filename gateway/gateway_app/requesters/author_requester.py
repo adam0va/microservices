@@ -14,6 +14,8 @@ class AuthorRequester(Requester):
 		response = self.get_request(host)
 		if response is None:
 			return self.BASE_HTTP_ERROR
+		if response is 1:
+			return self.ERROR_503
 		response_json = self.next_and_prev_links_to_params(self.get_data_from_response(response))
 		AuthorRequester.author_queue.send_requests()
 		return response_json, response.status_code
@@ -22,6 +24,8 @@ class AuthorRequester(Requester):
 		response = self.get_request(self.AUTHOR_HOST + f'{uuid}/')
 		if response is None:
 			return self.BASE_HTTP_ERROR
+		if response is 1:
+			return self.ERROR_503
 		AuthorRequester.author_queue.send_requests()
 		return self.get_data_from_response(response), response.status_code
 
@@ -30,6 +34,9 @@ class AuthorRequester(Requester):
 		if response is None:
 			AuthorRequester.author_queue.add_post(data)
 			return self.BASE_HTTP_ERROR
+		if response is 1:
+			AuthorRequester.author_queue.add_post(data)
+			return self.ERROR_503
 		AuthorRequester.author_queue.send_requests()
 		return self.get_data_from_response(response), response.status_code
 
@@ -38,6 +45,9 @@ class AuthorRequester(Requester):
 		if response is None:
 			AuthorRequester.author_queue.add_patch(uuid, data)
 			return self.BASE_HTTP_ERROR
+		if response is 1:
+			AuthorRequester.author_queue.add_patch(uuid, data)
+			return self.ERROR_503
 		AuthorRequester.author_queue.send_requests()
 		return self.get_data_from_response(response), response.status_code
 
@@ -50,6 +60,9 @@ class AuthorRequester(Requester):
 			AuthorRequester.author_queue.add_delete(uuid)
 			BookRequester().return_deleted_authors_uuid(edited_books)
 			return self.BASE_HTTP_ERROR
+		if response is 1:
+			AuthorRequester.author_queue.add_delete(uuid)
+			return self.ERROR_503
 		if response.status_code != 204:
 			BookRequester().return_deleted_authors_uuid(edited_books)
 			return self.get_data_from_response(response), response.status_code

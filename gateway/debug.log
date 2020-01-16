@@ -6715,3 +6715,213 @@ Internal Server Error: /authors/
 "POST /authors/ HTTP/1.1" 500 32
 "GET /authors/ HTTP/1.1" 200 12074
 "GET /authors/ HTTP/1.1" 200 12654
+Watching for file changes with StatReloader
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/requesters/requester.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/requesters/author_requester.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/requesters/author_requester.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/requesters/author_requester.py changed, reloading.
+Watching for file changes with StatReloader
+Service Unavailable: /authors/
+"GET /authors/ HTTP/1.1" 503 38
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/requesters/author_requester.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/requesters/book_requester.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/requesters/reader_requester.py changed, reloading.
+Watching for file changes with StatReloader
+Service Unavailable: /authors/
+"GET /authors/ HTTP/1.1" 503 38
+Service Unavailable: /readers/
+"GET /readers/ HTTP/1.1" 503 38
+Method Not Allowed: /readers/
+"PATCH /readers/ HTTP/1.1" 405 42
+Service Unavailable: /readers/
+"POST /readers/ HTTP/1.1" 503 38
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/requesters/author_requester.py changed, reloading.
+Watching for file changes with StatReloader
+Service Unavailable: /authors/
+"POST /authors/ HTTP/1.1" 503 38
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/requesters/author_requester.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /authors/
+Traceback (most recent call last):
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/views.py", line 45, in post
+    data, code = self.REQUESTER.post_author(request=request, data=request.data)
+TypeError: cannot unpack non-iterable int object
+"POST /authors/ HTTP/1.1" 500 15278
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/requesters/author_requester.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /authors/
+Traceback (most recent call last):
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/views.py", line 45, in post
+    data, code = self.REQUESTER.post_author(request=request, data=request.data)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/requesters/author_requester.py", line 41, in post_author
+    return json.dumps({'message' : 'created'}, 201)
+TypeError: dumps() takes 1 positional argument but 2 were given
+"POST /authors/ HTTP/1.1" 500 15485
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/requesters/author_requester.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /authors/
+Traceback (most recent call last):
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/views.py", line 45, in post
+    data, code = self.REQUESTER.post_author(request=request, data=request.data)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/template/response.py", line 120, in __iter__
+    'The response content must be rendered before it can be iterated over.'
+django.template.response.ContentNotRenderedError: The response content must be rendered before it can be iterated over.
+"POST /authors/ HTTP/1.1" 500 15585
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/requesters/author_requester.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/requesters/author_requester.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/requesters/author_requester.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /authors/
+Traceback (most recent call last):
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/views.py", line 45, in post
+    data, code = self.REQUESTER.post_author(request=request, data=request.data)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/requesters/author_requester.py", line 42, in post_author
+    return Response({"Success": "Created"}, status=status.HTTP_201_CREATED)
+NameError: name 'status' is not defined
+"POST /authors/ HTTP/1.1" 500 15461
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/requesters/author_requester.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /authors/
+Traceback (most recent call last):
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/views.py", line 45, in post
+    data, code = self.REQUESTER.post_author(request=request, data=request.data)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/template/response.py", line 120, in __iter__
+    'The response content must be rendered before it can be iterated over.'
+django.template.response.ContentNotRenderedError: The response content must be rendered before it can be iterated over.
+"POST /authors/ HTTP/1.1" 500 15585
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/requesters/author_requester.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/requesters/author_requester.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /authors/
+Traceback (most recent call last):
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/env/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/views.py", line 45, in post
+    data, code = self.REQUESTER.post_author(request=request, data=request.data)
+ValueError: not enough values to unpack (expected 2, got 1)
+"POST /authors/ HTTP/1.1" 500 15300
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/requesters/author_requester.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/views.py changed, reloading.
+Watching for file changes with StatReloader
+"POST /authors/ HTTP/1.1" 201 0
+"GET /authors/ HTTP/1.1" 200 657
+"GET /authors/ HTTP/1.1" 200 786

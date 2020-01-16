@@ -2,6 +2,7 @@ from rest_framework.views import Response, Request, APIView
 from .requesters.book_requester import BookRequester
 from .requesters.reader_requester import ReaderRequester
 from .requesters.author_requester import AuthorRequester
+from rest_framework import status
 
 
 class AllReadersView(APIView):
@@ -43,6 +44,8 @@ class AllAuthorsView(APIView):
 
 	def post(self, request):
 		data, code = self.REQUESTER.post_author(request=request, data=request.data)
+		if code == 500 or code == 503:
+			return Response(status=status.HTTP_201_CREATED)
 		return Response(data, status=code)
 
 
@@ -55,10 +58,14 @@ class AuthorView(APIView):
 
 	def delete(self, request, author_uuid):
 		data, code = self.REQUESTER.delete_author(request=request,uuid=author_uuid)
+		if code == 500 or code == 503:
+			return Response(status=status.HTTP_204_NO_CONTENT)
 		return Response(data, status=code)
 
 	def patch(self, request, author_uuid):
 		data, code = self.REQUESTER.patch_author(request=request, uuid=author_uuid, data=request.data)
+		if code == 500 or code == 503:
+			return Response(status=status.HTTP_202_ACCEPTED)
 		return Response(data, status=code)
 
 
