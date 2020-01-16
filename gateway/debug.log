@@ -8083,3 +8083,29 @@ Forbidden: /readers/
 "GET /readers/ HTTP/1.1" 200 549
 Forbidden: /readers/
 "GET /readers/ HTTP/1.1" 403 58
+Watching for file changes with StatReloader
+"GET /api/o/redirect/?code=DHqMa95jOYdmrrx82VwtcGAq2Fuf7e HTTP/1.1" 200 10054
+"GET /authors/ HTTP/1.1" 200 651
+"GET /readers/ HTTP/1.1" 200 549
+"GET /readers/ HTTP/1.1" 200 549
+"GET /readers/ HTTP/1.1" 200 549
+"GET /readers/ HTTP/1.1" 200 549
+"GET /readers/ HTTP/1.1" 200 549
+"GET /readers/ HTTP/1.1" 200 549
+"GET /readers/ HTTP/1.1" 200 549
+"GET /readers/ HTTP/1.1" 200 549
+"GET /readers/ HTTP/1.1" 200 549
+"GET /readers/05e98fcf-eb48-40c8-a3b5-8eb12e1cb245/ HTTP/1.1" 200 108
+"GET /readers/05e98fcf-eb48-40c8-a3b5-8eb12e1cb245/ HTTP/1.1" 200 108
+"GET /readers/05e98fcf-eb48-40c8-a3b5-8eb12e1cb245/ HTTP/1.1" 200 108
+Forbidden: /readers/05e98fcf-eb48-40c8-a3b5-8eb12e1cb245/
+"GET /readers/05e98fcf-eb48-40c8-a3b5-8eb12e1cb245/ HTTP/1.1" 403 58
+"GET /readers/05e98fcf-eb48-40c8-a3b5-8eb12e1cb245/ HTTP/1.1" 200 108
+"GET /readers/05e98fcf-eb48-40c8-a3b5-8eb12e1cb245/ HTTP/1.1" 200 108
+"GET /readers/05e98fcf-eb48-40c8-a3b5-8eb12e1cb245/ HTTP/1.1" 200 108
+"GET /readers/05e98fcf-eb48-40c8-a3b5-8eb12e1cb245/ HTTP/1.1" 200 108
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/permissions.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /readers/05e98fcf-eb48-40c8-a3b5-8eb12e1cb245/ HTTP/1.1" 200 108
+Forbidden: /readers/05e98fcf-eb48-40c8-a3b5-8eb12e1cb245/
+"GET /readers/05e98fcf-eb48-40c8-a3b5-8eb12e1cb245/ HTTP/1.1" 403 58

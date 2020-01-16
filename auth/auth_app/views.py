@@ -33,8 +33,10 @@ class GetUserInfoView(APIView):
     def get(self, request):
         try:
             tok = request.META.get('HTTP_AUTHORIZATION', '')[7:]
-            _ = AccessToken.objects.get(token=tok)
+            token = AccessToken.objects.get(token=tok)
         except AccessToken.DoesNotExist:
+            return Response(status=403)
+        if token.is_expired():
             return Response(status=403)
         return Response(status=200)
 
