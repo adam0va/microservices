@@ -24,6 +24,7 @@ class AuthorQueue:
         if self.is_on:
             return
         self.is_on = True
+        print('Sending')
         requester = AuthorRequester()
         for request in self.queue:
             if request['type'] == 'patch':

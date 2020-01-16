@@ -3,8 +3,10 @@ from .requesters.book_requester import BookRequester
 from .requesters.reader_requester import ReaderRequester
 from .requesters.author_requester import AuthorRequester
 
+
 class AllReadersView(APIView):
 	REQUESTER = ReaderRequester()
+
 	def get(self, request):
 		data, code = self.REQUESTER.get_all_readers(request=request)
 		return Response(data, status=code)
@@ -13,10 +15,13 @@ class AllReadersView(APIView):
 		data, code = self.REQUESTER.post_reader(request=request, data=request.data)
 		return Response(data, status=code)
 
+
 class ReaderView(APIView):
 	REQUESTER = ReaderRequester()
+
 	def get(self, request, reader_uuid):
-		data, code = self.REQUESTER.get_reader(request=request, uuid=reader_uuid)
+		data, code = self.REQUESTER.get_reader_db_breaker(request=request, uuid=reader_uuid)
+		#data, code = self.REQUESTER.get_reader(request=request, uuid=reader_uuid)
 		return Response(data, status=code)
 
 	def delete(self, request, reader_uuid):
@@ -30,8 +35,8 @@ class ReaderView(APIView):
 
 
 class AllAuthorsView(APIView):
-	#renderer_classes = [JSONRenderer]
 	REQUESTER = AuthorRequester()
+
 	def get(self, request):
 		data, code = self.REQUESTER.get_all_authors(request=request)
 		return Response(data, status=code)
@@ -40,9 +45,10 @@ class AllAuthorsView(APIView):
 		data, code = self.REQUESTER.post_author(request=request, data=request.data)
 		return Response(data, status=code)
 
+
 class AuthorView(APIView):
-	#renderer_classes = [JSONRenderer]
 	REQUESTER = AuthorRequester()
+
 	def get(self, request, author_uuid):
 		data, code = self.REQUESTER.get_author(request=request, uuid=author_uuid)
 		return Response(data, status=code)
@@ -58,9 +64,11 @@ class AuthorView(APIView):
 
 class AllBooksView(APIView):
 	REQUESTER = BookRequester()
+
 	def get (self, request):
 		data, code = self.REQUESTER.get_all_books(request=request)
 		return Response(data, status=code)
+
 	def post(self, request):
 		data, code = self.REQUESTER.post_book(request=request, data=request.data)
 		print(request.data)
@@ -69,6 +77,7 @@ class AllBooksView(APIView):
 
 class BookView(APIView):
 	REQUESTER = BookRequester()
+
 	def get(self, request, book_uuid):
 		data, code = self.REQUESTER.get_book(request=request, uuid=book_uuid)
 		return Response(data, status=code)

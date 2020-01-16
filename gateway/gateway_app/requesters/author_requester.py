@@ -1,12 +1,12 @@
 from gateway_app.requesters.requester import Requester
 from .author_queue import AuthorQueue
 
+
 class AuthorRequester(Requester):
 	author_queue = AuthorQueue()
 	AUTHOR_HOST = Requester.HOST + ':8002/authors/'
 
 	def get_all_authors(self, request):
-
 		host = self.AUTHOR_HOST
 		l_o = self.get_limit_and_offset(request)
 		if l_o is not None:
@@ -17,7 +17,6 @@ class AuthorRequester(Requester):
 		response_json = self.next_and_prev_links_to_params(self.get_data_from_response(response))
 		AuthorRequester.author_queue.send_requests()
 		return response_json, response.status_code
-
 
 	def get_author(self, request, uuid):
 		response = self.get_request(self.AUTHOR_HOST + f'{uuid}/')

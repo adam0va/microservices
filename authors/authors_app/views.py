@@ -9,6 +9,18 @@ class AuthorList(ListCreateAPIView):
     serializer_class = AuthorSerializer
     def get_queryset(self):
         return Author.objects.all()
+
+    def post(self, request):
+        data = request.data
+        serializer = AuthorSerializer(data=data)
+        print(f'request: {data}\n')
+        surname = data['surname']
+        print(f'{surname}')
+        if serializer.is_valid():
+            serializer.save()
+            return Response(serializer.data, status=status.HTTP_201_CREATED)
+        else:
+            return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 '''
 class AuthorList(APIView):
     def get(self, request):
@@ -18,15 +30,6 @@ class AuthorList(APIView):
             return Response(serializer.data, status = status.HTTP_200_OK)
         else:
             return Response({'error': 'wrong request'}, status=status.HTTP_400_BAD_REQUEST)
-
-    def post(self, request):
-        data = request.data
-        serializer = AuthorSerializer(data=data)
-        if serializer.is_valid():
-            serializer.save()
-            return Response(serializer.data, status=status.HTTP_201_CREATED)
-        else:
-            return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 '''
 
 
@@ -51,7 +54,6 @@ class AuthorDetail(APIView):
             return Response(serializer.data, status=status.HTTP_202_ACCEPTED)
         else:
             return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
-        
 
     def delete(self, request, uuid):
         try:

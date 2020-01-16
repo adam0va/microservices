@@ -15,13 +15,6 @@ class ReaderRequester(Requester):
 			return self.BASE_HTTP_ERROR
 		response_json = self.next_and_prev_links_to_params(self.get_data_from_response(response))
 		return response_json, response.status_code
-		'''
-		response = self.get_request(self.READER_HOST)
-		if response is None:
-			return self.BASE_HTTP_ERROR
-		return self.get_data_from_response(response), response.status_code
-		'''
-
 
 	def get_reader(self, request, uuid):
 		response = self.get_request(self.READER_HOST + f'{uuid}/')
@@ -42,7 +35,6 @@ class ReaderRequester(Requester):
 		if response is None:
 			return self.BASE_HTTP_ERROR
 		return self.get_data_from_response(response), response.status_code
-
 
 	def post_reader(self, request, data):
 		response = self.post_request(self.READER_HOST, data=data)
