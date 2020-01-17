@@ -7,7 +7,7 @@ class Requester:
 	HOST = 'http://127.0.0.1'
 	BASE_HTTP_ERROR = (json.dumps({'error': 'BaseHTTPError'}), 500)
 	ERROR_503 = (json.dumps({'error': 'Service unavailable'}), 503)
-	DB_BREAKER = pybreaker.CircuitBreaker(fail_max=2, reset_timeout=10)
+	DB_BREAKER = pybreaker.CircuitBreaker(fail_max=3, reset_timeout=10)
 
 	@DB_BREAKER
 	def simple_get_request(self, url):

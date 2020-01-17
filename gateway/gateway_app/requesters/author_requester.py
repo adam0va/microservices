@@ -18,6 +18,7 @@ class AuthorRequester(Requester):
 			return self.ERROR_503
 		response_json = self.next_and_prev_links_to_params(self.get_data_from_response(response))
 		AuthorRequester.author_queue.send_requests()
+		response = self.get_request(host)
 		return response_json, response.status_code
 
 	def get_author(self, request, uuid):
@@ -27,18 +28,31 @@ class AuthorRequester(Requester):
 		if response is 1:
 			return self.ERROR_503
 		AuthorRequester.author_queue.send_requests()
+		response = self.get_request(self.AUTHOR_HOST + f'{uuid}/')
 		return self.get_data_from_response(response), response.status_code
 
 	def post_author(self, request, data):
-		response = self.post_request(self.AUTHOR_HOST, data=data)
-		if response is None:
-			AuthorRequester.author_queue.add_post(data)
-			return self.BASE_HTTP_ERROR
-		if response is 1:
-			AuthorRequester.author_queue.add_post(data)
-			return self.ERROR_503
-		AuthorRequester.author_queue.send_requests()
-		return self.get_data_from_response(response), response.status_code
+		if AuthorRequester.author_queue.is_empty():
+			response = self.post_request(self.AUTHOR_HOST, data=data)
+			if response is None:
+				AuthorRequester.author_queue.add_post(data)
+				return self.BASE_HTTP_ERROR
+			if response is 1:
+				AuthorRequester.author_queue.add_post(data)
+				return self.ERROR_503
+			return self.get_data_from_response(response), response.status_code
+		else:
+			response = self.get_request(self.AUTHOR_HOST)
+			if response.status_code == 200:
+				AuthorRequester.author_queue.send_requests()
+			response = self.post_request(self.AUTHOR_HOST, data=data)
+			if response is None:
+				AuthorRequester.author_queue.add_post(data)
+				return self.BASE_HTTP_ERROR
+			if response is 1:
+				AuthorRequester.author_queue.add_post(data)
+				return self.ERROR_503
+			return self.get_data_from_response(response), response.status_code
 
 	def patch_author(self, request, uuid, data):
 		response = self.patch_request(self.AUTHOR_HOST + f'{uuid}/', data=data)
@@ -54,17 +68,17 @@ class AuthorRequester(Requester):
 	def delete_author(self, request, uuid):
 		from gateway_app.requesters.book_requester import BookRequester
 		edited_books = BookRequester().erase_deleted_authors_uuid(uuid)
-
-		response = self.delete_request(self.AUTHOR_HOST + f'{uuid}/')
-		if response is None:
-			AuthorRequester.author_queue.add_delete(uuid)
-			BookRequester().return_deleted_authors_uuid(edited_books)
-			return self.BASE_HTTP_ERROR
-		if response is 1:
-			AuthorRequester.author_queue.add_delete(uuid)
-			return self.ERROR_503
-		if response.status_code != 204:
-			BookRequester().return_deleted_authors_uuid(edited_books)
+		if edited_books is not None:
+			response = self.delete_request(self.AUTHOR_HOST + f'{uuid}/')
+			if response is None:
+				AuthorRequester.author_queue.add_delete(uuid)
+				BookRequester().return_deleted_authors_uuid(edited_books)
+				return self.BASE_HTTP_ERROR
+			if response is 1:
+				AuthorRequester.author_queue.add_delete(uuid)
+				return self.ERROR_503
+			if response.status_code != 204:
+				BookRequester().return_deleted_authors_uuid(edited_books)
+				return self.get_data_from_response(response), response.status_code
+			AuthorRequester.author_queue.send_requests()
 			return self.get_data_from_response(response), response.status_code
-		AuthorRequester.author_queue.send_requests()
-		return self.get_data_from_response(response), response.status_code

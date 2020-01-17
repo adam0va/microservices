@@ -6925,3 +6925,99 @@ Watching for file changes with StatReloader
 "POST /authors/ HTTP/1.1" 201 0
 "GET /authors/ HTTP/1.1" 200 657
 "GET /authors/ HTTP/1.1" 200 786
+Watching for file changes with StatReloader
+Service Unavailable: /readers/
+"GET /readers/ HTTP/1.1" 503 38
+"GET /readers/ HTTP/1.1" 200 331
+Not Found: /readers/05e98fcf-eb48-40c8-a3b5-8eb12e1cb145/
+"GET /readers/05e98fcf-eb48-40c8-a3b5-8eb12e1cb145/ HTTP/1.1" 404 2
+"GET /readers/05e98fcf-eb48-40c8-a3b5-8eb12e1cb245/ HTTP/1.1" 200 108
+Not Found: /readers/05e98fcf-eb48-40c8-a3b5-8eb11e1cb245/
+"GET /readers/05e98fcf-eb48-40c8-a3b5-8eb11e1cb245/ HTTP/1.1" 404 2
+"POST /readers/ HTTP/1.1" 201 111
+Bad Request: /readers/
+"POST /readers/ HTTP/1.1" 400 45
+"GET /books/ HTTP/1.1" 200 1177
+"GET /books/ HTTP/1.1" 200 1652
+"GET /books/ HTTP/1.1" 200 1652
+"GET /books/c066d53b-0e46-433e-b375-57aa6ca32940/ HTTP/1.1" 200 279
+"GET /books/ HTTP/1.1" 200 1652
+"GET /books/7ebd3e0a-400a-49e8-b33c-a57ddddcaeb9 HTTP/1.1" 301 0
+"GET /books/7ebd3e0a-400a-49e8-b33c-a57ddddcaeb9/ HTTP/1.1" 200 435
+"GET /books/ HTTP/1.1" 200 1177
+"GET /books/7ebd3e0a-400a-49e8-b33c-a57ddddcaeb9/ HTTP/1.1" 200 317
+Not Found: /rea
+"GET /rea HTTP/1.1" 404 3477
+Internal Server Error: /readers/05e98fcf-eb48-40c8-a3b5-8eb12e1cb245/
+"GET /readers/05e98fcf-eb48-40c8-a3b5-8eb12e1cb245/ HTTP/1.1" 500 32
+Internal Server Error: /readers/05e98fcf-eb48-40c8-a3b5-8eb12e1cb245/
+"GET /readers/05e98fcf-eb48-40c8-a3b5-8eb12e1cb245/ HTTP/1.1" 500 32
+Internal Server Error: /readers/05e98fcf-eb48-40c8-a3b5-8eb12e1cb245/
+"GET /readers/05e98fcf-eb48-40c8-a3b5-8eb12e1cb245/ HTTP/1.1" 500 32
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/requesters/requester.py changed, reloading.
+Watching for file changes with StatReloader
+Service Unavailable: /readers/05e98fcf-eb48-40c8-a3b5-8eb12e1cb245/
+"GET /readers/05e98fcf-eb48-40c8-a3b5-8eb12e1cb245/ HTTP/1.1" 503 38
+Service Unavailable: /readers/05e98fcf-eb48-40c8-a3b5-8eb12e1cb245/
+"GET /readers/05e98fcf-eb48-40c8-a3b5-8eb12e1cb245/ HTTP/1.1" 503 38
+Internal Server Error: /readers/05e98fcf-eb48-40c8-a3b5-8eb12e1cb245/
+"GET /readers/05e98fcf-eb48-40c8-a3b5-8eb12e1cb245/ HTTP/1.1" 500 32
+Internal Server Error: /readers/05e98fcf-eb48-40c8-a3b5-8eb12e1cb245/
+"GET /readers/05e98fcf-eb48-40c8-a3b5-8eb12e1cb245/ HTTP/1.1" 500 32
+Internal Server Error: /readers/05e98fcf-eb48-40c8-a3b5-8eb12e1cb245/
+"GET /readers/05e98fcf-eb48-40c8-a3b5-8eb12e1cb245/ HTTP/1.1" 500 32
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/requesters/author_queue.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/requesters/book_requester.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/requesters/book_requester.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/requesters/author_requester.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/requesters/author_queue.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/requesters/author_requester.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/requesters/author_requester.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/requesters/author_requester.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /readers/
+"POST /readers/ HTTP/1.1" 500 15155
+Internal Server Error: /readers/
+"POST /readers/ HTTP/1.1" 500 15407
+"POST /readers/ HTTP/1.1" 201 111
+"POST /readers/ HTTP/1.1" 201 111
+"POST /readers/ HTTP/1.1" 201 111
+"POST /readers/ HTTP/1.1" 201 111
+"POST /readers/ HTTP/1.1" 201 111
+"POST /readers/ HTTP/1.1" 201 111
+Internal Server Error: /readers/
+"POST /readers/ HTTP/1.1" 500 15519
+Internal Server Error: /readers/
+"POST /readers/ HTTP/1.1" 500 15425
+"POST /readers/ HTTP/1.1" 201 111
+Internal Server Error: /readers/
+"POST /readers/ HTTP/1.1" 500 14965
+"POST /readers/ HTTP/1.1" 201 111
+"POST /readers/ HTTP/1.1" 201 111
+"POST /readers/ HTTP/1.1" 201 111
+Internal Server Error: /readers/
+"POST /readers/ HTTP/1.1" 500 15202
+"POST /readers/ HTTP/1.1" 201 111
+Bad Request: /readers/
+"POST /readers/ HTTP/1.1" 400 2
+Bad Request: /readers/
+"POST /readers/ HTTP/1.1" 400 2
+Bad Request: /readers/
+"POST /readers/ HTTP/1.1" 400 2
+Bad Request: /readers/
+"POST /readers/ HTTP/1.1" 400 2
+Bad Request: /readers/
+"POST /readers/ HTTP/1.1" 400 2
+"POST /readers/ HTTP/1.1" 201 111
+Bad Request: /readers/
+"POST /readers/ HTTP/1.1" 400 2
+Bad Request: /readers/
+"POST /readers/ HTTP/1.1" 400 2
+"POST /readers/ HTTP/1.1" 201 111

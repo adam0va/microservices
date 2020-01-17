@@ -45,6 +45,8 @@ class BookRequester(Requester):
 				auid = book['author_uuid']
 				book['author_uuid'] = None
 				response = self.patch_request(self.BOOK_HOST + book['uuid'] + '/', data=book)
+				if response.status_code != 202:
+					return None
 				book['author_uuid'] = auid
 				return book
 
@@ -66,6 +68,8 @@ class BookRequester(Requester):
 			book = self.erase_uuid(response_data[i], 'author', uuid)
 			if book is not None:
 				edited_books.append(book)
+			else:
+				return None
 		return edited_books
 
 	def erase_deleted_readers_uuid(self, uuid):

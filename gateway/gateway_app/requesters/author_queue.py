@@ -4,6 +4,11 @@ class AuthorQueue:
         self.queue = []
         self.is_on = True
 
+    def is_empty(self):
+        if self.is_on:
+            return
+        return self.queue == []
+
     def add_patch(self, uuid, data):
         self.queue.append({'type' : 'patch', 'uuid' : uuid, 'data' : data})
         self.is_on = False
@@ -34,3 +39,4 @@ class AuthorQueue:
             if request['type'] == 'delete':
                 requester.delete_author(uuid=request['uuid'], request=None)
         self.queue = []
+        #лишние поля, полный откат, очередь (отправить гет перед тем, как пускать очередь)
