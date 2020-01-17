@@ -39,4 +39,4 @@ class AuthorQueue:
             if request['type'] == 'delete':
                 requester.delete_author(uuid=request['uuid'], request=None)
         self.queue = []
-        #лишние поля, полный откат, очередь (отправить гет перед тем, как пускать очередь)
+        

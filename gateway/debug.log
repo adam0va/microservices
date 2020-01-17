@@ -7021,3 +7021,5 @@ Bad Request: /readers/
 Bad Request: /readers/
 "POST /readers/ HTTP/1.1" 400 2
 "POST /readers/ HTTP/1.1" 201 111
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/requesters/author_queue.py changed, reloading.
+Watching for file changes with StatReloader
