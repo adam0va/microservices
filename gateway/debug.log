@@ -8117,3 +8117,50 @@ Forbidden: /readers/05e98fcf-eb48-40c8-a3b5-8eb12e1cb245/
 Watching for file changes with StatReloader
 >>>>>>> Stashed changes
 Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET /api/o/redirect/?code=6f8euujq5arG4YqXSJC7kpW45G5Bug HTTP/1.1" 200 10054
+"GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 200 3385
+"GET /static/rest_framework/css/default.css HTTP/1.1" 200 1131
+"GET /static/rest_framework/css/prettify.css HTTP/1.1" 200 817
+"GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 200 3597
+"GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 121457
+"GET /static/rest_framework/js/csrf.js HTTP/1.1" 200 1719
+"GET /static/rest_framework/js/jquery-3.4.1.min.js HTTP/1.1" 200 88145
+"GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 200 13632
+"GET /static/rest_framework/js/default.js HTTP/1.1" 200 1268
+"GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 200 37608
+"GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 3813
+"GET /readers/05e98fcf-eb48-40c8-a3b5-8eb12e1cb245/ HTTP/1.1" 200 108
+"GET /authors/ HTTP/1.1" 200 651
+"GET /authors/ HTTP/1.1" 200 651
+"GET /authors/ab10ab11-1ecd-43fb-babb-64d76dd4aeed HTTP/1.1" 301 0
+Forbidden: /authors/ab10ab11-1ecd-43fb-babb-64d76dd4aeed/
+"GET /authors/ab10ab11-1ecd-43fb-babb-64d76dd4aeed/ HTTP/1.1" 403 58
+Forbidden: /authors/ab10ab11-1ecd-43fb-babb-64d76dd4aeed/
+"GET /authors/ab10ab11-1ecd-43fb-babb-64d76dd4aeed/ HTTP/1.1" 403 58
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /authors/ab10ab11-1ecd-43fb-babb-64d76dd4aeed/ HTTP/1.1" 200 134
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/views.py changed, reloading.
+Watching for file changes with StatReloader
+Forbidden: /readers/
+"GET /readers/ HTTP/1.1" 403 58
+"GET /readers/ HTTP/1.1" 200 549
+Forbidden: /readers/
+"GET /readers/ HTTP/1.1" 403 58
+"GET /api/o/redirect/?code=uOi11pZRJXj9lPW1Szgx2yud5sBhcJ HTTP/1.1" 200 10054
+"GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 3813
+Forbidden: /readers/
+"GET /readers/ HTTP/1.1" 403 58
+"GET /readers/ HTTP/1.1" 200 549
+Forbidden: /readers/
+"GET /readers/ HTTP/1.1" 403 58
+"GET /readers/ HTTP/1.1" 200 549
+/Users/malenkijkotik/Desktop/progs/rsoi/rsoi2/gateway/gateway_app/requesters/author_requester.py changed, reloading.
+Watching for file changes with StatReloader

@@ -1,6 +1,7 @@
 from gateway_app.requesters.requester import Requester
 from .author_queue import AuthorQueue
 
+
 class AuthorRequester(Requester):
 	author_queue = AuthorQueue()
 	AUTHOR_HOST = Requester.HOST + ':8002/authors/'

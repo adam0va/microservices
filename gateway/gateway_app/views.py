@@ -93,19 +93,39 @@ class AllAuthorsView(APIView):
 
 
 class AuthorView(APIView):
-    permission_classes = (IsAuthenticatedThroughAuthService,)
+    #permission_classes = (IsAuthenticatedThroughAuthService,)
 
     REQUESTER = AuthorRequester()
 
+    def _get_token(self, refresh=False):
+        import requests
+        global TOKEN, REFRESH
+        body = {
+            'server_id': 'Authors_id',
+            'server_secret': 'Authors_secret',
+        }
+        if refresh:
+            body['refresh_token'] = REFRESH
+        ret = requests.post('http://127.0.0.1:8002/api/server_login/', json=body)
+        print(f'response: {ret.json()}')
+        TOKEN = ret.json()['token']
+        REFRESH = ret.json()['refresh_token']
+
     def get(self, request, author_uuid):
+        if TOKEN == '':
+            self._get_token()
         data, code = self.REQUESTER.get_author(request=request, uuid=author_uuid)
         return Response(data, status=code)
 
     def delete(self, request, author_uuid):
+        if TOKEN == '':
+            self._get_token()
         data, code = self.REQUESTER.delete_author(request=request,uuid=author_uuid)
         return Response(data, status=code)
 
     def patch(self, request, author_uuid):
+        if TOKEN == '':
+            self._get_token()
         data, code = self.REQUESTER.patch_author(request=request, uuid=author_uuid, data=request.data)
         return Response(data, status=code)
 
